@@ -14,21 +14,13 @@
 <body>
 {{--    {!! $scripts->after_open_field !!}--}}
 
-    <div class="wrapper">
-        @include('front.header')
-        @yield('header')
+    @include('front.header')
+    @yield('header')
 
-        @yield('content')
+    @yield('content')
 
-        @include('front.footer')
-        @yield('footer')
-    </div>
-
-    <div class="hide">
-        @include('front.popups.sponsor_form')
-        @include('front.popups.thank')
-        <a href="#thanks" class="thank"></a>
-    </div>
+    @include('front.footer')
+    @yield('footer')
 
     @include('front.scripts')
     @include('front.metriks')

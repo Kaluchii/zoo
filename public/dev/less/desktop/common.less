@@ -4,13 +4,7 @@
 
 
                                       Пример подключения шрифтов
-
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Light'), local('RobotoLight'), url('../fonts/Roboto/Robotolight.woff2') format('woff2'), url('../fonts/Roboto/Robotolight.woff') format('woff'), url('../fonts/Roboto/Robotolight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
+*/
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto'), local('RobotoRegular'), url('../fonts/Roboto/Roboto.woff2') format('woff2'), url('../fonts/Roboto/Roboto.woff') format('woff'), url('../fonts/Roboto/Roboto.ttf') format('truetype');
@@ -19,10 +13,16 @@
 }
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto Black'), local('RobotoBlack'), url('../fonts/Roboto/Robotoblack.woff2') format('woff2'), url('../fonts/Roboto/Robotoblack.woff') format('woff'), url('../fonts/Roboto/Robotoblack.ttf') format('truetype');
-  font-weight: 900;
+  src: local('Roboto Medium'), local('RobotoMedium'), url('../fonts/Roboto/RobotoMedium.woff2') format('woff2'), url('../fonts/Roboto/RobotoMedium.woff') format('woff'), url('../fonts/Roboto/RobotoMedium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
-}*/
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('RobotoBold'), url('../fonts/Roboto/RobotoBold.woff2') format('woff2'), url('../fonts/Roboto/RobotoBold.woff') format('woff'), url('../fonts/Roboto/RobotoBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 .link{
   .link(@link-color,@link-border,@hover-color,@hover-border);
