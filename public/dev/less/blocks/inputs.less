@@ -1,0 +1,162 @@
+.form{
+  margin-left: 350px;
+}
+
+.input-row{
+  position: relative;
+  margin-top: 20px;
+
+  &__label{
+    position: absolute;
+    left: -260px;
+    top: 11px;
+    text-align: right;
+    max-width: 230px;
+    width: 100%;
+    color: #333333;
+  }
+
+  &__name{}
+
+  &__description{
+    display: inline-block;
+    max-width: 175px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999999;
+  }
+}
+
+/* Однострочное поле */
+.input{
+  height: 40px;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  border-radius: @border-radius;
+  color: #333333;
+  transition: .2s;
+
+  &[readonly], &--readonly{
+    background-color: #eeeeee;
+  }
+  
+  &::placeholder{
+    color: #999999;
+  }
+
+  &:not([readonly]):not([class*="--readonly"]):hover{
+    border-color: #cc9933;
+  }
+
+  &:not([readonly]):not([class*="--readonly"]):focus{
+    border-color: #cc9933;
+    box-shadow: 0 0 10px 1px rgba(255, 204, 102, 0.5), inset 3px 3px 5px -3px rgba(102, 51, 0, 0.25);
+  }
+}
+
+/* Переключатель */
+.radio-switchers{
+  font-size: 0;
+
+  &__item{
+    display: inline-block;
+
+    &:nth-child(n+2){
+      margin-left: -1px;
+    }
+
+    &:first-child{
+      .radio-switchers__button{
+        border-top-left-radius: @border-radius;
+        border-bottom-left-radius: @border-radius;
+      }
+    }
+
+    &:last-child{
+      .radio-switchers__button{
+        border-top-right-radius: @border-radius;
+        border-bottom-right-radius: @border-radius;
+      }
+    }
+
+    &:nth-child(n+2):nth-last-child(n+2){}
+  }
+
+  &__input{
+    display: none;
+
+    &:checked ~ .radio-switchers__button{
+      border: 1px solid #aea375;
+      background: #cccc99;
+      box-shadow: none;
+      z-index: 2;
+    }
+  }
+
+  &__button{
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    color: #333333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+    box-shadow: 1px 1px 2px rgba(153, 153, 153, 0.5);
+    transition: .2s;
+
+    &:hover{
+      background: rgba(255,255,255,1);
+      background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,204,1)));
+      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=0 );
+    }
+  }
+}
+
+
+/* Многострочное текстовое поле */
+
+.textarea{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 470px;
+  height: 180px;
+  padding: 10px;
+  border-radius: @border-radius;
+  resize: none;
+  transition: .2s;
+
+  &::placeholder{
+    color: #999999;
+  }
+
+  &:hover{
+    border-color: #cc9933;
+  }
+
+  &:focus{
+    border-color: #cc9933;
+    box-shadow: 0 0 10px 1px rgba(255, 204, 102, 0.5), inset 3px 3px 5px -3px rgba(102, 51, 0, 0.25);
+  }
+}
