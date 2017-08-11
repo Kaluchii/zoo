@@ -1,10 +1,22 @@
 .form{
   margin-left: 350px;
+
+  &__checkbox-btn{
+    margin-left: 10px;
+    vertical-align: top;
+  }
 }
 
 .input-row{
   position: relative;
   margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+  &__wrap{
+    display: flex;
+    align-items: flex-start;
+  }
 
   &__label{
     position: absolute;
@@ -26,13 +38,25 @@
     line-height: 1.5;
     color: #999999;
   }
+
+  &__clarification{
+    position: relative;
+    margin-top: 9px;
+    margin-left: 30px;
+    line-height: 1.5;
+    color: #999999;
+  }
+
+  &__clarification-text{
+    font-size: 14px;
+  }
 }
 
 /* Однострочное поле */
 .input{
   height: 40px;
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
+  max-width: 100%;
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
@@ -102,7 +126,7 @@
     display: inline-block;
     position: relative;
     height: 40px;
-    padding: 10px;
+    padding: 10px 15px;
     box-sizing: border-box;
     border: 1px solid #999999;
     color: #333333;
@@ -139,8 +163,8 @@
 
 .textarea{
   box-sizing: border-box;
-  width: 100%;
-  max-width: 470px;
+  width: 470px;
+  max-width: 100%;
   height: 180px;
   padding: 10px;
   border-radius: @border-radius;
@@ -158,5 +182,56 @@
   &:focus{
     border-color: #cc9933;
     box-shadow: 0 0 10px 1px rgba(255, 204, 102, 0.5), inset 3px 3px 5px -3px rgba(102, 51, 0, 0.25);
+  }
+}
+
+
+/* Чекбокс кнопка */
+
+.checkbox-btn{
+  &__input{
+    display: none;
+
+    &:checked ~ .checkbox-btn__button{
+      border: 1px solid #aea375;
+      background: #cccc99;
+      box-shadow: none;
+    }
+  }
+
+  &__button{
+    display: inline-block;
+    height: 40px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    border-radius: @border-radius;
+    color: #333333;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+    box-shadow: 1px 1px 2px rgba(153, 153, 153, 0.5);
+    transition: .2s;
+
+    &:hover{
+      background: rgba(255,255,255,1);
+      background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,204,1)));
+      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(204,204,204,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=0 );
+    }
   }
 }
