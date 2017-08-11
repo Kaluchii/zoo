@@ -186,6 +186,43 @@
 }
 
 
+/* Чекбокс */
+
+.checkbox{
+  &__input{
+    display: none;
+
+    &:checked ~ .checkbox__wrap .checkbox__button{
+      border: 1px solid #666666;
+    }
+  }
+
+  &__wrap{
+    color: #333333;
+    line-height: 1.2;
+  }
+
+  &__button{
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #999999;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  &__text{
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
+
+
 /* Чекбокс кнопка */
 
 .checkbox-btn{

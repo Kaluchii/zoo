@@ -53,8 +53,24 @@
             </div>
             <div class="input-row">
                 <div class="input-row__wrap">
+                    <label class="form__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1">
+                        <span class="checkbox__wrap">
+                            <span class="checkbox__button"></span>
+                            <span class="checkbox__text">Я соглашаюсь с правилами подачи объявлений</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap">
                     <label class="input-row__label"><span class="input-row__name">Фотографии</span>
                         <span class="input-row__description">Вы можете загрузить до 8 фотографий размером до 1 Мб</span></label>
+                    <div class="image-download-box">
+                        <ul class="image-download-box__list image-download-list">
+                            <li class="image-download-list__item"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
