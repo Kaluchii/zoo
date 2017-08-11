@@ -67,10 +67,75 @@
                     <label class="input-row__label"><span class="input-row__name">Фотографии</span>
                         <span class="input-row__description">Вы можете загрузить до 8 фотографий размером до 1 Мб</span></label>
                     <div class="image-download-box">
-                        <ul class="image-download-box__list image-download-list">
-                            <li class="image-download-list__item"></li>
+                        <ul class="image-download-box__list">
+                            <li class="image-download-box__list-item img-download">
+                                <div class="img-download__button-wrap">
+                                    <input type="file" id="file1" class="img-download__input">
+                                    <span class="img-download__rotate"></span>
+                                    <span class="img-download__del"></span>
+                                    <label for="file1" class="img-download__button">
+                                        <img src="/img/placeholde.png" alt="" class="img-download__preview">
+                                        <span class="img-download__caption">Главное фото</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="image-download-box__list-item img-download">
+                                <div class="img-download__button-wrap">
+                                    <input type="file" id="file1" class="img-download__input">
+                                    <span class="img-download__rotate"></span>
+                                    <span class="img-download__del"></span>
+                                    <label for="file1" class="img-download__button">
+                                        <img src="" alt="" class="img-download__preview">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="image-download-box__list-item img-download">
+                                <div class="img-download__button-wrap">
+                                    <input type="file" id="file1" class="img-download__input">
+                                    <span class="img-download__rotate"></span>
+                                    <span class="img-download__del"></span>
+                                    <label for="file1" class="img-download__button">
+                                        <img src="" alt="" class="img-download__preview">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="image-download-box__list-item img-download">
+                                <div class="img-download__button-wrap">
+                                    <input type="file" id="file1" class="img-download__input">
+                                    <span class="img-download__rotate"></span>
+                                    <span class="img-download__del"></span>
+                                    <label for="file1" class="img-download__button">
+                                        <img src="" alt="" class="img-download__preview">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="image-download-box__list-item img-download">
+                                <div class="img-download__button-wrap">
+                                    <input type="file" id="file1" class="img-download__input">
+                                    <span class="img-download__rotate"></span>
+                                    <span class="img-download__del"></span>
+                                    <label for="file1" class="img-download__button">
+                                        <img src="" alt="" class="img-download__preview">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="image-download-box__list-item img-download">
+                                <div class="img-download__button-wrap">
+                                    <input type="file" id="file1" class="img-download__input">
+                                    <span class="img-download__rotate"></span>
+                                    <span class="img-download__del"></span>
+                                    <label for="file1" class="img-download__button">
+                                        <img src="" alt="" class="img-download__preview">
+                                    </label>
+                                </div>
+                            </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap">
+                    <select name="" id="select"></select>
                 </div>
             </div>
         </div>
