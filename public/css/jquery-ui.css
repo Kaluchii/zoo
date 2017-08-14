@@ -182,13 +182,8 @@
 	display: inline-block;
 	position: relative;
 	line-height: normal;
-	cursor: pointer;
 	vertical-align: middle;
 	text-align: center;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 
 	/* Support: IE <= 11 */
 	overflow: visible;

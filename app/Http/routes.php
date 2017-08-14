@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('front.index.index');
+    return view('front.pages.index');
+});
+
+Route::get('/add_ad', function () {
+    return view('front.pages.ad');
 });
 
 

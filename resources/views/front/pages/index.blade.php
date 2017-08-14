@@ -82,8 +82,6 @@
                             <li class="image-download-box__list-item img-download">
                                 <div class="img-download__button-wrap">
                                     <input type="file" id="file1" class="img-download__input">
-                                    <span class="img-download__rotate"></span>
-                                    <span class="img-download__del"></span>
                                     <label for="file1" class="img-download__button">
                                         <img src="" alt="" class="img-download__preview">
                                     </label>
@@ -92,8 +90,6 @@
                             <li class="image-download-box__list-item img-download">
                                 <div class="img-download__button-wrap">
                                     <input type="file" id="file1" class="img-download__input">
-                                    <span class="img-download__rotate"></span>
-                                    <span class="img-download__del"></span>
                                     <label for="file1" class="img-download__button">
                                         <img src="" alt="" class="img-download__preview">
                                     </label>
@@ -102,8 +98,6 @@
                             <li class="image-download-box__list-item img-download">
                                 <div class="img-download__button-wrap">
                                     <input type="file" id="file1" class="img-download__input">
-                                    <span class="img-download__rotate"></span>
-                                    <span class="img-download__del"></span>
                                     <label for="file1" class="img-download__button">
                                         <img src="" alt="" class="img-download__preview">
                                     </label>
@@ -112,8 +106,6 @@
                             <li class="image-download-box__list-item img-download">
                                 <div class="img-download__button-wrap">
                                     <input type="file" id="file1" class="img-download__input">
-                                    <span class="img-download__rotate"></span>
-                                    <span class="img-download__del"></span>
                                     <label for="file1" class="img-download__button">
                                         <img src="" alt="" class="img-download__preview">
                                     </label>
@@ -122,8 +114,6 @@
                             <li class="image-download-box__list-item img-download">
                                 <div class="img-download__button-wrap">
                                     <input type="file" id="file1" class="img-download__input">
-                                    <span class="img-download__rotate"></span>
-                                    <span class="img-download__del"></span>
                                     <label for="file1" class="img-download__button">
                                         <img src="" alt="" class="img-download__preview">
                                     </label>
@@ -140,7 +130,7 @@
                         <option value="jquery">Черный</option>
                         <option value="jqueryui">Белый</option>
                         <option value="somefile">Пятнистый</option>
-                        <option value="someotherfile">Some other file with a very long option text option text option text</option>
+                        <option value="someotherfile">Достаточно длинное название чтобы не поместиться</option>
                     </select>
                 </div>
             </div>
