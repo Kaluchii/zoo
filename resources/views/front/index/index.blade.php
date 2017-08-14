@@ -135,7 +135,13 @@
             </div>
             <div class="input-row">
                 <div class="input-row__wrap">
-                    <select name="" id="select"></select>
+                    <label for="select" class="input-row__label"><span class="input-row__name">Окрас</span></label>
+                    <select name="select" id="select" class="select">
+                        <option value="jquery">Черный</option>
+                        <option value="jqueryui">Белый</option>
+                        <option value="somefile">Пятнистый</option>
+                        <option value="someotherfile">Some other file with a very long option text option text option text</option>
+                    </select>
                 </div>
             </div>
         </div>
