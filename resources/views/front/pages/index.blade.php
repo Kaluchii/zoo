@@ -3,21 +3,53 @@
     <div class="wrapper">
         <div class="form">
             <div class="input-row">
+                <div class="input-row__wrap input-row__success">
+                    <label for="category" class="input-row__label"><span class="input-row__name">Категория<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <select name="category" id="category" class="select gr-h">
+                        <option value="jquery">Собаки</option>
+                        <option value="jqueryui">Кошки</option>
+                        <option value="somefile">Рептилии</option>
+                    </select>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
                 <div class="input-row__wrap">
+                    <label for="vid" class="input-row__label"><span class="input-row__name">Выберите породу<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <select name="vid" id="vid" class="select gr-h">
+                        <option value="jquery">Такса</option>
+                        <option value="jqueryui">Мопс</option>
+                        <option value="somefile">Овчарка</option>
+                    </select>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap input-row__success">
+                    <label class="input-row__label"><span class="input-row__name">Пол<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <div class="radio-switchers">
+                        <label class="radio-switchers__item">
+                            <input name="pol" class="radio-switchers__input" type="radio" value="1">
+                            <span class="radio-switchers__button">Мальчик</span>
+                        </label>
+                        <label class="radio-switchers__item">
+                            <input name="pol" class="radio-switchers__input" type="radio" value="2">
+                            <span class="radio-switchers__button">Девочка</span>
+                        </label>
+                    </div>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap input-row__success">
                     <label for="classic" class="input-row__label"><span class="input-row__name">Возраст, в месяцах<i class="sym-necessary">&nbsp;*</i></span></label>
                     <input type="text" id="classic" class="input" placeholder="Укажите возраст">
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
                 </div>
             </div>
             <div class="input-row">
                 <div class="input-row__wrap">
-                    <label for="readonly" class="input-row__label"><span class="input-row__name">Эл. почта<i class="sym-necessary">&nbsp;*</i></span></label>
-                    <input readonly type="text" id="readonly" class="input input--readonly" value="vitrety@yandex.ru">
-                    <p class="input-row__clarification"><i class="suc-input"></i><span class="input-row__clarification-text">Имя будет отображаться на сайте</span></p>
-                </div>
-            </div>
-            <div class="input-row">
-                <div class="input-row__wrap">
-                    <label class="input-row__label"><span class="input-row__name">Размер</span></label>
+                    <label class="input-row__label"><span class="input-row__name">Размер<i class="sym-necessary">&nbsp;*</i></span></label>
                     <div class="radio-switchers">
                         <label class="radio-switchers__item">
                             <input name="radio" class="radio-switchers__input" type="radio" value="1">
@@ -32,13 +64,77 @@
                             <span class="radio-switchers__button">Крупный</span>
                         </label>
                     </div>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
                 </div>
             </div>
             <div class="input-row">
                 <div class="input-row__wrap">
+                    <label class="input-row__label"><span class="input-row__name">Длина шерсти<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <div class="radio-switchers">
+                        <label class="radio-switchers__item">
+                            <input name="wool" class="radio-switchers__input" type="radio" value="1">
+                            <span class="radio-switchers__button">Короткая</span>
+                        </label>
+                        <label class="radio-switchers__item">
+                            <input name="wool" class="radio-switchers__input" type="radio" value="2">
+                            <span class="radio-switchers__button">Длинная</span>
+                        </label>
+                        <label class="radio-switchers__item">
+                            <input name="wool" class="radio-switchers__input" type="radio" value="3">
+                            <span class="radio-switchers__button">Без шерсти</span>
+                        </label>
+                    </div>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap input-row__success">
+                    <label for="select gr-h" class="input-row__label"><span class="input-row__name">Окрас<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <select name="select gr-h" id="select gr-h" class="select gr-h">
+                        <option value="jquery">Черный</option>
+                        <option value="jqueryui">Белый</option>
+                        <option value="somefile">Пятнистый</option>
+                        <option value="someotherfile">Достаточно длинное название чтобы не поместиться</option>
+                    </select>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap">
+                    <label class="input-row__label"><span class="input-row__name">Прививки<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <div class="radio-switchers">
+                        <label class="radio-switchers__item">
+                            <input name="priv" class="radio-switchers__input" type="radio" value="1">
+                            <span class="radio-switchers__button">Привит</span>
+                        </label>
+                        <label class="radio-switchers__item">
+                            <input name="priv" class="radio-switchers__input" type="radio" value="2">
+                            <span class="radio-switchers__button">Не привит</span>
+                        </label>
+                    </div>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap input-row__error">
+                    <label for="contact" class="input-row__label"><span class="input-row__name">Контактное лицо<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <input type="text" id="contact" class="input" placeholder="">
+                    <p class="input-row__clarification"><i class="suc-input"></i><span class="input-row__clarification-text">Имя будет отображаться на сайте</span></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap">
+                    <label for="readonly" class="input-row__label"><span class="input-row__name">Эл. почта<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <input readonly type="text" id="readonly" class="input input--readonly" value="vitrety@yandex.ru">
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__wrap input-row__success">
                     <label for="textarea" class="input-row__label"><span class="input-row__name">Описание<i class="sym-necessary">&nbsp;*</i></span>
                         <span class="input-row__description">Расскажите о характере и особенностях питомца<br>до 4000 знаков</span></label>
                     <textarea name="textarea" id="textarea" class="textarea" placeholder="Введите текст ..."></textarea>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
                 </div>
             </div>
             <div class="input-row">
@@ -49,6 +145,7 @@
                         <input class="checkbox-btn__input" type="checkbox" value="1">
                         <span class="checkbox-btn__button">Бесплатно</span>
                     </label>
+                    <p class="input-row__clarification"><i class="suc-input"></i></p>
                 </div>
             </div>
             <div class="input-row">
@@ -121,17 +218,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="input-row">
-                <div class="input-row__wrap">
-                    <label for="select" class="input-row__label"><span class="input-row__name">Окрас</span></label>
-                    <select name="select" id="select" class="select">
-                        <option value="jquery">Черный</option>
-                        <option value="jqueryui">Белый</option>
-                        <option value="somefile">Пятнистый</option>
-                        <option value="someotherfile">Достаточно длинное название чтобы не поместиться</option>
-                    </select>
                 </div>
             </div>
         </div>

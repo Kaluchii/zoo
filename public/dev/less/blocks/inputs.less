@@ -8,14 +8,28 @@
 }
 
 .input-row{
-  position: relative;
   margin-top: 20px;
+  position: relative;
   display: flex;
   justify-content: flex-start;
 
   &__wrap{
     display: flex;
     align-items: flex-start;
+  }
+
+  &__error{
+    .input{
+      border: 2px solid #cc0100;
+      background-color: rgba(204, 1, 0, 0.1);
+      padding: 9px;
+    }
+  }
+
+  &__success{
+    .suc-input{
+      display: block;
+    }
   }
 
   &__label{
@@ -78,8 +92,9 @@
   }
 
   &:not([readonly]):not([class*="--readonly"]):focus{
-    border-color: #cc9933;
+    border: 1px solid #cc9933;
     box-shadow: 0 0 10px 1px rgba(255, 204, 102, 0.5), inset 3px 3px 5px -3px rgba(102, 51, 0, 0.25);
+    padding: 10px;
   }
 }
 
@@ -125,6 +140,7 @@
   &__button{
     position: relative;
     .gradient-button;
+    .gradient-hover-button;
   }
 }
 
@@ -218,6 +234,7 @@
 
   &__button{
     .gradient-button;
+    .gradient-hover-button;
     border-radius: @border-radius;
   }
 }
