@@ -1,0 +1,111 @@
+.footer{
+  align-self: flex-end;
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 35px;
+  box-sizing: border-box;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+
+  &__soc{
+    max-width: 215px;
+    flex-grow: 1;
+  }
+
+  &__copy{
+    color: #333333;
+    font-size: 14px;
+  }
+
+  &__soc-wrap{}
+
+  &__soc-text{
+    margin-top: 12px;
+    color: #333333;
+    font-size: 14px;
+  }
+
+  &__soc-list{
+    margin-top: 10px;
+    font-size: 0;
+  }
+
+  &__soc-item{
+    display: inline-block;
+
+    &:nth-child(n+2){
+      margin-left: 10px;
+    }
+  }
+
+  &__soc-link{}
+
+  &__soc-img{}
+
+  &__sub-nav{}
+
+  &__rating-col{}
+
+  &__rating{}
+
+  &__make-in{
+    margin-top: 25px;
+    color: #333333;
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+
+.sub-nav{
+  padding-left: 20px;
+
+  &__item{
+    line-height: 1.2;
+
+    &:nth-child(n+2){
+      margin-top: 13px;
+    }
+
+    &--reclame{
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        background: url("/img/reclameOnSite.png") no-repeat;
+        height: 30px;
+        width: 140px;
+        left: -10px;
+        top: -5px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__link{
+    font-size: 14px;
+  }
+}
+
+
+.rating{
+  text-align: right;
+
+  &__text{
+    color: #333333;
+    font-size: 14px;
+  }
+
+  &__numbers{
+    font-size: inherit;
+  }
+
+  &__img{
+    margin-top: 5px;
+  }
+}

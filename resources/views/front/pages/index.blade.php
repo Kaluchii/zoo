@@ -89,8 +89,8 @@
             </div>
             <div class="input-row">
                 <div class="input-row__wrap input-row__success">
-                    <label for="select gr-h" class="input-row__label"><span class="input-row__name">Окрас<i class="sym-necessary">&nbsp;*</i></span></label>
-                    <select name="select gr-h" id="select gr-h" class="select gr-h">
+                    <label for="select" class="input-row__label"><span class="input-row__name">Окрас<i class="sym-necessary">&nbsp;*</i></span></label>
+                    <select name="select" id="select" class="select gr-h">
                         <option value="jquery">Черный</option>
                         <option value="jqueryui">Белый</option>
                         <option value="somefile">Пятнистый</option>

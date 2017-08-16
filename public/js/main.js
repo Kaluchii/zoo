@@ -5,7 +5,7 @@ $( ".select.gr-h" ).selectmenu({
     }
 }).selectmenu( "menuWidget" ).addClass( "select-list" );
 $( ".select.cl-h" ).selectmenu({
-    width: 320,
+    width: 200,
     classes: {
         "ui-selectmenu-button": "select-button select-button--color-h"
     }

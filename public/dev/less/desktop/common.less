@@ -31,9 +31,23 @@
 }
 
 .link{
-  .link(@link-color,@link-border,@hover-color,@hover-border);
+  .link(@link-color, @link-border, @hover-color, @hover-border);
+}
+
+.dashed-link{
+  .link(@link-color, @link-border, @hover-color, @hover-border);
+}
+
+.grey-link{
+  .link(#666666, rgba(102, 102, 102, 0.3), @hover-color, @hover-border);
 }
 
 br{
   font-size: 0;
+}
+
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
