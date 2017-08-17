@@ -11,6 +11,27 @@ $( ".select.cl-h" ).selectmenu({
     }
 }).selectmenu( "menuWidget" ).addClass( "select-list" );
 
+
+$( "#vid" ).selectmenu({
+    width: 320,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+$( "#select" ).selectmenu({
+    width: 320,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+$( "#reg" ).selectmenu({
+    width: 200,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--color-h"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+
 /*
 $( ".select" ).forEach(function(){
     $(this).selectmenu({

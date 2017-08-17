@@ -9,10 +9,17 @@
             </div>
             <div class="main-nav__central-navigation central-navigation">
                 <div class="central-navigation__top-list-wrap">
-                    <ul class="central-navigation__top-nav-list">
+                    {{--<ul class="central-navigation__top-nav-list">
                         <li class="central-navigation__top-nav-item"><a href="#" class="central-navigation__top-nav-link grey-link">Личный кабинет</a></li>
                         <li class="central-navigation__top-nav-item"><a href="#" class="central-navigation__top-nav-link grey-link">Регистрация</a></li>
-                        <li class="central-navigation__top-nav-item"><a href="#" class="central-navigation__top-nav-link grey-link">Избранные</a></li>
+                        <li class="central-navigation__top-nav-item"><a href="#" class="central-navigation__top-nav-link central-navigation__top-nav-link--favorites grey-link" data-count="2">Избранные</a></li>
+                    </ul>--}}
+                    <ul class="central-navigation__for-authorized-list authorized-list">
+                        <li class="authorized-list__item authorized-list__item--name"><a href="#" class="authorized-list__link"><span class="authorized-list__name">Василий Напетрович Васечкин</span></a></li>
+                        <li class="authorized-list__item authorized-list__item--favourites"><a href="#" class="authorized-list__link">Избранные <span class="authorized-list__number">15</span></a></li>
+                        <li class="authorized-list__item authorized-list__item--adverts"><a href="#" class="authorized-list__link">Объявления <span class="authorized-list__number">0</span></a></li>
+                        <li class="authorized-list__item authorized-list__item--balance"><a href="#" class="authorized-list__link">Баланс <span class="authorized-list__number">99 999 ед.</span></a></li>
+                        <li class="authorized-list__item authorized-list__item--logout"><a href="#" class="authorized-list__link"><i class="authorized-list__logout"></i></a></li>
                     </ul>
                 </div>
                 <div class="central-navigation__bottom-list-wrap">
@@ -38,10 +45,12 @@
                 <div class="search-panel__select-wrap">
                     <select name="" id="" class="select cl-h">
                         <option value="1">Во всех категориях</option>
+                        <option value="2">Кошки</option>
+                        <option value="3">Собаки</option>
                     </select>
                 </div>
                 <div class="search-panel__select-wrap">
-                    <select name="" id="" class="select cl-h">
+                    <select name="" id="reg" class="select cl-h">
                         <option value="1">Весь Казахстан</option>
                     </select>
                 </div>
