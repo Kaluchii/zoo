@@ -40,6 +40,48 @@
   }
 }
 
+.dotted-link(@color, @border, @hover, @border_h){
+  background: -moz-linear-gradient(to to left, @color 1px, transparent 1px);
+  background: -ms-linear-gradient(to left, @color 1px, transparent 1px);
+  background: -o-linear-gradient(to left, @color 1px, transparent 1px);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(@color), color-stop(0.6, @color), color-stop(0.6, transparent));
+  background: -webkit-linear-gradient(to left, @color 1px, transparent 1px);
+  background: linear-gradient(to left, @color 1px, transparent 1px);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color', endColorstr='@color', GradientType=1);
+  background-position: 0 100%;
+  background-size: 2px 1px;
+  background-repeat: repeat-x;
+  color: @color;
+  &:hover{
+    cursor: pointer;
+    background: -moz-linear-gradient(to to left, @hover 1px, transparent 1px);
+    background: -ms-linear-gradient(to left, @hover 1px, transparent 1px);
+    background: -o-linear-gradient(to left, @hover 1px, transparent 1px);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@hover), color-stop(0.6, @hover), color-stop(0.6, transparent));
+    background: -webkit-linear-gradient(to left, @hover 1px, transparent 1px);
+    background: linear-gradient(to left, @hover 1px, transparent 1px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@hover', endColorstr='@hover', GradientType=1);
+    background-position: 0 100%;
+    background-size: 2px 1px;
+    background-repeat: repeat-x;
+    color: @hover;
+  }
+  &:focus{
+    outline: none;
+    background: -moz-linear-gradient(to to left, @hover 1px, transparent 1px);
+    background: -ms-linear-gradient(to left, @hover 1px, transparent 1px);
+    background: -o-linear-gradient(to left, @hover 1px, transparent 1px);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@hover), color-stop(0.6, @hover), color-stop(0.6, transparent));
+    background: -webkit-linear-gradient(to left, @hover 1px, transparent 1px);
+    background: linear-gradient(to left, @hover 1px, transparent 1px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@hover', endColorstr='@hover', GradientType=1);
+    background-position: 0 100%;
+    background-size: 2px 1px;
+    background-repeat: repeat-x;
+    color: @hover;
+  }
+}
+
 .gradient-button{
   display: inline-block;
   height: 40px;

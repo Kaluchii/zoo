@@ -34,8 +34,8 @@
   .link(@link-color, @link-border, @hover-color, @hover-border);
 }
 
-.dashed-link{
-  .link(@link-color, @link-border, @hover-color, @hover-border);
+.dotted-link{
+  .dotted-link(@link-color, @link-border, @hover-color, @hover-border);
 }
 
 .grey-link{
@@ -46,8 +46,26 @@ br{
   font-size: 0;
 }
 
-.main-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.main-content{
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 35px;
+  box-sizing: border-box;
+}
+
+.bold{
+  font-weight: bold;
+  color: #333333;
+}
+
+.biggest-title{
+  font-size: 48px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.big-title{
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
 }
