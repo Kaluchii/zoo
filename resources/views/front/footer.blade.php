@@ -7,9 +7,9 @@
                 <div class="footer__soc-wrap">
                     <p class="footer__soc-text">Мы в социальных сетях</p>
                     <ul class="footer__soc-list">
-                        <li class="footer__soc-item"><a href="#" class="footer__soc-link"><img src="/img/vk.png" alt="" class="footer__soc-img"></a></li>
-                        <li class="footer__soc-item"><a href="#" class="footer__soc-link"><img src="/img/fb.png" alt="" class="footer__soc-img"></a></li>
-                        <li class="footer__soc-item"><a href="#" class="footer__soc-link"><img src="/img/tw.png" alt="" class="footer__soc-img"></a></li>
+                        <li class="footer__soc-item"><a href="#" class="footer__soc-link"><img src="/img/social_vk.png" alt="" class="footer__soc-img"></a></li>
+                        <li class="footer__soc-item"><a href="#" class="footer__soc-link"><img src="/img/social_fb.png" alt="" class="footer__soc-img"></a></li>
+                        <li class="footer__soc-item"><a href="#" class="footer__soc-link"><img src="/img/social_tw.png" alt="" class="footer__soc-img"></a></li>
                     </ul>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="footer__rating-col">
                 <div class="footer__rating rating">
                     <p class="rating__text">Пожалуйста, оцените страницу<br><span class="rating__numbers">Рейтинг — 4.0 (250 человек)</span></p>
-                    <img src="/img/rating.png" alt="" class="rating__img">
+                    <img src="/img/shema_rating.png" alt="" class="rating__img">
                 </div>
                 <p class="footer__make-in">Сделано в <a href="#" target="_blank" class="link">ИнтерПро</a></p>
             </div>

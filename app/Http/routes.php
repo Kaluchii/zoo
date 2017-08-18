@@ -19,6 +19,9 @@ Route::get('/add_ad', function () {
     return view('front.pages.ad');
 });
 
+Route::get('/category', function () {
+    return view('front.pages.category');
+});
 
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');

@@ -1,7 +1,7 @@
 @extends('front.layout')
 @section('content')
-    <main class="main-content">
-        <div class="add-advert">
+    <div class="main-content">
+        <main class="add-advert">
             <h1 class="add-advert__title biggest-title">Подать объявление</h1>
             <p class="add-advert__clarification">Объявление размещается сроком на <span class="bold">7 дней.</span><br>
             Продлить объявление можно воспользовавшись платными услугами. <br>Обязательные поля помечены<i class="sym-necessary">&nbsp;*</i>
@@ -319,6 +319,6 @@
                 </div>
             </div>
             <p class="add-advert__notice">Неверно заполнено поле <span class="add-advert__inputs-with-error">Эл. почта, Номер телефона</span></p>
-        </div>
-    </main>
+        </main>
+    </div>
 @endsection
