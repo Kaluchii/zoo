@@ -22,7 +22,7 @@
                         <li class="authorized-list__item authorized-list__item--logout"><a href="#" class="authorized-list__link"><i class="authorized-list__logout"></i></a></li>
                     </ul>
                 </div>
-                <div class="central-navigation__bottom-list-wrap">
+                <div class="central-navigation__bottom-list-wrap central-navigation__bottom-list-wrap--authorized">
                     <ul class="central-navigation__nav-list">
                         <li class="central-navigation__nav-item is-active"><a href="#" class="central-navigation__nav-link link">Объявления</a></li>
                         <li class="central-navigation__nav-item"><a href="#" class="central-navigation__nav-link link">Почитать</a></li>
