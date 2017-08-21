@@ -1,0 +1,169 @@
+.declarations-top{
+  margin-top: 15px;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 680px;
+  }
+
+  &__title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__subscriptions-wrap{}
+
+  &__subscriptions{
+    font-size: 14px;
+  }
+
+  &__dashed-line{
+    margin-top: 15px;
+  }
+}
+
+
+
+.declarations{
+  display: flex;
+
+  &__main-content{}
+
+  &__display{}
+
+  &__sort-wrap{}
+
+  &__display-view{}
+
+  &__list{}
+
+  &__aside{}
+}
+
+
+
+.declarations-list{
+  &__item{}
+}
+
+
+
+.declaration{
+  border-bottom: 1px dashed #CCCCCC;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+
+    &--reclame{
+      padding: 10px 0;
+    }
+
+    &--yellow{
+      background-color: #fff6b8;
+    }
+
+    &--blue{
+      background-color: #d7f0f5;
+    }
+  }
+
+  &__reclame{}
+
+  &__img-wrap{}
+
+  &__link{
+    display: block;
+
+    &:hover{
+      box-shadow: 0 0 0 1px #cc0000;
+    }
+  }
+
+  &__img{
+    display: block;
+  }
+
+  &__info-wrap{
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  &__title{}
+
+  &__urgently{
+    margin-right: 10px;
+    padding: 3px;
+    font-size: 12px;
+    background-color: #ffcc00;
+    color: #333333;
+  }
+
+  &__name{
+    font-weight: bold;
+  }
+
+  &__data-info{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  &__info-category{
+    font-size: inherit;
+  }
+
+  &__info-city{
+    font-size: inherit;
+  }
+
+  &__info-date{
+    font-size: inherit;
+  }
+
+  &__info-delimiter{
+    font-size: inherit;
+  }
+
+  &__stat{
+    line-height: 1.2;
+  }
+
+  &__views{
+    font-size: 14px;
+  }
+
+  &__comments{
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  &__price-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin-top: 5px;
+    text-align: right;
+  }
+
+  &__price{
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__favourite{
+    margin-top: 3px;
+    width: 28px;
+    height: 26px;
+    background: url("/img/favorites-g.png") no-repeat center;
+    cursor: pointer;
+
+    &.is-favourite{
+      background: url("/img/favorites.png") no-repeat center;
+    }
+  }
+}

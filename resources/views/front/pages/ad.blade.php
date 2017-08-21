@@ -1,6 +1,6 @@
 @extends('front.layout')
 @section('content')
-    <div class="main-content">
+    <div class="content">
         <main class="add-advert">
             <h1 class="add-advert__title biggest-title">Подать объявление</h1>
             <p class="add-advert__clarification">Объявление размещается сроком на <span class="bold">7 дней.</span><br>

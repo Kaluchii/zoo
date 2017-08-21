@@ -160,8 +160,20 @@
 
   &__button{
     position: relative;
+    padding: 10px;
     .gradient-button;
     .gradient-hover-button;
+
+    &--filter{
+      .filter-gradient-btn;
+      padding: 5px 10px 3px;
+      line-height: 1;
+      font-size: 14px;
+
+      &:hover{
+        .filter-gradient-btn-hover;
+      }
+    }
   }
 }
 
@@ -256,6 +268,7 @@
   &__button{
     .gradient-button;
     .gradient-hover-button;
+    padding: 10px;
     border-radius: @border-radius;
   }
 }

@@ -1,0 +1,153 @@
+.filter{
+  margin: 20px auto 0;
+  max-width: 1020px;
+  padding: 0 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &__wrapper{
+    padding: 15px 0 25px;
+    background-color: #f7f1d9;
+    border-radius: 5px;
+  }
+
+  &__title{
+    padding: 0 30px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__row{
+    margin-top: 20px;
+
+    &--2col{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__criterion-row{
+    &:not([class*="--half"]):nth-child(n+2){
+      margin-top: 10px;
+    }
+
+    &--half{
+      width: ~'calc(50% - 30px)';
+
+      &:nth-child(n+3){
+        margin-top: 10px;
+      }
+
+      &:nth-child(odd){
+        padding-right: 0;
+      }
+
+      &:nth-child(even){
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__dashed-line{
+    margin-top: 20px;
+  }
+
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 20px 0 30px;
+  }
+
+  &__extra-options{}
+
+  &__extra-options-btn{
+    font-weight: bold;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      right: -22px;
+      top: 2px;
+      background: url(/img/arrow_down.png) no-repeat center;
+      height: 16px;
+      width: 12px;
+    }
+  }
+
+  &__search-btn{}
+}
+
+
+.criterion{
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+
+  &__name{
+    font-weight: bold;
+    width: 120px;
+    color: #333333;
+  }
+
+  &__list-wrapper{
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+    &:nth-child(n+2){
+      margin-left: 10px;
+    }
+  }
+
+  &__btn{
+    font-size: 14px;
+    padding: 5px 10px 3px;
+    line-height: 1;
+    border-radius: @border-radius;
+    .filter-gradient-btn;
+
+    &:hover{
+      .filter-gradient-btn-hover;
+    }
+
+    &.is-active{
+      border: 1px solid #aea375;
+      background: #cccc99;
+      box-shadow: none;
+    }
+  }
+
+  &__other-variants{
+    margin-left: 20px;
+  }
+
+  &__other-variants-btn{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__number-input{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    padding: 3px 5px;
+
+    &+.criterion__number-input{
+      margin-left: 10px;
+    }
+  }
+
+  &__label{
+    font-size: 14px;
+    color: #666666;
+    margin-left: 10px;
+  }
+}
