@@ -3,6 +3,45 @@
   padding: 10px;
   .gradient-button;
 
+  &--filter-gradient-h{
+    .filter-gradient-btn;
+    padding: 5px 5px 3px 10px;
+    line-height: 1;
+    font-size: 14px;
+
+    &:hover{
+      .filter-gradient-btn-hover;
+    }
+
+    .ui-selectmenu-text{
+      margin-right: 15px;
+      font-size: 14px;
+    }
+
+    .ui-icon-triangle-1-s{
+      background: url("/img/small_arrow_down.png") no-repeat center;
+      height: 15px;
+      width: 8px;
+    }
+  }
+
+  &--sort-gradient-h{
+    height: 30px;
+    padding: 6px 10px 5px;
+    line-height: 1;
+
+    .ui-selectmenu-text{
+      margin-right: 15px;
+      font-size: 14px;
+    }
+
+    .ui-icon-triangle-1-s{
+      background: url("/img/sort.png") no-repeat center;
+      height: 15px;
+      width: 8px;
+    }
+  }
+
   &--gradient-h{
     .gradient-hover-button;
   }
@@ -22,21 +61,28 @@
   box-sizing: border-box;
   max-width: 320px;
   color: #666666;
-  font-size: 14px;
   background-color: #ffffff;
   border: 2px solid #cc9933;
   border-radius: @border-radius;
 
+  &--filter{
+    max-width: 170px;
+  }
+
   .ui-menu-item{}
 
   .ui-menu-item-wrapper{
-    padding: 5px 20px 5px 10px;
+    padding: 8px 20px 8px 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1;
 
     &.ui-state-active{
       background-color: #fedf76;
+      color: #333333;
     }
   }
 }

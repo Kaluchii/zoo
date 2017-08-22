@@ -20,10 +20,26 @@
 
   &__row{
     margin-top: 20px;
+    transition: .5s margin;
 
     &--2col{
       display: flex;
       flex-wrap: wrap;
+    }
+
+    &--close{
+      margin-top: 0;
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+
+      & + .filter__dashed-line{
+        margin-top: -1px;
+      }
+    }
+
+    &--open{
+      height: auto;
     }
   }
 
@@ -51,6 +67,7 @@
 
   &__dashed-line{
     margin-top: 20px;
+    transition: .2s margin;
   }
 
   &__footer{
@@ -74,6 +91,13 @@
       background: url(/img/arrow_down.png) no-repeat center;
       height: 16px;
       width: 12px;
+      transition: .4s;
+    }
+
+    &--open{
+      &::after{
+        transform: rotate(180deg);
+      }
     }
   }
 
@@ -149,5 +173,9 @@
     font-size: 14px;
     color: #666666;
     margin-left: 10px;
+  }
+
+  &__select{
+    max-width: 170px;
   }
 }
