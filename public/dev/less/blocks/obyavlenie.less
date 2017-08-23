@@ -1,0 +1,155 @@
+.obyavlenie{
+  display: flex;
+
+  &__main-content{}
+
+  &__title{
+  }
+
+  &__urgently{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    height: 20px;
+    padding-left: 11px;
+    line-height: 1.4;
+    vertical-align: super;
+    font-size: 14px;
+    color: #333333;
+    background: url("/img/urgently_backg.png") no-repeat center;
+
+    & + .obyavlenie__name{
+      margin-left: 5px;
+    }
+  }
+
+  &__name{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333333;
+
+    & + .obyavlenie__favourite{
+      margin-left: 5px;
+    }
+  }
+
+  &__favourite{
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 28px;
+    height: 26px;
+    background: url("/img/favorites-g.png") no-repeat center;
+    cursor: pointer;
+
+    &.is-favourite{
+      background: url("/img/favorites.png") no-repeat center;
+    }
+  }
+
+  &__service-information{
+    margin-top: 5px;
+    font-size: 0;
+  }
+
+  &__inf-delimiter{
+    font-size: 14px;
+    margin: 0 7px;
+  }
+
+  &__inf-city{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__inf-date{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__inf-num{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__inf-views{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__inf-views-today{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__aside{
+    font-size: 14px;
+  }
+}
+
+
+.obyavlenie-control{
+  margin-top: 20px;
+  padding: 10px 20px 5px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+  }
+
+  &__link{
+    position: relative;
+    font-size: 14px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: 21px;
+      height: 22px;
+      left: -25px;
+    }
+
+    &--up{
+      &:before{
+        background: url("/img/up.png") no-repeat;
+        top: -3px;
+      }
+    }
+
+    &--color{
+      &:before{
+        background: url("/img/brush.png") no-repeat;
+      }
+    }
+
+    &--top{
+      &:before{
+        background: url("/img/clips.png") no-repeat;
+      }
+    }
+
+    &--hot{
+      &:before{
+        background: url("/img/hot.png") no-repeat;
+      }
+    }
+
+    &--urgently{
+      &:before{
+        background: url("/img/torg.png") no-repeat;
+      }
+    }
+
+    &--turbo{
+      &:before{
+        background: url("/img/turbo.png") no-repeat;
+      }
+    }
+  }
+}

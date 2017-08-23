@@ -5,6 +5,10 @@
   flex-direction: column;
 
   &__rec-block{}
+
+  &__like-declarations{}
+
+  &__contacts-block{}
 }
 
 div + .rec-block, div + .hot-declarations{
@@ -73,5 +77,155 @@ div + .rec-block, div + .hot-declarations{
   &__city{
     font-size: 12px;
     color: #666666;
+  }
+}
+
+
+.like-declarations{
+  margin-top: 35px;
+
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__subtitle{}
+
+  &__how{
+    font-size: 12px;
+  }
+
+  &__list-wrap{
+    margin-top: 20px;
+  }
+
+  &__list{}
+
+  &__list-item{
+    margin-top: 20px;
+  }
+}
+
+.like-declaration{
+  font-size: 0;
+
+  &:nth-last-child(n+2){
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__img-wrap{
+    display: inline-block;
+  }
+
+  &__img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__inf-wrap{
+    display: inline-block;
+    margin-top: -4px;
+    margin-left: 10px;
+    max-width: 170px;
+    vertical-align: top;
+  }
+
+  &__title{
+    font-size: 14px;
+  }
+
+  &__link{
+  }
+
+  &__price-city-wrap{
+    font-size: 14px;
+  }
+
+  &__price{
+    font-weight: bold;
+    color: #333333;
+    font-size: inherit;
+  }
+
+  &__city{
+    margin-left: 6px;
+    color: #666666;
+    font-size: inherit;
+  }
+}
+
+
+.contacts-block{
+  margin-top: 20px;
+
+  &__phones{
+    padding: 17px 0 15px;
+    background-color: #d5ebcf;
+    border-radius: @border-radius;
+    text-align: center;
+  }
+
+  &__display-phones{}
+
+
+  &__display-phone-btn{
+    font-weight: bold;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: -26px;
+      top: 3px;
+      background: url("/img/phone.png");
+    }
+  }
+
+  &__phones-list{
+    margin-top: 10px;
+  }
+
+  &__phone-item{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__warning-info{
+    margin-top: 15px;
+    padding: 0 10px 0 20px;
+    font-size: 12px;
+  }
+
+  &__action-list{
+    margin-top: 20px;
+    padding: 0 20px 5px;
+    font-size: 14px;
+  }
+
+  &__action{
+    margin-top: 7px;
+  }
+
+  &__action-link{}
+}
+
+
+.obyavlenie-price{
+  height: 50px;
+  margin-top: 25px;
+  padding-left: 10px;
+  background: #f7f1d9;
+  background: url("/img/price_backg.png");
+
+  &__sum{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
   }
 }

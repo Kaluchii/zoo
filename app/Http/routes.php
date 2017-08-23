@@ -23,6 +23,10 @@ Route::get('/category', function () {
     return view('front.pages.category');
 });
 
+Route::get('/declaration', function () {
+    return view('front.pages.declaration');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 
