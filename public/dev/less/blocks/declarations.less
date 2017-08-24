@@ -67,6 +67,12 @@
 
   &__list{
     margin-top: 20px;
+    transition: opacity .5s;
+    opacity: 1;
+
+    &--view-animation{
+      opacity: 0;
+    }
   }
 
   &__add-declaration{
@@ -98,6 +104,12 @@
 
 
 .declarations-list{
+  &--tile{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__item{}
 }
 
@@ -110,6 +122,8 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px 10px 10px;
+    height: 100%;
+    box-sizing: border-box;
 
     &--reclame{
       padding: 10px 0;
@@ -126,11 +140,36 @@
     &--red{
       background-color: #f5d7dc;
     }
+
+    &.link-hover{
+      .declaration__name{
+        background: -moz-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+        background: -ms-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+        background: -o-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 0, 0, 0.3)), to(rgba(204, 0, 0, 0.3)));
+        background: -webkit-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+        background: linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(204, 0, 0, 0.3)', endColorstr='rgba(204, 0, 0, 0.3)', GradientType=0);
+        background-position: 0 100%;
+        background-size: 10px 1px;
+        background-repeat: repeat-x;
+        color: #cc0000;
+      }
+      .declaration__link{
+        box-shadow: 0 0 0 1px #cc0000;
+      }
+    }
   }
 
   &__reclame{}
 
-  &__img-wrap{}
+  &__img-wrap{
+    flex-shrink: 0;
+
+    &:hover{
+      &~.declaration__info-wrap .declaration__name{}
+    }
+  }
 
   &__link{
     display: block;
@@ -142,17 +181,20 @@
 
   &__img{
     display: block;
+    width: 150px;
   }
 
   &__info-wrap{
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: 20px;
+    max-width: 380px;
   }
 
-  &__title{}
+  &__title{
+    line-height: 1.2;
+  }
 
   &__urgently{
-    margin-right: 10px;
     padding: 3px;
     font-size: 12px;
     background-color: #ffcc00;
@@ -201,6 +243,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
     min-width: 100px;
     flex-grow: 1;
     margin-top: 5px;
@@ -213,14 +256,94 @@
   }
 
   &__favourite{
-    margin-top: 3px;
+    margin-top: 10px;
     width: 28px;
     height: 26px;
     background: url("/img/favorites-g.png") no-repeat center;
     cursor: pointer;
 
-    &.is-favourite{
+    &:hover, &.is-favourite{
       background: url("/img/favorites.png") no-repeat center;
     }
+  }
+}
+// Отображение списка объявлений ПЛИТКОЙ
+.declaration--tile{
+  border: 1px solid #CCCCCC;
+  max-width: 220px;
+  width: 100%;
+  margin-bottom: 10px;
+
+  &.declaration--reclame{
+    border: none;
+    max-width: none;
+  }
+
+  .declaration__wrapper{
+    &:not([class*='--reclame']){
+      flex-direction: column;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      position: relative;
+    }
+  }
+
+  .declaration__img{
+    width: 200px;
+  }
+
+  .declaration__info-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    flex-grow: 1;
+    order: 2;
+  }
+
+  .declaration__title{
+    margin-top: 3px;
+  }
+
+  .declaration__urgently{
+    margin-left: 10px;
+  }
+
+  .declaration__data-info{
+    font-size: 12px;
+    margin-top: 25px;
+    align-self: flex-end;
+  }
+
+  .declaration__info-category{
+    display: block;
+  }
+
+  .declaration__info-city{
+    display: block;
+  }
+
+  .declaration__info-date{
+    display: none;
+  }
+
+  .declaration__info-delimiter{
+    display: none;
+  }
+
+  .declaration__stat{
+    display: none;
+  }
+
+  .declaration__price-wrap{
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .declaration__favourite{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
   }
 }

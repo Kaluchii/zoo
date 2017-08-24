@@ -220,47 +220,43 @@
                         <p class="declarations__label">Выводить</p>
                         <div class="declarations__switchers-wrap">
                             <div class="declarations__radio-switchers radio-switchers">
-                                <label class="radio-switchers__item">
-                                    <input name="pol11" class="radio-switchers__input" checked type="radio" value="1">
+                                <label class="radio-switchers__item js_how_to_display">
+                                    <input name="pol11" class="radio-switchers__input" checked type="radio" value="list">
                                     <span class="radio-switchers__button radio-switchers__button--view">Списком<i class="radio-switchers__list-icon"></i></span>
                                 </label>
-                                <label class="radio-switchers__item">
-                                    <input name="pol11" class="radio-switchers__input" type="radio" value="2">
+                                <label class="radio-switchers__item js_how_to_display">
+                                    <input name="pol11" class="radio-switchers__input" type="radio" value="tile">
                                     <span class="radio-switchers__button radio-switchers__button--view">Плиткой<i class="radio-switchers__plite-icon"></i></span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <ul class="declarations__list declarations-list">
+                <ul class="declarations__list declarations-list js_declarations">
                     <li class="declarations-list__item declaration">
                         <div class="declaration__wrapper declaration__wrapper--yellow">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/declaration_img.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
-                                <p class="declaration__title"><span class="declaration__urgently">Срочно, торг</span><a href="" class="declaration__name link">Пудель, девочка, 6 мес</a></p>
+                                <p class="declaration__title"><a href="" class="declaration__name link">Пудель, девочка, 6 мес</a></p>
                                 <p class="declaration__data-info"><span class="declaration__info-category">Собаки</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-city">Усть-Каменогорск</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-date">19 мая, 16:00</span></p>
                                 <p class="declaration__stat"><span class="declaration__views">25 просмотров</span><span class="declaration__comments">15 комментариев</span></p>
                             </div>
                             <div class="declaration__price-wrap">
                                 <p class="declaration__price">135 000 тг</p>
+                                <p class="declaration__urgently">Срочно, торг</p>
                                 <div class="declaration__favourite is-favourite"></div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="declarations-list__item declaration">
-                        <div class="declaration__wrapper declaration__wrapper--reclame">
-                            <img src="/img/palceholder_rec.png" alt="" class="declaration__reclame">
                         </div>
                     </li>
                     <li class="declarations-list__item declaration">
                         <div class="declaration__wrapper">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/cz1.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -278,16 +274,17 @@
                         <div class="declaration__wrapper declaration__wrapper--yellow">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/cz2.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
-                                <p class="declaration__title"><span class="declaration__urgently">Срочно, торг</span><a href="" class="declaration__name link">Новозеландская овчарка, мальчик, 12 мес</a></p>
+                                <p class="declaration__title"><a href="" class="declaration__name link">Новозеландская овчарка, мальчик, 12 мес</a></p>
                                 <p class="declaration__data-info"><span class="declaration__info-category">Собаки</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-city">Усть-Каменогорск</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-date">19 мая, 16:00</span></p>
                                 <p class="declaration__stat"><span class="declaration__views">1 просмотр</span><span class="declaration__comments">0 комментариев</span></p>
                             </div>
                             <div class="declaration__price-wrap">
                                 <p class="declaration__price">40 000 тг</p>
+                                <p class="declaration__urgently">Срочно, торг</p>
                                 <div class="declaration__favourite is-favourite"></div>
                             </div>
                         </div>
@@ -296,7 +293,7 @@
                         <div class="declaration__wrapper declaration__wrapper--blue">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/cz3.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -314,7 +311,7 @@
                         <div class="declaration__wrapper">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/cz2.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -332,7 +329,7 @@
                         <div class="declaration__wrapper">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/declaration_img.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -342,11 +339,12 @@
                             </div>
                             <div class="declaration__price-wrap">
                                 <p class="declaration__price">135 000 тг</p>
+                                <p class="declaration__urgently">Срочно, торг</p>
                                 <div class="declaration__favourite"></div>
                             </div>
                         </div>
                     </li>
-                    <li class="declarations-list__item declaration">
+                    <li class="declarations-list__item declaration declaration--reclame">
                         <div class="declaration__wrapper declaration__wrapper--reclame">
                             <img src="/img/palceholder_rec.png" alt="" class="declaration__reclame">
                         </div>
@@ -355,7 +353,7 @@
                         <div class="declaration__wrapper">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/declaration_img.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -373,7 +371,7 @@
                         <div class="declaration__wrapper">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/declaration_img.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -383,6 +381,7 @@
                             </div>
                             <div class="declaration__price-wrap">
                                 <p class="declaration__price">135 000 тг</p>
+                                <p class="declaration__urgently">Срочно, торг</p>
                                 <div class="declaration__favourite"></div>
                             </div>
                         </div>
@@ -391,7 +390,7 @@
                         <div class="declaration__wrapper declaration__wrapper--blue">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/cz4.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -409,7 +408,7 @@
                         <div class="declaration__wrapper">
                             <div class="declaration__img-wrap">
                                 <a href="" class="declaration__link">
-                                    <img src="/img/cz5.png" alt="" class="declaration__img">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
                                 </a>
                             </div>
                             <div class="declaration__info-wrap">
@@ -421,6 +420,47 @@
                                 <p class="declaration__price">35 000 тг</p>
                                 <div class="declaration__favourite"></div>
                             </div>
+                        </div>
+                    </li>
+                    <li class="declarations-list__item declaration">
+                        <div class="declaration__wrapper declaration__wrapper--blue">
+                            <div class="declaration__img-wrap">
+                                <a href="" class="declaration__link">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
+                                </a>
+                            </div>
+                            <div class="declaration__info-wrap">
+                                <p class="declaration__title"><a href="" class="declaration__name link">Бульдог, мальчик, 3 мес</a></p>
+                                <p class="declaration__data-info"><span class="declaration__info-category">Собаки</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-city">Усть-Каменогорск</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-date">19 мая, 16:00</span></p>
+                                <p class="declaration__stat"><span class="declaration__views">25 просмотров</span><span class="declaration__comments">15 комментариев</span></p>
+                            </div>
+                            <div class="declaration__price-wrap">
+                                <p class="declaration__price">15 000 тг</p>
+                                <div class="declaration__favourite"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="declarations-list__item declaration">
+                        <div class="declaration__wrapper">
+                            <div class="declaration__img-wrap">
+                                <a href="" class="declaration__link">
+                                    <img src="/img/dec_pl.png" alt="" class="declaration__img">
+                                </a>
+                            </div>
+                            <div class="declaration__info-wrap">
+                                <p class="declaration__title"><a href="" class="declaration__name link">Пудель, девочка, 6 мес</a></p>
+                                <p class="declaration__data-info"><span class="declaration__info-category">Собаки</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-city">Усть-Каменогорск</span><span class="declaration__info-delimiter"> • </span><span class="declaration__info-date">19 мая, 16:00</span></p>
+                                <p class="declaration__stat"><span class="declaration__views">25 просмотров</span><span class="declaration__comments">15 комментариев</span></p>
+                            </div>
+                            <div class="declaration__price-wrap">
+                                <p class="declaration__price">135 000 тг</p>
+                                <div class="declaration__favourite"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="declarations-list__item declaration declaration--reclame">
+                        <div class="declaration__wrapper declaration__wrapper--reclame">
+                            <img src="/img/palceholder_rec.png" alt="" class="declaration__reclame">
                         </div>
                     </li>
                 </ul>

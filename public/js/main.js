@@ -60,8 +60,40 @@ $( ".select" ).forEach(function(){
 
 
 
-
+/* Открытие дополнительных пунктов фильтра */
 $('.js_toggle_extra').on('click', function () {
     $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
     $(this).toggleClass('filter__extra-options-btn--open');
+});
+
+$('.declaration__img').hover( function () {
+    $(this).closest('.declaration__wrapper').addClass('link-hover');
+}, function () {
+    $(this).closest('.declaration__wrapper').removeClass('link-hover');
+});
+$('.declaration__name').hover( function () {
+    $(this).closest('.declaration__wrapper').addClass('link-hover');
+}, function () {
+    $(this).closest('.declaration__wrapper').removeClass('link-hover');
+});
+
+/* Переключение режима отображения объявлений (список/плитка) */
+var display_condition = 'list';
+$('.js_how_to_display').on('click', function () {
+    var display = $(this).children('.radio-switchers__input').attr('value');
+
+    if (display_condition !== display){
+
+        display_condition = display;
+
+        $('.js_declarations').addClass('declarations__list--view-animation');
+        setTimeout(function () {
+            $('.declaration').toggleClass('declaration--tile', display === 'tile');
+            $('.js_declarations').toggleClass('declarations-list--tile', display === 'tile');
+        }, 500);
+        setTimeout(function () {
+            $('.js_declarations').removeClass('declarations__list--view-animation')
+        }, 550);
+
+    }
 });
