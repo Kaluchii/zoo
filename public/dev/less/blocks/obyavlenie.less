@@ -4,6 +4,7 @@
   &__main-content{}
 
   &__title{
+    margin-top: 15px;
   }
 
   &__urgently{
@@ -43,7 +44,7 @@
     background: url("/img/favorites-g.png") no-repeat center;
     cursor: pointer;
 
-    &.is-favourite{
+    &:hover, &.is-favourite{
       background: url("/img/favorites.png") no-repeat center;
     }
   }
@@ -81,6 +82,22 @@
   &__inf-views-today{
     font-size: 14px;
     white-space: nowrap;
+  }
+
+  &__slider-wrap{
+    margin-top: 15px;
+  }
+
+  &__about-info{
+    margin-top: 20px;
+  }
+
+  &__description{
+    margin-top: 25px;
+    max-width: 100%;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
   }
 
   &__aside{
@@ -152,4 +169,41 @@
       }
     }
   }
+}
+
+
+.about-info{
+  background-color: #f7f1d9;
+  border-radius: @border-radius;
+  padding: 0 30px 15px;
+
+  &__list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    margin-top: 25px;
+    min-width: 140px;
+    margin-right: 15px;
+  }
+
+  &__item-name{
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__value{
+    color: #333333;
+  }
+
+  &__row{
+    margin-top: 25px;
+    color: #333333;
+  }
+
+  &__data-item{}
+
+  &__delimiter{}
 }

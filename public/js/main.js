@@ -66,6 +66,7 @@ $('.js_toggle_extra').on('click', function () {
     $(this).toggleClass('filter__extra-options-btn--open');
 });
 
+/* Синхронная подсветка изображения и ссылки */
 $('.declaration__img').hover( function () {
     $(this).closest('.declaration__wrapper').addClass('link-hover');
 }, function () {

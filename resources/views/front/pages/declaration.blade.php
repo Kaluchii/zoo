@@ -25,7 +25,7 @@
                 <div class="obyavlenie__title">
                     <span class="obyavlenie__urgently">Срочно, торг</span>
                     <span class="obyavlenie__name">Хаски, 12 месяцев, мальчик</span>
-                    <span class="obyavlenie__favourite is-favourite"></span>
+                    <span class="obyavlenie__favourite"></span>
                 </div>
                 <p class="obyavlenie__service-information">
                     <span class="obyavlenie__inf-city">Алматы</span>
@@ -38,6 +38,60 @@
                     <span class="obyavlenie__inf-delimiter">•</span>
                     <span class="obyavlenie__inf-views-today">1 из них сегодня</span>
                 </p>
+                <div class="obyavlenie__slider-wrap">
+                    <img src="/img/decpl.png" alt="" style="display: block;" class="img-img">
+                </div>
+                <div class="obyavlenie__about-info about-info">
+                    <ul class="about-info__list">
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Размер</p>
+                            <p class="about-info__value">Средний</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Окрас</p>
+                            <p class="about-info__value">Смешанный</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Купирование</p>
+                            <p class="about-info__value">Уши, хвост</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Тип шерсти</p>
+                            <p class="about-info__value">Короткая</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Стерилизация</p>
+                            <p class="about-info__value">Стерилизован</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Свойство подлиннее</p>
+                            <p class="about-info__value">Значение свойства</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Короткое</p>
+                            <p class="about-info__value">Длинное значение</p>
+                        </li>
+                        <li class="about-info__item">
+                            <p class="about-info__item-name">Еще свойство</p>
+                            <p class="about-info__value">Его значение</p>
+                        </li>
+                    </ul>
+                    <p class="about-info__row">
+                        <span class="about-info__data-item">Не привит</span>
+                        <span class="about-info__delimiter"> • </span>
+                        <span class="about-info__data-item">Стерилизован</span>
+                        <span class="about-info__delimiter"> • </span>
+                        <span class="about-info__data-item">Не привит</span>
+                        <span class="about-info__delimiter"> • </span>
+                        <span class="about-info__data-item">Стерилизован</span>
+                        <span class="about-info__delimiter"> • </span>
+                        <span class="about-info__data-item">Не привит</span>
+                        <span class="about-info__delimiter"> • </span>
+                        <span class="about-info__data-item">Стерилизован</span>
+                    </p>
+                </div>
+                <p class="obyavlenie__description">Для истинных ценителей!
+Предлагаем к продаже редкого красавца хаски. Возраст 2,5 месяца. Потрясающий цвет шубки! Необыкновенно красивый цвет и разрез глаз! Привит. РКФ. Подробности только по телефону (вотс апп,вайбер) Находимся 100 км от Алматы по Кульджинскому шоссе.Доставим в Алмату и другие область.</p>
             </div>
             <aside class="obyavlenie__aside aside">
                 <div class="aside__obyavlenie-price obyavlenie-price">
