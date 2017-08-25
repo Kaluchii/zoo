@@ -39,7 +39,17 @@
                     <span class="obyavlenie__inf-views-today">1 из них сегодня</span>
                 </p>
                 <div class="obyavlenie__slider-wrap">
-                    <img src="/img/decpl.png" alt="" style="display: block;" class="img-img">
+                    {{--<img src="/img/decpl.png" alt="" style="display: block;" class="img-img">--}}
+                    <div class="fotorama js_gallery_fotorama" data-auto="false"
+                         data-nav="thumbs"
+                         data-thumbmargin="2" data-loop="true"
+                         data-thumbwidth="64" data-thumbheight="64" data-transition="crossfade">
+                        <img src="/img/decpl.png" alt="" class="img-img">
+                        <img src="/img/decpl.png" alt="" class="img-img">
+                        <img src="/img/decpl.png" alt="" class="img-img">
+                        <img src="/img/decpl.png" alt="" class="img-img">
+                        <img src="/img/decpl.png" alt="" class="img-img">
+                    </div>
                 </div>
                 <div class="obyavlenie__about-info about-info">
                     <ul class="about-info__list">
@@ -92,6 +102,48 @@
                 </div>
                 <p class="obyavlenie__description">Для истинных ценителей!
 Предлагаем к продаже редкого красавца хаски. Возраст 2,5 месяца. Потрясающий цвет шубки! Необыкновенно красивый цвет и разрез глаз! Привит. РКФ. Подробности только по телефону (вотс апп,вайбер) Находимся 100 км от Алматы по Кульджинскому шоссе.Доставим в Алмату и другие область.</p>
+                <div class="obyavlenie__comments comments">
+                    <div class="comments__authorization">
+                        <p class="comments__authorization-text">
+                            Чтобы добавить комментарий, <span class="link">зарегистрируйтесь</span> или <span
+                                    class="link">войдите</span>
+                        </p>
+                    </div>
+                    <h2 class="comments__title">Комментарии <span class="comments__comment-count">3</span></h2>
+                    <div class="comments__add-comment add-comment">
+                        <p class="add-comment__title">Добавить комментарий</p>
+                        <textarea name="" class="add-comment__textarea textarea"></textarea>
+                        <div class="add-comment__bottom-wrap">
+                            <p class="add-comment__info-text">Комментарии модерируются и могут быть удалены,
+                                если нарушают <span class="link">правила общения на сайте</span>. Будьте вежливы.</p>
+                            <div class="add-comment__button-wrap">
+                                <a href="" class="button">Добавить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="comments__list">
+                        <li class="comments__item comment">
+                            <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                            <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                            <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                        </li>
+                        <li class="comments__item comment comment--author">
+                            <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                            <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                            <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                        </li>
+                        <li class="comments__item comment">
+                            <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                            <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                            <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                        </li>
+                        <li class="comments__item comment">
+                            <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                            <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                            <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <aside class="obyavlenie__aside aside">
                 <div class="aside__obyavlenie-price obyavlenie-price">

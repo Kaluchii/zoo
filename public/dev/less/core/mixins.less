@@ -150,3 +150,15 @@
   background: linear-gradient(to bottom, #ffffff 0%, #d9cea2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9cea2', GradientType=0 );
 }
+
+.dashed-border{
+  background: -moz-linear-gradient(to to left, #CCCCCC 2px, transparent 2px);
+  background: -ms-linear-gradient(to left, #CCCCCC 2px, transparent 2px);
+  background: -o-linear-gradient(to left, #CCCCCC 2px, transparent 2px);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#CCCCCC), color-stop(0.6, #CCCCCC), color-stop(0.6, transparent));
+  background: -webkit-linear-gradient(to left, #CCCCCC 2px, transparent 2px);
+  background: linear-gradient(to left, #CCCCCC 2px, transparent 2px);
+  background-position: 0 100%;
+  background-size: 4px 1px;
+  background-repeat: repeat-x;
+}

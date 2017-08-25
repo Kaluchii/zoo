@@ -98,3 +98,15 @@ $('.js_how_to_display').on('click', function () {
 
     }
 });
+
+
+
+// 1. Initialize fotorama manually.
+var $fotorama = $('.js_gallery_fotorama').fotorama({
+    // navwidth: '70%'
+});
+// 2. Get the API object.
+var fotorama = $fotorama.data('fotorama');
+fotorama.setOptions({
+    arrows: false
+});

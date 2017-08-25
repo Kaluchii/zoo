@@ -20,6 +20,8 @@
 
   &__row{
     margin-top: 20px;
+    padding-bottom: 20px;
+    .dashed-border();
     transition: .5s margin;
 
     &--2col{
@@ -29,13 +31,10 @@
 
     &--close{
       margin-top: 0;
+      padding-bottom: 0;
       overflow: hidden;
       height: 0;
       opacity: 0;
-
-      & + .filter__dashed-line{
-        margin-top: -1px;
-      }
     }
 
     &--open{
@@ -63,11 +62,6 @@
         padding-left: 0;
       }
     }
-  }
-
-  &__dashed-line{
-    margin-top: 20px;
-    transition: .2s margin;
   }
 
   &__footer{

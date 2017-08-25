@@ -1,6 +1,5 @@
 @section('footer')
     <footer class="footer">
-        <hr class="dashed-line">
         <div class="footer__wrapper">
             <div class="footer__soc">
                 <p class="footer__copy">© Все права защищены,<br>«ЗооМир», 2017</p>

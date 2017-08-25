@@ -1,0 +1,116 @@
+.comments{
+  margin-top: 35px;
+
+  &__title{
+    margin-top: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__add-comment{}
+
+  &__comment-count{
+    font-size: inherit;
+    font-weight: normal;
+    color: #999999;
+  }
+
+  &__list{
+    margin-top: 20px;
+  }
+
+  &__item{
+    margin-top: 10px;
+  }
+
+  &__authorization{
+    padding: 25px 30px;
+    background-color: #f7f1d9;
+  }
+
+  &__authorization-text{
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+
+.comment{
+  &:nth-last-child(n+2){
+    padding-bottom: 15px;
+    .dashed-border();
+  }
+
+  &--author{
+    .comment{
+      &__name, &__date, &__text{
+        color: #669900;
+      }
+    }
+  }
+
+  &__top-wrap{}
+
+  &__name{
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__date{
+    margin-left: 15px;
+    font-size: 12px;
+    color: #999999;
+  }
+
+  &__text{
+    color: #666666;
+  }
+
+  &__action-wrap{}
+
+  &__answer{}
+
+  &__complain{
+    margin-left: 15px;
+  }
+
+  &__action{
+    font-size: 12px;
+  }
+}
+
+
+.add-comment{
+  margin-top: 25px;
+  background-color: #f7f1d9;
+  padding: 15px 20px 20px;
+  border-radius: 5px;
+
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__textarea{
+    margin-top: 5px;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  &__bottom-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__info-text{
+    max-width: 390px;
+    font-size: 14px;
+  }
+
+  &__button-wrap{
+    margin-top: 3px;
+  }
+}

@@ -45,8 +45,6 @@
                 </div>
             </div>
 
-            <hr class="filter__dashed-line dashed-line">
-
             <div class="filter__row filter__row--2col">
                 <div class="filter__criterion-row filter__criterion-row--half criterion">
                     <p class="criterion__name">Размер</p>
@@ -98,8 +96,6 @@
                     </div>
                 </div>
             </div>
-
-            <hr class="filter__dashed-line dashed-line">
 
             <div class="filter__row filter__row--2col js_extra_options filter__row--close">
                 <div class="filter__criterion-row filter__criterion-row--half criterion">
@@ -183,8 +179,6 @@
                 </div>
             </div>
 
-            <hr class="filter__dashed-line dashed-line">
-
             <div class="filter__footer">
                 <div class="filter__extra-options">
                     <span class="filter__extra-options-btn js_toggle_extra dotted-link">Дополнительные параметры</span>
@@ -202,7 +196,6 @@
                     <a href="" class="declarations-top__subscriptions link">Подписаться на эти объявления</a>
                 </div>
             </div>
-            <hr class="declarations-top__dashed-line dashed-line">
         </div>
         <main class="declarations">
             <div class="declarations__main-content main-content">
