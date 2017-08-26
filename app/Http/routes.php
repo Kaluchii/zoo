@@ -27,6 +27,10 @@ Route::get('/declaration', function () {
     return view('front.pages.declaration');
 });
 
+Route::get('/main', function () {
+    return view('front.pages.main');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 

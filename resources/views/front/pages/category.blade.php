@@ -489,7 +489,7 @@
                     <img src="/img/aside_rec.png" alt="" class="rec-block__img">
                 </div>
                 <div class="aside__hot-declarations hot-declarations">
-                    <h4 class="hot-declarations__title">Горячие объявления</h4>
+                    <h4 class="hot-declarations__title aside__title">Горячие объявления</h4>
                     <p class="hot-declarations__subtitle"><a href="" class="hot-declarations__how link">Как попасть в «Горячие»</a></p>
                     <div class="hot-declarations__list-wrap">
                         <ul class="hot-declarations__list">

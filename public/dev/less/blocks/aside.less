@@ -9,6 +9,16 @@
   &__like-declarations{}
 
   &__contacts-block{}
+
+  &__forum-publication{}
+
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__links-list{}
 }
 
 div + .rec-block, div + .hot-declarations{
@@ -29,9 +39,6 @@ div + .rec-block, div + .hot-declarations{
   text-align: center;
 
   &__title{
-    font-size: 16px;
-    font-weight: bold;
-    color: #333333;
   }
 
   &__subtitle{}
@@ -85,9 +92,6 @@ div + .rec-block, div + .hot-declarations{
   margin-top: 35px;
 
   &__title{
-    font-size: 16px;
-    font-weight: bold;
-    color: #333333;
   }
 
   &__subtitle{}
@@ -153,6 +157,69 @@ div + .rec-block, div + .hot-declarations{
     margin-left: 6px;
     color: #666666;
     font-size: inherit;
+  }
+}
+
+
+.forum-publication{
+  margin-top: 20px;
+  padding-bottom: 90px;
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -25px;
+    width: 105px;
+    height: 159px;
+    background: url("/img/forum_cat.png") no-repeat;
+  }
+
+  &__wrapper{
+    padding: 20px 20px 35px;
+    background-color: #d5ebcf;
+    border-radius: @border-radius;
+  }
+
+  &__title{}
+
+  &__list{
+    margin-top: 20px;
+  }
+
+  &__item{
+    &:nth-child(n+2){
+      margin-top: 20px;
+    }
+  }
+
+  &__name{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__name-link{
+    color: #333333;
+    background: none;
+  }
+
+  &__item-info{
+    color: #999999;
+  }
+
+  &__date{
+    font-size: 12px;
+  }
+
+  &__comments{
+    margin-left: 15px;
+    font-size: 12px;
+  }
+
+  &__forum-go-link{
+    font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -227,5 +294,37 @@ div + .rec-block, div + .hot-declarations{
     font-size: 32px;
     font-weight: bold;
     color: #333333;
+  }
+}
+
+
+.links-list{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: @border-radius;
+
+  &--rubrics{
+    background-color: #f7f1d9;
+  }
+
+  &--popular{
+    background-color: #d5ebcf;
+  }
+
+  &__title{}
+
+  &__list{
+    margin-top: 20px;
+  }
+
+  &__item{
+    margin-top: 11px;
+    font-size: 14px;
+  }
+
+  &__link{
+    &--bold{
+      font-weight: bold;
+    }
   }
 }

@@ -39,7 +39,6 @@
                     <span class="obyavlenie__inf-views-today">1 из них сегодня</span>
                 </p>
                 <div class="obyavlenie__slider-wrap">
-                    {{--<img src="/img/decpl.png" alt="" style="display: block;" class="img-img">--}}
                     <div class="fotorama js_gallery_fotorama" data-auto="false"
                          data-nav="thumbs"
                          data-thumbmargin="2" data-loop="true"
@@ -169,7 +168,7 @@
                     <img src="/img/aside_rec.png" alt="" class="rec-block__img">
                 </div>
                 <div class="aside__like-declarations like-declarations">
-                    <h4 class="like-declarations__title">Похожие объявления</h4>
+                    <h4 class="like-declarations__title aside__title">Похожие объявления</h4>
                     <div class="like-declarations__list-wrap">
                         <ul class="like-declarations__list">
                             <li class="like-declarations__list-item like-declaration">
