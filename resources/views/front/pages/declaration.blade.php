@@ -24,7 +24,7 @@
             <div class="obyavlenie__main-content main-content">
                 <div class="obyavlenie__title">
                     <span class="obyavlenie__urgently">Срочно, торг</span>
-                    <span class="obyavlenie__name">Хаски, 12 месяцев, мальчик</span>
+                    <h1 class="obyavlenie__name">Хаски, 12 месяцев, мальчик</h1>
                     <span class="obyavlenie__favourite"></span>
                 </div>
                 <p class="obyavlenie__service-information">

@@ -1,7 +1,156 @@
 .main{
-  display: flex;
+  &__content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title{
+    margin-top: 35px;
+    padding-right: 25px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  &__category-nav{}
+
+  &__title-first-letter{
+    position: relative;
+    font-size: inherit;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: -3px;
+      width: 32px;
+      height: 18px;
+      background: url('/img/bird.png');
+    }
+  }
+
+  &__declarations-division{
+    margin-top: 35px;
+  }
+
+  &__news{
+    margin-top: 15px;
+  }
 }
 
 
 
-.declarations-division{}
+.declarations-division{
+  &__main-title{
+    font-size: 32px;
+    font-weight: bold;
+
+    & + .declarations-division__list{
+      margin-top: 20px;
+    }
+  }
+
+  &__title{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-last-child(n+2){
+      padding-bottom: 15px;
+      .dashed-border();
+    }
+
+    & + .declarations-division__title{
+      margin-top: 15px;
+    }
+  }
+
+  &__item{
+    width: 33%;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+
+  &__link{
+    background: none;
+
+    &--main{
+      font-weight: bold;
+    }
+  }
+
+  &__declar-count{
+    color: #CCCCCC;
+  }
+}
+
+
+.category-nav{
+  position: relative;
+  margin-top: 20px;
+  padding: 10px 40px 20px;
+  border-radius: 5px;
+  background: url("/img/small_dog.png") 10px 100% no-repeat,
+  url("/img/big_dog.png") bottom left no-repeat,
+  url("/img/lizard.png") 96% 85% no-repeat #f7f1d9;
+
+  &:after{
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: -39px;
+    width: 46px;
+    height: 39px;
+    background: url('/img/cat.png');
+  }
+
+  &__row-wrapper{
+    margin-top: 15px;
+  }
+
+  &__title{
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__list{
+    margin: 5px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &--organizations{
+      max-width: 700px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  &__link{
+    display: block;
+    padding: 2px 10px;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #aea375;
+    border-radius: @border-radius;
+    color: #0066cc;
+
+    &:hover{
+      color: #cc0000;
+      border: 1px solid #897d4f;
+    }
+  }
+}
