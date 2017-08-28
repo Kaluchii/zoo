@@ -27,6 +27,14 @@ Route::get('/declaration', function () {
     return view('front.pages.declaration');
 });
 
+Route::get('/publications', function () {
+    return view('front.pages.publications');
+});
+
+Route::get('/publication', function () {
+    return view('front.pages.publication');
+});
+
 Route::get('/main', function () {
     return view('front.pages.main');
 });

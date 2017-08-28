@@ -185,7 +185,7 @@
                     <div class="aside__rec-block rec-block">
                         <img src="/img/reec2.png" alt="" class="rec-block__img">
                     </div>
-                    <div class="aside__forum-publication forum-publication">
+                    <div class="aside__forum-publication forum-publication forum-publication--with-cat">
                         <div class="forum-publication__wrapper">
                             <h4 class="forum-publication__title aside__title">Последнее на форуме</h4>
                             <ul class="forum-publication__list">

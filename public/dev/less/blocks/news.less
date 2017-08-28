@@ -9,17 +9,44 @@
     }
   }
 
-  &__list{}
+  &__list{
+    margin-top: 25px;
+  }
 
   &__item{
     display: flex;
-    margin-top: 30px;
     padding-bottom: 30px;
     .dashed-border();
 
+    &:nth-child(n+2){
+      margin-top: 30px;
+    }
+
+    &--big{
+      flex-direction: column;
+
+      .news__info-wrapper{
+        margin: 20px 0 0;
+      }
+
+      .news__item-title{
+        margin-top: 5px;
+        font-size: 24px;
+      }
+
+      .news__text{
+        margin-top: 15px;
+        font-size: 16px;
+      }
+
+      .news__date-comment-wrapper{
+        margin-top: 15px;
+      }
+    }
+
     &--reclame{
-      padding-bottom: 0;
-      background: none;
+      //padding-bottom: 0;
+      //background: none;
     }
   }
 

@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
 
+  &__search{}
+
+  &__tag-search{}
+
   &__rec-block{}
 
   &__like-declarations{}
@@ -32,6 +36,29 @@ div + .rec-block, div + .hot-declarations{
   }
 }
 
+
+.search{
+  display: flex;
+
+  &__input{
+    height: 30px;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 205px;
+  }
+
+  &__btn{
+    display: inline-block;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: @border-radius;
+    border: none;
+    background: #0066cc url("/img/search.png") no-repeat center;
+    cursor: pointer;
+  }
+}
 
 .hot-declarations{
   padding: 20px 25px 35px;
@@ -113,11 +140,8 @@ div + .rec-block, div + .hot-declarations{
 
 .like-declaration{
   font-size: 0;
-
-  &:nth-last-child(n+2){
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e5e5e5;
-  }
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 
   &__img-wrap{
     display: inline-block;
@@ -160,20 +184,51 @@ div + .rec-block, div + .hot-declarations{
   }
 }
 
+.tag-search{
+  margin-top: 20px;
+  padding: 20px 20px 25px;
+  border-radius: @border-radius;
+  background-color: #f7f1d9;
+
+  &__title{}
+
+  &__tag-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tag-item{
+    margin: 5px 5px 0 0;
+    line-height: 1;
+  }
+
+  &__tag-link{
+    display: inline-block;
+    padding: 3px 5px;
+    border: 1px solid #aea375;
+    border-radius: 2px;
+    background: #ffffff;
+    color: #666666;
+    font-size: 12px;
+  }
+}
 
 .forum-publication{
   margin-top: 20px;
-  padding-bottom: 90px;
   position: relative;
 
-  &:after{
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: -25px;
-    width: 105px;
-    height: 159px;
-    background: url("/img/forum_cat.png") no-repeat;
+  &--with-cat{
+    padding-bottom: 90px;
+
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      left: -25px;
+      width: 105px;
+      height: 159px;
+      background: url("/img/forum_cat.png") no-repeat;
+    }
   }
 
   &__wrapper{
