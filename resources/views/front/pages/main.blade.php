@@ -38,6 +38,35 @@
                     </ul>
                 </div>
             </div>
+            <div class="main__hot-carousel hot-carousel">
+                <div class="hot-carousel__top">
+                    <h2 class="hot-carousel__title">Горячие объявления</h2>
+                    <p class="hot-carousel__link-wrap"><a href="" class="hot-carousel__link link">Как сюда попасть?</a></p>
+                    <div class="hot-carousel__control-wrap">
+                        <button class="hot-carousel__btn hot-carousel__btn--left"></button>
+                        <button class="hot-carousel__btn hot-carousel__btn--right"></button>
+                    </div>
+                </div>
+                <div class="hot-carousel__list">
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl1.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl2.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl3.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl4.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl1.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl3.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl2.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl1.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item hot-carousel__item--rec"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl6.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl3.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl2.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl4.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl2.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl3.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl4.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl2.png" alt="" class="hot-carousel__declar-img"></a></div>
+                    <div class="hot-carousel__item"><a href="" class="hot-carousel__declar-link"><img src="/img/hot_pl1.png" alt="" class="hot-carousel__declar-img"></a></div>
+                </div>
+            </div>
             <div class="main__content-wrapper">
                 <div class="main__main-content main-content">
                     <div class="main__news news">

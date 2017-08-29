@@ -62,7 +62,8 @@ $( ".select" ).forEach(function(){
 
 /* Открытие дополнительных пунктов фильтра */
 $('.js_toggle_extra').on('click', function () {
-    $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
+    $('.js_extra_options').slideToggle();
+    // $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
     $(this).toggleClass('filter__extra-options-btn--open');
 });
 
@@ -102,9 +103,7 @@ $('.js_how_to_display').on('click', function () {
 
 
 // 1. Initialize fotorama manually.
-var $fotorama = $('.js_gallery_fotorama').fotorama({
-    // navwidth: '70%'
-});
+var $fotorama = $('.js_gallery_fotorama').fotorama();
 // 2. Get the API object.
 var fotorama = $fotorama.data('fotorama');
 fotorama.setOptions({
