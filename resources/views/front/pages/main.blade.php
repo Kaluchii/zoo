@@ -74,7 +74,7 @@
                         <ul class="news__list">
                             <li class="news__item">
                                 <div class="news__img-wrapper">
-                                    <img src="/img/news-pl.png" alt="" class="news__img">
+                                    <a href="" class="news__img-link"><img src="/img/news-pl.png" alt="" class="news__img"></a>
                                 </div>
                                 <div class="news__info-wrapper">
                                     <div class="news__item-title"><a href="" class="news__link link">Как правильно и быстро приучть котят к лотку</a></div>
@@ -84,7 +84,7 @@
                             </li>
                             <li class="news__item">
                                 <div class="news__img-wrapper">
-                                    <img src="/img/news-pl.png" alt="" class="news__img">
+                                    <a href="" class="news__img-link"><img src="/img/news-pl.png" alt="" class="news__img"></a>
                                 </div>
                                 <div class="news__info-wrapper">
                                     <div class="news__item-title"><a href="" class="news__link link">Как правильно и быстро приучть котят к лотку Как правильно и быстро приучть котят к лотку</a></div>
@@ -94,7 +94,7 @@
                             </li>
                             <li class="news__item">
                                 <div class="news__img-wrapper">
-                                    <img src="/img/news-pl.png" alt="" class="news__img">
+                                    <a href="" class="news__img-link"><img src="/img/news-pl.png" alt="" class="news__img"></a>
                                 </div>
                                 <div class="news__info-wrapper">
                                     <div class="news__item-title"><a href="" class="news__link link">Знаменитые собаки медалисты и чемпионы</a></div>
@@ -104,7 +104,7 @@
                             </li>
                             <li class="news__item">
                                 <div class="news__img-wrapper">
-                                    <img src="/img/news-pl.png" alt="" class="news__img">
+                                    <a href="" class="news__img-link"><img src="/img/news-pl.png" alt="" class="news__img"></a>
                                 </div>
                                 <div class="news__info-wrapper">
                                     <div class="news__item-title"><a href="" class="news__link link">Какие собаки лучше всего подходят ксли в доме дети</a></div>
@@ -114,7 +114,7 @@
                             </li>
                             <li class="news__item">
                                 <div class="news__img-wrapper">
-                                    <img src="/img/news-pl.png" alt="" class="news__img">
+                                    <a href="" class="news__img-link"><img src="/img/news-pl.png" alt="" class="news__img"></a>
                                 </div>
                                 <div class="news__info-wrapper">
                                     <div class="news__item-title"><a href="" class="news__link link">Профилактика паразитов для кошек и собак</a></div>

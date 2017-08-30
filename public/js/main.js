@@ -67,17 +67,25 @@ $('.js_toggle_extra').on('click', function () {
     $(this).toggleClass('filter__extra-options-btn--open');
 });
 
-/* Синхронная подсветка изображения и ссылки */
-$('.declaration__img').hover( function () {
-    $(this).closest('.declaration__wrapper').addClass('link-hover');
-}, function () {
-    $(this).closest('.declaration__wrapper').removeClass('link-hover');
-});
-$('.declaration__name').hover( function () {
-    $(this).closest('.declaration__wrapper').addClass('link-hover');
-}, function () {
-    $(this).closest('.declaration__wrapper').removeClass('link-hover');
-});
+/* Функция для синхронной подсветки ссылки и изображения */
+function setBehavior(parentName, childName) {
+    $(childName).hover( function () {
+        $(this).closest(parentName).addClass('link-hover');
+    }, function () {
+        $(this).closest(parentName).removeClass('link-hover');
+    });
+}
+
+setBehavior('.like-declaration', '.like-declaration__link');
+setBehavior('.like-declaration', '.like-declaration__img');
+setBehavior('.hot-declaration', '.hot-declaration__link');
+setBehavior('.hot-declaration', '.hot-declaration__img');
+setBehavior('.declaration__wrapper', '.declaration__name');
+setBehavior('.declaration__wrapper', '.declaration__img');
+setBehavior('.news__item', '.news__link');
+setBehavior('.news__item', '.news__img');
+
+
 
 /* Переключение режима отображения объявлений (список/плитка) */
 var display_condition = 'list';

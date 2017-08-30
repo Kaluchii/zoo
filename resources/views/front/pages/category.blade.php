@@ -620,7 +620,7 @@
                         <ul class="hot-declarations__list">
                             <li class="hot-declarations__list-item hot-declaration">
                                 <div class="hot-declaration__img-wrap">
-                                    <img src="/img/hot_rec.png" alt="" class="hot-declaration__img">
+                                    <a href="" class="hot-declaration__img-link"><img src="/img/hot_rec.png" alt="" class="hot-declaration__img"></a>
                                 </div>
                                 <p class="hot-declaration__title"><a href="" class="hot-declaration__link link">Немецкая
                                         овчарка, девочка, 6 мес</a></p>
@@ -629,7 +629,7 @@
                             </li>
                             <li class="hot-declarations__list-item hot-declaration">
                                 <div class="hot-declaration__img-wrap">
-                                    <img src="/img/cz5.png" alt="" class="hot-declaration__img">
+                                    <a href="" class="hot-declaration__img-link"><img src="/img/cz5.png" alt="" class="hot-declaration__img"></a>
                                 </div>
                                 <p class="hot-declaration__title"><a href="" class="hot-declaration__link link">Хаски,
                                         мальчик, 12 мес</a></p>
@@ -638,7 +638,7 @@
                             </li>
                             <li class="hot-declarations__list-item hot-declaration">
                                 <div class="hot-declaration__img-wrap">
-                                    <img src="/img/cz4.png" alt="" class="hot-declaration__img">
+                                    <a href="" class="hot-declaration__img-link"><img src="/img/cz4.png" alt="" class="hot-declaration__img"></a>
                                 </div>
                                 <p class="hot-declaration__title"><a href="" class="hot-declaration__link link">Хаски,
                                         мальчик, 12 мес</a></p>

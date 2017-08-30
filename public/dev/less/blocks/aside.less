@@ -94,8 +94,11 @@ div + .rec-block, div + .hot-declarations{
   }
 
   &__title{
-    margin-top: 7px;
     line-height: 1.2;
+  }
+
+  &__img-link{
+    display: inline-block;
   }
 
   &__link{
@@ -145,11 +148,16 @@ div + .rec-block, div + .hot-declarations{
 
   &__img-wrap{
     display: inline-block;
+    font-size: 0;
   }
 
   &__img{
     display: block;
     margin: 0 auto;
+  }
+
+  &__img-link{
+    display: inline-block;
   }
 
   &__inf-wrap{
@@ -275,6 +283,8 @@ div + .rec-block, div + .hot-declarations{
   &__forum-go-link{
     font-size: 14px;
     font-weight: bold;
+    position: relative;
+    z-index: 1;
   }
 }
 

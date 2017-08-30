@@ -173,7 +173,7 @@
                         <ul class="like-declarations__list">
                             <li class="like-declarations__list-item like-declaration">
                                 <div class="like-declaration__img-wrap">
-                                    <img src="/img/like1.png" alt="" class="like-declaration__img">
+                                    <a href="" class="like-declaration__img-link"><img src="/img/like1.png" alt="" class="like-declaration__img"></a>
                                 </div>
                                 <div class="like-declaration__inf-wrap">
                                     <p class="like-declaration__title"><a href="" class="like-declaration__link link">Хаски, мальчик, 3 мес</a></p>
@@ -182,7 +182,7 @@
                             </li>
                             <li class="like-declarations__list-item like-declaration">
                                 <div class="like-declaration__img-wrap">
-                                    <img src="/img/like1.png" alt="" class="like-declaration__img">
+                                    <a href="" class="like-declaration__img-link"><img src="/img/like1.png" alt="" class="like-declaration__img"></a>
                                 </div>
                                 <div class="like-declaration__inf-wrap">
                                     <p class="like-declaration__title"><a href="" class="like-declaration__link link">Хаски, девочка, 6 мес</a></p>
@@ -191,7 +191,7 @@
                             </li>
                             <li class="like-declarations__list-item like-declaration">
                                 <div class="like-declaration__img-wrap">
-                                    <img src="/img/like1.png" alt="" class="like-declaration__img">
+                                    <a href="" class="like-declaration__img-link"><img src="/img/like1.png" alt="" class="like-declaration__img"></a>
                                 </div>
                                 <div class="like-declaration__inf-wrap">
                                     <p class="like-declaration__title"><a href="" class="like-declaration__link link">Хаски, девочка, 2 мес</a></p>
@@ -200,7 +200,7 @@
                             </li>
                             <li class="like-declarations__list-item like-declaration">
                                 <div class="like-declaration__img-wrap">
-                                    <img src="/img/like1.png" alt="" class="like-declaration__img">
+                                    <a href="" class="like-declaration__img-link"><img src="/img/like1.png" alt="" class="like-declaration__img"></a>
                                 </div>
                                 <div class="like-declaration__inf-wrap">
                                     <p class="like-declaration__title"><a href="" class="like-declaration__link link">Немецкая овчарка, девочка, 16 мес</a></p>

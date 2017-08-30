@@ -82,3 +82,23 @@ br{
   font-weight: bold;
   color: #333333;
 }
+
+
+.link-hover{
+  .declaration__name, .hot-declaration__link, .like-declaration__link, .news__link{
+    background: -moz-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: -ms-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: -o-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 0, 0, 0.3)), to(rgba(204, 0, 0, 0.3)));
+    background: -webkit-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(204, 0, 0, 0.3)', endColorstr='rgba(204, 0, 0, 0.3)', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: #cc0000;
+  }
+  .declaration__link, .hot-declaration__img-link, .like-declaration__img-link, .news__img-link{
+    box-shadow: 0 0 0 1px #cc0000;
+  }
+}
