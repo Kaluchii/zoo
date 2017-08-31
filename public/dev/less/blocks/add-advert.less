@@ -2,6 +2,10 @@
   &__title{
     margin-top: 70px;
     text-align: center;
+
+    & + .add-advert__form{
+      margin-top: 50px;
+    }
   }
 
   &__clarification{
@@ -34,6 +38,24 @@
   &__inputs-with-error{
     font-weight: bold;
   }
+
+  &__social-authorization-row{
+    max-width: 420px;
+    margin: 30px auto 0;
+    padding-top: 15px;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__social-authorization-title{
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__social-authorization-wrap{
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 
@@ -41,4 +63,11 @@
   &__input-row{
     margin-top: 20px;
   }
+}
+
+#rc-imageselect, .g-recaptcha {
+  transform:scale(1.058);
+  transform-origin:0;
+  transform:scale(1.058);
+  transform-origin:0 0;
 }

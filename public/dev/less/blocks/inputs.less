@@ -3,9 +3,21 @@
   display: flex;
   justify-content: flex-start;
 
+  &--btn-right-flag{
+    justify-content: flex-end;
+    max-width: 320px;
+  }
+
   &__wrap{
     display: flex;
     align-items: flex-start;
+
+    &--between{
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 320px;
+    }
   }
 
   &__error{
@@ -111,6 +123,10 @@
   &:not([readonly]):not([class*="--readonly"]):focus{
     border: 1px solid #cc9933;
     box-shadow: 0 0 10px 1px rgba(255, 204, 102, 0.5), inset 3px 3px 5px -3px rgba(102, 51, 0, 0.25);
+  }
+
+  &[type='password']{
+    font-size: 32px;
   }
 
   & ~ .checkbox-btn{

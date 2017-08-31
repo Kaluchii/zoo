@@ -39,6 +39,14 @@ Route::get('/main', function () {
     return view('front.pages.main');
 });
 
+Route::get('/zoo_login', function () {
+    return view('front.pages.login');
+});
+
+Route::get('/zoo_registration', function () {
+    return view('front.pages.registration');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 
