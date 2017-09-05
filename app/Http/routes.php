@@ -47,6 +47,10 @@ Route::get('/zoo_registration', function () {
     return view('front.pages.registration');
 });
 
+Route::get('/acc_dialogs', function () {
+    return view('front.pages.acc_dialogs');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 

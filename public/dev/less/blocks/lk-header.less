@@ -1,0 +1,112 @@
+.lk-header{
+  max-width: 1020px;
+  padding: 45px 35px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title{
+    font-size: 36px;
+  }
+
+  &__user-number{
+    color: #cccccc;
+    font-size: inherit;
+    font-weight: normal;
+  }
+
+  &__balance-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 270px;
+    background-color: #d5ebcf;
+    border-radius: @border-radius;
+  }
+
+  &__balance-text{
+    font-size: 14px;
+    color: #333333;
+    margin-right: 20px;
+  }
+
+  &__balance{
+    font-size: inherit;
+    color: #666666;
+  }
+
+  &__balance-up-btn{}
+
+  &__nav{
+    margin-top: 25px;
+  }
+
+  &__nav-list{
+    display: flex;
+    background: #cdd6dd;
+    background: -moz-linear-gradient(to left, #cdd6dd, #cdd6dd 100%);
+    background: -ms-linear-gradient(to left, #cdd6dd, #cdd6dd 100%);
+    background: -o-linear-gradient(to left, #cdd6dd, #cdd6dd 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#cdd6dd), to(#cdd6dd));
+    background: -webkit-linear-gradient(to left, #cdd6dd, #cdd6dd 100%);
+    background: linear-gradient(to left, #cdd6dd, #cdd6dd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdd6dd', endColorstr='#cdd6dd', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+
+  &__nav-item{
+    flex-grow: 1;
+    text-align: center;
+
+    &:nth-child(n+2){
+      margin-left: 2px;
+    }
+  }
+
+  &__nav-link{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #cdd6dd;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background: #e9edf0;
+    white-space: nowrap;
+    color: #0066cc;
+    font-weight: 800;
+
+    &:hover{
+      background-color: #eef1f4;
+      color: #cc0000;
+    }
+
+    &.is-active{
+      background-color: #fff;
+      border: 1px solid #cdd6dd;
+      border-bottom: 1px solid transparent;
+      color: #333333;
+    }
+  }
+}
+
+
+.lk{
+  padding-top: 25px;
+
+  &__title{
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__content-wrap{}
+}

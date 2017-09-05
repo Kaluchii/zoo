@@ -84,6 +84,8 @@ setBehavior('.declaration__wrapper', '.declaration__name');
 setBehavior('.declaration__wrapper', '.declaration__img');
 setBehavior('.news__item', '.news__link');
 setBehavior('.news__item', '.news__img');
+setBehavior('.like-publications__item', '.like-publications__link');
+setBehavior('.like-publications__item', '.like-publications__img');
 
 
 

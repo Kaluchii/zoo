@@ -179,7 +179,7 @@
             <ul class="like-publications__list">
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
-                        <img src="/img/like_pub.png" alt="" class="like-publications__img">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
                     <p class="like-publications__small-descr">
@@ -198,7 +198,7 @@
                 </li>
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
-                        <img src="/img/like_pub.png" alt="" class="like-publications__img">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
                     <p class="like-publications__small-descr">
@@ -214,7 +214,7 @@
                 </li>
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
-                        <img src="/img/like_pub.png" alt="" class="like-publications__img">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
                     <p class="like-publications__small-descr">
@@ -228,7 +228,7 @@
                 </li>
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
-                        <img src="/img/like_pub.png" alt="" class="like-publications__img">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
                     <p class="like-publications__small-descr">
@@ -245,7 +245,7 @@
                 </li>
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
-                        <img src="/img/like_pub.png" alt="" class="like-publications__img">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
                     <p class="like-publications__small-descr">
@@ -260,7 +260,7 @@
                 </li>
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
-                        <img src="/img/like_pub.png" alt="" class="like-publications__img">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
                     <p class="like-publications__small-descr">
