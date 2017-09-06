@@ -1,5 +1,5 @@
 .chat{
-  padding: 30px 5px 30px 30px;
+  padding: 30px 5px 30px 25px;
   height: 260px;
   box-sizing: border-box;
   background-color: #e9edf0;
@@ -10,6 +10,7 @@
     height: 200px;
     overflow-y: scroll;
     padding-right: 25px;
+    padding-left: 25px;
   }
 
   &__message{
@@ -24,17 +25,19 @@
         &::before {
           border: 5px solid transparent;
           border-top: 5px solid #d5ebcf;
-          border-right: 5px solid #d5ebcf;
+          border-left: 5px solid #d5ebcf;
           top: 11px;
-          left: -10px;
+          right: -10px;
+          left: auto;
           z-index: 1;
         }
         &::after{
           border: 6px solid transparent;
           border-top: 6px solid #99cc99;
-          border-right: 6px solid #99cc99;
+          border-left: 6px solid #99cc99;
           top: 10px;
-          left: -12px;
+          right: -12px;
+          left: auto;
         }
       }
     }
@@ -47,7 +50,7 @@
   }
 
   &__text-wrap{
-    padding: 15px;
+    padding: 15px 20px;
     width: 60%;
     background-color: #ffffff;
     border: 1px solid #cccccc;
