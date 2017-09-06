@@ -51,6 +51,10 @@ Route::get('/acc_dialogs', function () {
     return view('front.pages.acc_dialogs');
 });
 
+Route::get('/acc_dialog', function () {
+    return view('front.pages.acc_dialog');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 

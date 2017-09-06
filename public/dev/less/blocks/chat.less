@@ -1,0 +1,91 @@
+.chat{
+  padding: 30px 5px 30px 30px;
+  height: 260px;
+  box-sizing: border-box;
+  background-color: #e9edf0;
+  border-radius: 5px;
+  overflow-y: hidden;
+
+  &__wrapper{
+    height: 200px;
+    overflow-y: scroll;
+    padding-right: 25px;
+  }
+
+  &__message{
+    margin-top: 15px;
+
+    &--me{
+      .chat__text-wrap{
+        margin-left: auto;
+        background-color: #d5ebcf;
+        border-color: #99cc99;
+
+        &::before {
+          border: 5px solid transparent;
+          border-top: 5px solid #d5ebcf;
+          border-right: 5px solid #d5ebcf;
+          top: 11px;
+          left: -10px;
+          z-index: 1;
+        }
+        &::after{
+          border: 6px solid transparent;
+          border-top: 6px solid #99cc99;
+          border-right: 6px solid #99cc99;
+          top: 10px;
+          left: -12px;
+        }
+      }
+    }
+  }
+
+  &__date{
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+  }
+
+  &__text-wrap{
+    padding: 15px;
+    width: 60%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: relative;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      border: 5px solid transparent;
+      border-top: 5px solid #ffffff;
+      border-right: 5px solid #ffffff;
+      top: 11px;
+      left: -10px;
+      z-index: 1;
+    }
+    &::after{
+      border: 6px solid transparent;
+      border-top: 6px solid #CCCCCC;
+      border-right: 6px solid #CCCCCC;
+      top: 10px;
+      left: -12px;
+    }
+  }
+
+  &__text{
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__complain{
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  &__complain-link{}
+}

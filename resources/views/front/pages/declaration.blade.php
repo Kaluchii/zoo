@@ -109,13 +109,13 @@
                         </p>
                     </div>
                     <h2 class="comments__title">Комментарии <span class="comments__comment-count">3</span></h2>
-                    <div class="comments__add-comment add-comment">
-                        <p class="add-comment__title">Добавить комментарий</p>
-                        <textarea name="" class="add-comment__textarea textarea"></textarea>
-                        <div class="add-comment__bottom-wrap">
-                            <p class="add-comment__info-text">Комментарии модерируются и могут быть удалены,
-                                если нарушают <span class="link">правила общения на сайте</span>. Будьте вежливы.</p>
-                            <div class="add-comment__button-wrap">
+                    <div class="comments__add-comment add-message">
+                        <p class="add-message__title">Добавить комментарий</p>
+                        <textarea name="" class="add-message__textarea textarea"></textarea>
+                        <div class="add-message__bottom-wrap">
+                            <p class="add-message__info-text">Комментарии модерируются и могут быть удалены,
+                                если нарушают <a href="" class="link">правила общения на сайте</a>. Будьте вежливы.</p>
+                            <div class="add-message__button-wrap">
                                 <a href="" class="button">Добавить</a>
                             </div>
                         </div>
