@@ -6,8 +6,8 @@
             <p class="add-advert__clarification">Объявление размещается сроком на <span class="bold">7 дней.</span><br>
             Продлить объявление можно воспользовавшись платными услугами. <br>Обязательные поля помечены<i class="sym-necessary">&nbsp;*</i>
             </p>
-            <div class="add-advert__form form-advert">
-                <div class="form-advert__input-row input-row">
+            <div class="add-advert__form form-rows">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__success">
                         <label for="category" class="input-row__label"><span class="input-row__name">Категория<i class="sym-necessary">&nbsp;*</i></span></label>
                         <select name="category" id="category" class="select gr-h">
@@ -18,7 +18,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label for="vid" class="input-row__label"><span class="input-row__name">Выберите породу<i class="sym-necessary">&nbsp;*</i></span></label>
                         <select name="vid" id="vid" class="select gr-h">
@@ -30,7 +30,7 @@
                         Если породы нет в списке, выберите прочие и опишите в комментарии.</span></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__success">
                         <label class="input-row__label"><span class="input-row__name">Пол<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -46,14 +46,14 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__success">
                         <label for="classic" class="input-row__label"><span class="input-row__name">Возраст, в месяцах<i class="sym-necessary">&nbsp;*</i></span></label>
                         <input type="text" id="classic" class="input" placeholder="Укажите возраст">
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Размер<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -73,7 +73,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Длина шерсти<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -93,7 +93,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__success">
                         <label for="select" class="input-row__label"><span class="input-row__name">Окрас<i class="sym-necessary">&nbsp;*</i></span></label>
                         <select name="select" id="select" class="select gr-h">
@@ -105,7 +105,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Прививки<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -121,7 +121,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Стерилизация<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -137,7 +137,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Кастрация<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -153,7 +153,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Купирование<i class="sym-necessary">&nbsp;*</i></span></label>
                         <div class="radio-switchers">
@@ -169,7 +169,7 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label for="readonly" class="input-row__label"><span class="input-row__name">Цена в тенге<i class="sym-necessary">&nbsp;*</i></span></label>
                         <input readonly type="text" id="readonly" class="input input--readonly">
@@ -180,15 +180,15 @@
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__success">
                         <label for="textarea" class="input-row__label"><span class="input-row__name">Описание<i class="sym-necessary">&nbsp;*</i></span>
                             <span class="input-row__description">Расскажите о характере и особенностях питомца<br>до 4000 знаков</span></label>
                         <textarea name="textarea" id="textarea" class="textarea" placeholder="Введите текст ..."></textarea>
-                        <p class="input-row__clarification"><i class="suc-input"></i></p>
+                        <p class="input-row__clarification input-row__clarification--top-align"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Фотографии</span>
                             <span class="input-row__description">Вы можете загрузить до 8 фотографий размером до 1 Мб</span></label>
@@ -251,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="input-row__label"><span class="input-row__name">Комментарии к объявлению</span></label>
                         <div class="radio-switchers">
@@ -273,29 +273,29 @@
 
             <h2 class="add-advert__section-title big-title">Ваши контакты</h2>
 
-            <div class="add-advert__form form-advert">
-                <div class="form-advert__input-row input-row">
+            <div class="add-advert__form form-rows">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__error">
                         <label for="contact" class="input-row__label"><span class="input-row__name">Контактное лицо<i class="sym-necessary">&nbsp;*</i></span></label>
                         <input type="text" id="contact" class="input" placeholder="">
                         <p class="input-row__clarification"><i class="suc-input"></i><span class="input-row__clarification-text">Имя будет отображаться на сайте</span></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__error">
                         <label for="tel" class="input-row__label"><span class="input-row__name">Номер телефона<i class="sym-necessary">&nbsp;*</i></span></label>
                         <input type="tel" id="tel" class="input" placeholder="" value="+7 777 123-45">
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label for="readonly" class="input-row__label"><span class="input-row__name">Эл. почта<i class="sym-necessary">&nbsp;*</i></span></label>
                         <input readonly type="email" id="readonly" class="input input--readonly" value="vitrety@yandex.ru">
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label for="tel" class="input-row__label"><span class="input-row__name">Дополнительный телефон<i class="sym-necessary">&nbsp;*</i></span></label>
                         <input type="tel" id="tel" class="input" placeholder="+7">
@@ -303,7 +303,7 @@
                                         href="#" class="dotted-link">Добавить номер</a></span></p>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="form__checkbox checkbox">
                             <input class="checkbox__input" type="checkbox" value="1">
@@ -314,7 +314,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="form-advert__input-row input-row">
+                <div class="form-rows__input-row input-row">
                     <button class="button">Подать объявление</button>
                 </div>
             </div>

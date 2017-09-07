@@ -66,10 +66,18 @@
 
   &__clarification{
     position: relative;
-    margin-top: 9px;
     margin-left: 30px;
-    line-height: 1.5;
+    line-height: 1.3;
     color: #999999;
+    transform: translateY(-50%);
+    top: 50%;
+    min-height: 20px;
+
+    &--top-align{
+      transform: none;
+      top: auto;
+      margin-top: 10px;
+    }
   }
 
   &__clarification-text{
@@ -87,6 +95,26 @@
     font-size: 14px;
     color: #666666;
   }
+
+  &__banner{
+    width: 100%;
+    max-width: 320px;
+    box-shadow: inset 0 0 0 1px #999999;
+  }
+
+  &__banner-size{
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  &__banner-position-wrap{
+    font-size: 0;
+  }
+
+  &__banner-position{}
 }
 .select-button{
   &:hover, &:focus{
@@ -107,6 +135,7 @@
   border-radius: @border-radius;
   color: #333333;
   transition: @transition-time;
+  flex-shrink: 0;
 
   &[readonly], &--readonly{
     background-color: #eeeeee;
@@ -231,6 +260,11 @@
   resize: none;
   transition: @transition-time;
 
+  &--small{
+    width: 320px;
+    height: 140px;
+  }
+
   &::placeholder{
     color: #999999;
   }
@@ -311,5 +345,20 @@
     .gradient-hover-button;
     padding: 10px;
     border-radius: @border-radius;
+  }
+}
+
+.file-select{
+  &__field{
+    display: none;
+  }
+
+  &__button{
+    .gradient-button;
+    .gradient-hover-button;
+    padding: 10px;
+    border-radius: @border-radius;
+    width: 320px;
+    max-width: 100%;
   }
 }

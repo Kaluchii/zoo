@@ -55,6 +55,18 @@ Route::get('/acc_dialog', function () {
     return view('front.pages.acc_dialog');
 });
 
+Route::get('/acc_add_banner', function () {
+    return view('front.pages.acc_add_banner');
+});
+
+Route::get('/acc_banners', function () {
+    return view('front.pages.acc_banners');
+});
+
+Route::get('/acc_options', function () {
+    return view('front.pages.acc_options');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 
