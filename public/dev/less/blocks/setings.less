@@ -10,15 +10,29 @@
   }
 
   &__nav-link{
-    &.is-active{}
+    padding: 1px 3px 0;
+
+    &.is-active{
+      font-weight: bold;
+      color: #333333;
+      background: #efe3b4;
+    }
   }
 
   &__tabs{}
 
-  &__tab{}
+  &__tab{
+    &:not([id='contacts']){
+      display: none;
+    }
+  }
 
   &__form-rows{
     margin-top: 25px;
+
+    &:first-child{
+      margin-top: 50px;
+    }
   }
 
   &__dashed-line{

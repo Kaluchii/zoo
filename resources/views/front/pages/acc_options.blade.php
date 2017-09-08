@@ -24,14 +24,14 @@
             <h2 class="lk__title">Настройки профиля</h2>
             <div class="lk__content-wrap settings">
                 <ul class="settings__nav">
-                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link is-active" data-tab-id="contacts">Контакты</span></li>
-                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link" data-tab-id="">Уведомления</span></li>
-                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link" data-tab-id="">Изменить пароль</span></li>
-                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link" data-tab-id="">Изменить почту</span></li>
-                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link" data-tab-id="">Подключить соцсети</span></li>
+                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link js_tab_switch is-active" data-tab-id="contacts">Контакты</span></li>
+                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link js_tab_switch" data-tab-id="notice">Уведомления</span></li>
+                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link js_tab_switch" data-tab-id="change_pass">Изменить пароль</span></li>
+                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link js_tab_switch" data-tab-id="change_mail">Изменить почту</span></li>
+                    <li class="settings__nav-item"><span class="settings__nav-link dotted-link js_tab_switch" data-tab-id="social_connect">Подключить соцсети</span></li>
                 </ul>
                 <div class="settings__tabs">
-                    <div class="settings__tab"  id="contacts" style="display: none;">
+                    <div class="settings__tab"  id="contacts">
                         <div class="settings__form-rows form-rows">
                             <div class="form-rows__input-row input-row">
                                 <div class="input-row__wrap">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="settings__tab"  id="uved">
+                    <div class="settings__tab" id="notice">
                         <div class="settings__form-rows form-rows">
                             <div class="form-rows__input-row input-row">
                                 <div class="input-row__wrap">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class="settings__tab"  id="changepass">
+                    <div class="settings__tab"  id="change_pass">
                         <div class="settings__form-rows form-rows">
                             <div class="form-rows__input-row input-row">
                                 <div class="input-row__wrap">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
 
-                    <div class="settings__tab"  id="changemail">
+                    <div class="settings__tab"  id="change_mail">
                         <div class="settings__form-rows form-rows">
                             <div class="form-rows__input-row input-row">
                                 <div class="input-row__wrap">
@@ -167,6 +167,19 @@
                         <hr class="settings__dashed-line dashed-line">
                         <div class="settings__form-rows form-rows">
                             <button class="button">Сохранить</button>
+                        </div>
+                    </div>
+
+                    <div class="settings__tab"  id="social_connect">
+                        <div class="settings__form-rows form-rows">
+                            <p class="form-rows__social-info-text">Вы можете подключить профиль на сайте к вашим аккаунтам в социальных сетях и входит на сайт используя соцсети.
+                                <br><br>Вместо ввода почты и пароля, вы нажимаете на иконку подключенного профиля и вход совершается автоматически.
+                            </p>
+                            <p class="form-rows__social-info-bottom-text">Выберите профили,
+                                которые хотите подключить</p>
+                            <div class="form-rows__social-authorization-wrap">
+                                <img src="/img/soc_img.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -61,11 +61,13 @@ $( ".select" ).forEach(function(){
 
 
 /* Открытие дополнительных пунктов фильтра */
-$('.js_toggle_extra').on('click', function () {
-    $('.js_extra_options').slideToggle();
-    // $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
-    $(this).toggleClass('filter__extra-options-btn--open');
-});
+if ($('.js_toggle_extra').length > 0) {
+    $('.js_toggle_extra').on('click', function () {
+        $('.js_extra_options').slideToggle();
+        // $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
+        $(this).toggleClass('filter__extra-options-btn--open');
+    });
+}
 
 /* Функция для синхронной подсветки ссылки и изображения */
 function setBehavior(parentName, childName) {
@@ -90,32 +92,43 @@ setBehavior('.like-publications__item', '.like-publications__img');
 
 
 /* Переключение режима отображения объявлений (список/плитка) */
-var display_condition = 'list';
-$('.js_how_to_display').on('click', function () {
-    var display = $(this).children('.radio-switchers__input').attr('value');
+if ($('.js_how_to_display').length > 0) {
+    var display_condition = 'list';
+    $('.js_how_to_display').on('click', function () {
+        var display = $(this).children('.radio-switchers__input').attr('value');
 
-    if (display_condition !== display){
+        if (display_condition !== display){
 
-        display_condition = display;
+            display_condition = display;
 
-        $('.js_declarations').addClass('declarations__list--view-animation');
-        setTimeout(function () {
-            $('.declaration').toggleClass('declaration--tile', display === 'tile');
-            $('.js_declarations').toggleClass('declarations-list--tile', display === 'tile');
-        }, 500);
-        setTimeout(function () {
-            $('.js_declarations').removeClass('declarations__list--view-animation')
-        }, 550);
+            $('.js_declarations').addClass('declarations__list--view-animation');
+            setTimeout(function () {
+                $('.declaration').toggleClass('declaration--tile', display === 'tile');
+                $('.js_declarations').toggleClass('declarations-list--tile', display === 'tile');
+            }, 500);
+            setTimeout(function () {
+                $('.js_declarations').removeClass('declarations__list--view-animation')
+            }, 550);
 
-    }
-});
+        }
+    });
+}
 
+if ($('.js_tab_switch').length > 0) {
+    $('.js_tab_switch').on('click', function () {
+        $('.settings__tab').hide();
+        $('.js_tab_switch').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('#' + $(this).data('tab-id')).show();
+    });
+}
 
-
-// 1. Initialize fotorama manually.
-var $fotorama = $('.js_gallery_fotorama').fotorama();
-// 2. Get the API object.
-var fotorama = $fotorama.data('fotorama');
-fotorama.setOptions({
-    arrows: false
-});
+if ($('.js_gallery_fotorama').length > 0){
+    // 1. Initialize fotorama manually.
+    var $fotorama = $('.js_gallery_fotorama').fotorama();
+    // 2. Get the API object.
+    var fotorama = $fotorama.data('fotorama');
+    fotorama.setOptions({
+        arrows: false
+    });
+}

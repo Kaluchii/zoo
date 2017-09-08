@@ -3,7 +3,7 @@
         <nav class="header__main-nav main-nav">
             <div class="main-nav__logo-wrap">
                 <a href="/" class="main-nav__home-link">
-                    <img src="/img/logo.png" alt="ЗооМир Бесплатные объявления о животных и услугах" class="main-nav__logo-img" width="138" height="21">
+                    <img src="/img/logo.svg" alt="ЗооМир Бесплатные объявления о животных и услугах" class="main-nav__logo-img" width="138" height="21">
                 </a>
                 <p class="main-nav__text-below-logo">Бесплатные объявления о животных и услугах</p>
             </div>
