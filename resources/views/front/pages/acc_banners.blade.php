@@ -23,6 +23,76 @@
         <main class="lk">
             <h2 class="lk__title">Ваши баннеры</h2>
             <div class="lk__content-wrap banners">
+                <div class="banners__top">
+                    <p class="banners__rules"><a href="" class="banners__rules-link link">Правила размещения баннерной рекламы</a></p>
+                    <div class="banners__btn-wrap"><a href="" class="banners__add-btn button button--small">Добавить баннер</a></div>
+                </div>
+                <table class="banners__table">
+                    <thead class="banners__thead">
+                        <tr class="banners__tr">
+                            <th class="banners__th banners__item-num">Номер</th>
+                            <th class="banners__th banners__item-name">Баннер</th>
+                            <th class="banners__th banners__view-start">Начало показа</th>
+                            <th class="banners__th banners__view-end">Конец показа</th>
+                            <th class="banners__th banners__view-count banners__right-align">Показы</th>
+                            <th class="banners__th banners__clicks-count banners__right-align">Клики</th>
+                            <th class="banners__th banners__ctr banners__right-align">CTR %</th>
+                            <th class="banners__th banners__stat banners__right-align">Статистика</th>
+                        </tr>
+                    </thead>
+                    <tbody class="banners__tbody">
+                        <tr class="banners__tr">
+                            <td class="banners__td">231</td>
+                            <td class="banners__td"><a href="" class="banners__link link">Объявления • Поиск • Справа</a></td>
+                            <td class="banners__td">21.06.2017</td>
+                            <td class="banners__td">28.06.2017</td>
+                            <td class="banners__td banners__right-align">155</td>
+                            <td class="banners__td banners__right-align">15</td>
+                            <td class="banners__td banners__right-align">0,15</td>
+                            <td class="banners__td banners__right-align"><a href="" class="banners__link link">Посмотреть</a></td>
+                        </tr>
+                        <tr class="banners__tr">
+                            <td class="banners__td">245</td>
+                            <td class="banners__td"><a href="" class="banners__link link">Объявления • Поиск • В списке</a></td>
+                            <td class="banners__td">21.06.2017</td>
+                            <td class="banners__td">28.06.2017</td>
+                            <td class="banners__td banners__right-align">252</td>
+                            <td class="banners__td banners__right-align">25</td>
+                            <td class="banners__td banners__right-align">0,25</td>
+                            <td class="banners__td banners__right-align"><a href="" class="banners__link link">Посмотреть</a></td>
+                        </tr>
+                        <tr class="banners__tr">
+                            <td class="banners__td">251</td>
+                            <td class="banners__td"><a href="" class="banners__link link">Объявления • Поиск • Справа</a></td>
+                            <td class="banners__td">22.06.2017</td>
+                            <td class="banners__td">29.06.2017</td>
+                            <td class="banners__td banners__right-align">16</td>
+                            <td class="banners__td banners__right-align">2</td>
+                            <td class="banners__td banners__right-align">3,2</td>
+                            <td class="banners__td banners__right-align"><a href="" class="banners__link link">Посмотреть</a></td>
+                        </tr>
+                        <tr class="banners__tr">
+                            <td class="banners__td">356</td>
+                            <td class="banners__td"><a href="" class="banners__link link">Растяжка сверху</a></td>
+                            <td class="banners__td">22.06.2017</td>
+                            <td class="banners__td">29.06.2017</td>
+                            <td class="banners__td banners__right-align">57</td>
+                            <td class="banners__td banners__right-align">5</td>
+                            <td class="banners__td banners__right-align">0,5</td>
+                            <td class="banners__td banners__right-align"><a href="" class="banners__link link">Посмотреть</a></td>
+                        </tr>
+                        <tr class="banners__tr">
+                            <td class="banners__td">365</td>
+                            <td class="banners__td"><a href="" class="banners__link link">Объявления • Поиск • Справа</a></td>
+                            <td class="banners__td">23.06.2017</td>
+                            <td class="banners__td">30.06.2017</td>
+                            <td class="banners__td banners__right-align">10 00</td>
+                            <td class="banners__td banners__right-align">132</td>
+                            <td class="banners__td banners__right-align">1</td>
+                            <td class="banners__td banners__right-align"><a href="" class="banners__link link">Посмотреть</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
     </div>

@@ -10,16 +10,17 @@
     @yield('styles')
     @yield('meta')
 </head>
-<body>
+<body class="color-bg">
 
-    @include('front.header')
-    @yield('header')
+    <div class="main-wrapper">
+        @include('front.header')
+        @yield('header')
 
-    @yield('content')
+        @yield('content')
 
-    @include('front.footer')
-    @yield('footer')
-
+        @include('front.footer')
+        @yield('footer')
+    </div>
     @include('front.scripts')
     @include('front.metriks')
     @yield('scripts')
