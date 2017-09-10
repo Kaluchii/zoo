@@ -61,7 +61,7 @@ $( ".select" ).forEach(function(){
 
 
 /* Открытие дополнительных пунктов фильтра */
-if ($('.js_toggle_extra').length > 0) {
+if ($('.js_toggle_extra').length) {
     $('.js_toggle_extra').on('click', function () {
         $('.js_extra_options').slideToggle();
         // $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
@@ -92,7 +92,7 @@ setBehavior('.like-publications__item', '.like-publications__img');
 
 
 /* Переключение режима отображения объявлений (список/плитка) */
-if ($('.js_how_to_display').length > 0) {
+if ($('.js_how_to_display').length) {
     var display_condition = 'list';
     $('.js_how_to_display').on('click', function () {
         var display = $(this).children('.radio-switchers__input').attr('value');
@@ -114,7 +114,7 @@ if ($('.js_how_to_display').length > 0) {
     });
 }
 
-if ($('.js_tab_switch').length > 0) {
+if ($('.js_tab_switch').length){
     $('.js_tab_switch').on('click', function () {
         $('.settings__tab').hide();
         $('.js_tab_switch').removeClass('is-active');
@@ -123,7 +123,17 @@ if ($('.js_tab_switch').length > 0) {
     });
 }
 
-if ($('.js_gallery_fotorama').length > 0){
+if ($('.input--date-select').length){
+    $( ".input--date-select" ).datepicker({ minDate: 0 });
+}
+
+if ($('.file-select').length){
+    $('input[type=file]').on('change', function () {
+        $(this).siblings('.js_file_name').text($(this).val());
+    });
+}
+
+if ($('.js_gallery_fotorama').length){
     // 1. Initialize fotorama manually.
     var $fotorama = $('.js_gallery_fotorama').fotorama();
     // 2. Get the API object.

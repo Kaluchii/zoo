@@ -140,7 +140,7 @@
   &[readonly], &--readonly{
     background-color: #eeeeee;
   }
-  
+
   &::placeholder{
     color: #999999;
   }
@@ -156,6 +156,15 @@
 
   &[type='password']{
     font-size: 32px;
+  }
+
+  &--date-select{
+    .gradient-button;
+    .gradient-hover-button;
+
+    &::placeholder{
+      color: #333333;
+    }
   }
 
   & ~ .checkbox-btn{
@@ -356,6 +365,10 @@
   &__button{
     .gradient-button;
     .gradient-hover-button;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 10px;
     border-radius: @border-radius;
     width: 320px;

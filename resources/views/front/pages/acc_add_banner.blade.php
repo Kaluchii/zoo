@@ -67,15 +67,18 @@
                             <label for="" class="input-row__label"><span class="input-row__name">Изображение<i class="sym-necessary">&nbsp;*</i></span></label>
                             <label class="file-select">
                                 <input type="file" id="file1" class="file-select__field">
-                                <span class="file-select__button">Выберите файл...</span>
+                                <span class="file-select__button js_file_name">Выберите файл...</span>
                             </label>
                             <p class="input-row__clarification"><i class="suc-input"></i><span class="input-row__clarification-text">В формате JPG, GIF, PNG</span></p>
                         </div>
                     </div>
-                    {{--<div class="form-rows__input-row input-row">
+                    <div class="form-rows__input-row input-row">
                         <div class="input-row__wrap">
+                            <label for="date" class="input-row__label"><span class="input-row__name">Начало показа<i class="sym-necessary">&nbsp;*</i></span></label>
+                            <input type="text" readonly id="date" class="input input--date-select" placeholder="Выберите дату...">
+                            <p class="input-row__clarification"><i class="suc-input"></i><span class="input-row__clarification-text">Баннер будет действовать 14&nbsp;дней или по достижению 1000 показов</span></p>
                         </div>
-                    </div>--}}
+                    </div>
                     <div class="form-rows__input-row input-row">
                         <div class="input-row__wrap">
                             <label for="contact" class="input-row__label"><span class="input-row__name">Ссылка<i class="sym-necessary">&nbsp;*</i></span></label>
