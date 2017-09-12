@@ -21,7 +21,9 @@
     </div>
     <div class="content">
         <main class="lk">
-            <h2 class="lk__title">Настройки профиля</h2>
+            <div class="lk__title-wrap">
+                <h2 class="lk__title">Настройки профиля</h2>
+            </div>
             <div class="lk__content-wrap settings">
                 <ul class="settings__nav">
                     <li class="settings__nav-item"><span class="settings__nav-link dotted-link js_tab_switch is-active" data-tab-id="contacts">Контакты</span></li>

@@ -21,7 +21,9 @@
     </div>
     <div class="content">
         <main class="lk">
-            <h2 class="lk__title">Ваши баннеры</h2>
+            <div class="lk__title-wrap">
+                <h2 class="lk__title">Ваши баннеры</h2>
+            </div>
             <div class="lk__content-wrap banners">
                 <div class="banners__top">
                     <p class="banners__rules"><a href="" class="banners__rules-link link">Правила размещения баннерной рекламы</a></p>

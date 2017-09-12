@@ -21,7 +21,9 @@
     </div>
     <div class="content">
         <main class="lk">
-            <h2 class="lk__title">Добавить баннер</h2>
+            <div class="lk__title-wrap">
+                <h2 class="lk__title">Добавить баннер</h2>
+            </div>
             <div class="lk__content-wrap">
                 <div class="lk__form-rows form-rows">
                     <div class="form-rows__input-row input-row">

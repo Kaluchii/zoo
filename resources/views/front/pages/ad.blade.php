@@ -308,9 +308,9 @@
                         <label class="form__checkbox checkbox">
                             <input class="checkbox__input" type="checkbox" value="1">
                             <span class="checkbox__wrap">
-                            <span class="checkbox__button"></span>
-                            <span class="checkbox__text">Я соглашаюсь с <a href="#" class="dotted-link">правилами подачи объявлений</a></span>
-                        </span>
+                                <span class="checkbox__button"></span>
+                                <span class="checkbox__text">Я соглашаюсь с <a href="#" class="dotted-link">правилами подачи объявлений</a></span>
+                            </span>
                         </label>
                     </div>
                 </div>

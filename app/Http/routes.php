@@ -67,6 +67,10 @@ Route::get('/acc_options', function () {
     return view('front.pages.acc_options');
 });
 
+Route::get('/acc_declarations', function () {
+    return view('front.pages.acc_declarations');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 

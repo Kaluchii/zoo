@@ -1,0 +1,175 @@
+.my-declarations{
+  &__filter-wrap{}
+
+  &__filter{}
+
+  &__search{}
+
+  &__info-wrap{
+    display: flex;
+    align-items: baseline;
+    padding: 10px 10px 10px 20px;
+    background-color: #d5ebcf;
+
+    &:nth-child(n+2){
+      margin-top: 10px;
+    }
+    
+    &--renewal{
+      background-color: #f7f1d9;
+    }
+  }
+
+  &__select-count-wrap{}
+
+  &__select-count{
+    font-weight: bold;
+  }
+
+  &__info-text{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &__units-count{
+    font-size: inherit;
+    font-weight: bold;
+  }
+
+  &__button{
+    margin-left: 20px;
+
+    &--no-active{}
+  }
+
+  &__balance-link{
+    font-weight: bold;
+  }
+
+  &__info-advancement{
+    color: #333333;
+    font-weight: bold;
+  }
+
+  &__list{}
+
+  &__list-item{
+    margin-top: 10px;
+  }
+}
+
+.my-dec-item{
+  display: flex;
+  box-shadow: 0 0 0 1px #CCCCCC;
+  border-radius: 5px;
+  transition: .3s;
+
+  &:hover{
+    box-shadow: 0 0 0 2px #aea375;
+  }
+
+  &__check-col{
+    padding: 20px;
+  }
+
+  &__checkbox{}
+
+  &__info-col{}
+
+  &__row-top{
+    display: flex;
+    padding: 20px 0;
+  }
+
+  &__left-col{
+    display: flex;
+  }
+
+  &__img-wrap{
+    font-size: 0;
+  }
+
+  &__img{}
+
+  &__data-wrap{
+    margin-left: 20px;
+  }
+
+  &__title-wrap{}
+
+  &__title{
+    font-weight: bold;
+  }
+
+  &__text-row{
+    font-size: 14px;
+  }
+
+  &__category{
+    font-size: inherit;
+  }
+
+  &__active-dates{
+    margin-left: 15px;
+    font-size: inherit;
+  }
+
+  &__stat{
+    font-size: inherit;
+
+    &:nth-child(n+2){
+      margin-left: 15px;
+    }
+  }
+
+  &__stat-digit{
+    font-size: inherit;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__active-services{
+    font-size: 14px;
+  }
+
+  &__price-col{}
+
+  &__price{
+    color: #333333;
+    font-weight: bold;
+  }
+
+  &__row-actions{
+    display: flex;
+    font-size: 14px;
+  }
+
+  &__action{
+    padding: 4px;
+    color: #0066cc;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+
+    &:first-child{
+      border-left: 1px solid #CCCCCC;
+      border-top-left-radius: @border-radius;
+    }
+
+    &:last-child{
+      border-top-right-radius: @border-radius;
+    }
+
+    &:hover{
+      color: #cc0000;
+    }
+  }
+
+  &__services-col{
+    padding: 15px 0 0 20px;
+  }
+
+  &__services-list{}
+
+  &__services-item{}
+}

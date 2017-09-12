@@ -21,7 +21,9 @@
     </div>
     <div class="content">
         <main class="lk">
-            <h2 class="lk__title">Сообщения</h2>
+            <div class="lk__title-wrap">
+                <h2 class="lk__title">Сообщения</h2>
+            </div>
             <div class="lk__content-wrap dialogs">
                 <div class="dialogs__kind-btns">
                     <button class="dialogs__kind-btn is-active">Все сообщения</button>
