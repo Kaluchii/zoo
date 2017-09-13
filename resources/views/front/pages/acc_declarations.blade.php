@@ -32,9 +32,16 @@
                 </div>
             </div>
             <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
+                <p class="my-declarations__select-count-wrap"><span class="my-declarations__select-count dotted-link">Выбрано 1 объявление</span></p>
+                <p class="my-declarations__info-text">Продление объявлений на месяц:</p>
+                <button class="my-declarations__button button button--small">до 5 об. — 25 ед.</button>
+                <button class="my-declarations__button button button--small button--disable">до 10 об. — 35 ед.</button>
+                <button class="my-declarations__button button button--small button--disable">до 15 об. — 45 ед.</button>
+            </div>
+            <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
                 <p class="my-declarations__select-count-wrap"><span class="my-declarations__select-count dotted-link">Выбрано 4 объявления</span></p>
                 <p class="my-declarations__info-text">Продлить объявления на месяц за <span class="my-declarations__units-count">30 ед.</span></p>
-                <button class="my-declarations__button button button--small">Оплатить</button>
+                <button class="my-declarations__button button button--small button--disable">Оплатить</button>
                 <p class="my-declarations__info-text">Недостаточно единиц, пополните <a href="" class="my-declarations__balance-link link">баланс</a></p>
             </div>
             <div class="my-declarations__info-wrap">
@@ -85,7 +92,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Поднять наверх <span class="my-dec-item__services-price">15 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Поднять наверх <span class="my-dec-item__services-price">15 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -94,7 +101,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Выделить цветом <span class="my-dec-item__services-price">25 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Выделить цветом <span class="my-dec-item__services-price">25 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -103,7 +110,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Закрепить в ТОП <span class="my-dec-item__services-price">35 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Закрепить в ТОП <span class="my-dec-item__services-price">35 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -112,7 +119,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">В горячие <span class="my-dec-item__services-price">45 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">В горячие <span class="my-dec-item__services-price">45 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -121,7 +128,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Срочно, торг <span class="my-dec-item__services-price">55 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Срочно, торг <span class="my-dec-item__services-price">55 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -130,7 +137,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Турбо-продажа <span class="my-dec-item__services-price">65 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Турбо-продажа <span class="my-dec-item__services-price">65 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -178,7 +185,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Поднять наверх <span class="my-dec-item__services-price">15 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Поднять наверх <span class="my-dec-item__services-price">15 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -187,7 +194,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Выделить цветом <span class="my-dec-item__services-price">25 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Выделить цветом <span class="my-dec-item__services-price">25 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -196,7 +203,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Закрепить в ТОП <span class="my-dec-item__services-price">35 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Закрепить в ТОП <span class="my-dec-item__services-price">35 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -205,7 +212,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">В горячие <span class="my-dec-item__services-price">45 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">В горячие <span class="my-dec-item__services-price">45 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -214,7 +221,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Срочно, торг <span class="my-dec-item__services-price">55 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Срочно, торг <span class="my-dec-item__services-price">55 ед.</span></span>
                                     </span>
                                 </label>
                             </li>
@@ -223,7 +230,7 @@
                                     <input class="checkbox__input" name="advert1" type="checkbox" value="1">
                                     <span class="checkbox__wrap">
                                         <span class="checkbox__button"></span>
-                                        <span class="checkbox__text">Турбо-продажа <span class="my-dec-item__services-price">65 ед.</span></span>
+                                        <span class="checkbox__text checkbox__text--service">Турбо-продажа <span class="my-dec-item__services-price">65 ед.</span></span>
                                     </span>
                                 </label>
                             </li>

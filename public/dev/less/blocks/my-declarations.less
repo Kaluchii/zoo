@@ -20,7 +20,9 @@
     }
   }
 
-  &__select-count-wrap{}
+  &__select-count-wrap{
+    font-size: 14px;
+  }
 
   &__select-count{
     font-weight: bold;
@@ -39,6 +41,10 @@
 
   &__button{
     margin-left: 20px;
+
+    &+.my-declarations__button{
+      margin-left: 10px;
+    }
 
     &--no-active{}
   }
@@ -62,7 +68,7 @@
 .my-dec-item{
   display: flex;
   box-shadow: 0 0 0 1px #CCCCCC;
-  border-radius: 5px;
+  border-radius: @border-radius;
   transition: .3s;
 
   &:hover{
@@ -70,16 +76,18 @@
   }
 
   &__check-col{
-    padding: 20px;
+    padding: 17px 15px 0 20px;
   }
 
   &__checkbox{}
 
-  &__info-col{}
+  &__info-col{
+    flex-grow: 1;
+  }
 
   &__row-top{
     display: flex;
-    padding: 20px 0;
+    padding: 20px 0 15px;
   }
 
   &__left-col{
@@ -104,6 +112,7 @@
 
   &__text-row{
     font-size: 14px;
+    line-height: 1.8;
   }
 
   &__category{
@@ -133,7 +142,11 @@
     font-size: 14px;
   }
 
-  &__price-col{}
+  &__price-col{
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 20px;
+  }
 
   &__price{
     color: #333333;
@@ -146,7 +159,7 @@
   }
 
   &__action{
-    padding: 4px;
+    padding: 4px 10px;
     color: #0066cc;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
@@ -166,10 +179,25 @@
   }
 
   &__services-col{
-    padding: 15px 0 0 20px;
+    padding: 12px 15px 0 20px;
+    background: -moz-linear-gradient(to to top, #CCCCCC 4px, transparent 6px);
+    background: -ms-linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+    background: -o-linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#CCCCCC), color-stop(0.6, #CCCCCC), color-stop(0.6, transparent));
+    background: -webkit-linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+    background: linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+    background-position: 0 0;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
+
   }
 
   &__services-list{}
 
   &__services-item{}
+
+  &__services-price{
+    color: #999999;
+    font-size: inherit;
+  }
 }
