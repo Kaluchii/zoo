@@ -1,20 +1,38 @@
 .my-declarations{
-  &__filter-wrap{}
+  &__filter-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__filter{}
 
+  &__category-wrap{
+    max-width: 125px;
+  }
+
   &__search{}
+
+  &__search-input{
+    height: 30px;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 205px;
+  }
+
+  &__search-btn{}
 
   &__info-wrap{
     display: flex;
     align-items: baseline;
+    margin-top: 20px;
     padding: 10px 10px 10px 20px;
     background-color: #d5ebcf;
 
-    &:nth-child(n+2){
+    &+.my-declarations__info-wrap{
       margin-top: 10px;
     }
-    
+
     &--renewal{
       background-color: #f7f1d9;
     }
@@ -102,6 +120,7 @@
 
   &__data-wrap{
     margin-left: 20px;
+    max-width: 390px;
   }
 
   &__title-wrap{}

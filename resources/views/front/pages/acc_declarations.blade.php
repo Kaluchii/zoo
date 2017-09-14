@@ -27,8 +27,33 @@
             </div>
             <div class="lk__content-wrap my-declarations">
                 <div class="my-declarations__filter-wrap">
-                    <div class="my-declarations__filter"></div>
-                    <div class="my-declarations__search"></div>
+                    <div class="my-declarations__filter">
+                        <div class="my-declarations__category-wrap">
+                            <select name="" id="test2" class="criterion__select select">
+                                <option value="jquery">Собаки</option>
+                                <option value="jqueryui">Кошки</option>
+                                <option value="somefile">Земноводные</option>
+                            </select>
+                        </div>
+                        <div class="my-declarations__radio-buttons radio-buttons">
+                            <label class="radio-buttons__item">
+                                <input name="radio2" class="radio-buttons__input" type="radio" value="1">
+                                <span class="radio-buttons__button radio-buttons__button--filter">Активные</span>
+                            </label>
+                            <label class="radio-buttons__item">
+                                <input name="radio2" class="radio-buttons__input" type="radio" value="2">
+                                <span class="radio-buttons__button radio-buttons__button--filter">На проверке</span>
+                            </label>
+                            <label class="radio-buttons__item">
+                                <input name="radio2" class="radio-buttons__input" type="radio" value="3">
+                                <span class="radio-buttons__button radio-buttons__button--filter">Не активные</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="my-declarations__search">
+                        <input type="text" class="my-declarations__search-input input" placeholder="Поиск по объявлениям">
+                        <button class="my-declarations__search-btn button button--small">Найти</button>
+                    </div>
                 </div>
             </div>
             <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
@@ -240,4 +265,7 @@
             </ul>
         </main>
     </div>
+
+
+    <div class="hide"></div>
 @endsection
