@@ -29,7 +29,7 @@
                 <div class="my-declarations__filter-wrap">
                     <div class="my-declarations__filter">
                         <div class="my-declarations__category-wrap">
-                            <select name="" id="test2" class="criterion__select select">
+                            <select name="" id="test3" class="select">
                                 <option value="jquery">Собаки</option>
                                 <option value="jqueryui">Кошки</option>
                                 <option value="somefile">Земноводные</option>
@@ -38,15 +38,15 @@
                         <div class="my-declarations__radio-buttons radio-buttons">
                             <label class="radio-buttons__item">
                                 <input name="radio2" class="radio-buttons__input" type="radio" value="1">
-                                <span class="radio-buttons__button radio-buttons__button--filter">Активные</span>
+                                <span class="radio-buttons__button"><span class="radio-buttons__item-text">Активные</span><span class="radio-buttons__item-digit">1</span></span>
                             </label>
                             <label class="radio-buttons__item">
                                 <input name="radio2" class="radio-buttons__input" type="radio" value="2">
-                                <span class="radio-buttons__button radio-buttons__button--filter">На проверке</span>
+                                <span class="radio-buttons__button"><span class="radio-buttons__item-text">На проверке</span><span class="radio-buttons__item-digit">3</span></span>
                             </label>
                             <label class="radio-buttons__item">
                                 <input name="radio2" class="radio-buttons__input" type="radio" value="3">
-                                <span class="radio-buttons__button radio-buttons__button--filter">Не активные</span>
+                                <span class="radio-buttons__button"><span class="radio-buttons__item-text">Неактивные</span><span class="radio-buttons__item-digit">12</span></span>
                             </label>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             <a href="" class="my-dec-item__action">Посмотреть</a>
                             <a href="" class="my-dec-item__action">Редактировать</a>
                             <a href="" class="my-dec-item__action">Деактивировать</a>
-                            <a href="" class="my-dec-item__action">Автоподнятие</a>
+                            <a href="" class="my-dec-item__action js_open_up">Автоподнятие</a>
                             <a href="" class="my-dec-item__action">Поделиться</a>
                         </div>
                     </div>
@@ -167,6 +167,73 @@
                                 </label>
                             </li>
                         </ul>
+                    </div>
+                    <div class="my-dec-item__auto-up auto-up">
+                        <div class="auto-up__top-row">
+                            <label class="auto-up__checkbox checkbox">
+                                <input class="checkbox__input" type="checkbox" value="1">
+                                <span class="checkbox__wrap">
+                                    <span class="checkbox__button"></span>
+                                    <span class="checkbox__text checkbox__text--up">Поднимать автоматически</span>
+                                </span>
+                            </label>
+                            <p class="auto-up__text">При активации данной услуги, единицы с вашего счета списываются при каждом автоподнятии.</p>
+                        </div>
+                        <div class="auto-up__bottom-row">
+                            <select name="" id="test4" class="auto-up__select select">
+                                <option value="">Раз в день</option>
+                                <option value="">Раз в неделю</option>
+                                <option value="">Раз в месяц</option>
+                            </select>
+                            <div class="auto-up__time-wrap">
+                                <span class="auto-up__time-text">Время поднятия</span>
+                                <div class="auto-up__time">
+                                    <select name="" id="test5" class="auto-up__select-time select">
+                                        <option value="">00</option>
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                        <option value="">05</option>
+                                        <option value="">06</option>
+                                        <option value="">07</option>
+                                        <option value="">08</option>
+                                        <option value="">09</option>
+                                        <option value="">10</option>
+                                        <option value="">11</option>
+                                        <option value="">12</option>
+                                        <option value="">13</option>
+                                        <option value="">14</option>
+                                        <option value="">15</option>
+                                        <option value="">16</option>
+                                        <option value="">17</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">21</option>
+                                        <option value="">22</option>
+                                        <option value="">23</option>
+                                    </select>
+                                    <span class="auto-up__time-delimiter">:</span>
+                                    <select name="" id="test6" class="auto-up__select-time select">
+                                        <option value="">00</option>
+                                        <option value="">05</option>
+                                        <option value="">10</option>
+                                        <option value="">15</option>
+                                        <option value="">20</option>
+                                        <option value="">25</option>
+                                        <option value="">30</option>
+                                        <option value="">35</option>
+                                        <option value="">40</option>
+                                        <option value="">45</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="auto-up__button button button--small">Подтвердить</button>
+                            <button class="auto-up__button button button--cancel">Отмена</button>
+                        </div>
                     </div>
                 </li>
                 <li class="my-declarations__list-item my-dec-item">
@@ -199,7 +266,7 @@
                             <a href="" class="my-dec-item__action">Посмотреть</a>
                             <a href="" class="my-dec-item__action">Редактировать</a>
                             <a href="" class="my-dec-item__action">Деактивировать</a>
-                            <a href="" class="my-dec-item__action">Автоподнятие</a>
+                            <a href="" class="my-dec-item__action js_open_up">Автоподнятие</a>
                             <a href="" class="my-dec-item__action">Поделиться</a>
                         </div>
                     </div>
@@ -260,6 +327,73 @@
                                 </label>
                             </li>
                         </ul>
+                    </div>
+                    <div class="my-dec-item__auto-up auto-up">
+                        <div class="auto-up__top-row">
+                            <label class="auto-up__checkbox checkbox">
+                                <input class="checkbox__input" type="checkbox" value="1">
+                                <span class="checkbox__wrap">
+                                    <span class="checkbox__button"></span>
+                                    <span class="checkbox__text checkbox__text--up">Поднимать автоматически</span>
+                                </span>
+                            </label>
+                            <p class="auto-up__text">При активации данной услуги, единицы с вашего счета списываются при каждом автоподнятии.</p>
+                        </div>
+                        <div class="auto-up__bottom-row">
+                            <select name="" id="test9" class="auto-up__select select">
+                                <option value="">Раз в день</option>
+                                <option value="">Раз в неделю</option>
+                                <option value="">Раз в месяц</option>
+                            </select>
+                            <div class="auto-up__time-wrap">
+                                <span class="auto-up__time-text">Время поднятия</span>
+                                <div class="auto-up__time">
+                                    <select name="" id="test7" class="auto-up__select-time select">
+                                        <option value="">00</option>
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                        <option value="">05</option>
+                                        <option value="">06</option>
+                                        <option value="">07</option>
+                                        <option value="">08</option>
+                                        <option value="">09</option>
+                                        <option value="">10</option>
+                                        <option value="">11</option>
+                                        <option value="">12</option>
+                                        <option value="">13</option>
+                                        <option value="">14</option>
+                                        <option value="">15</option>
+                                        <option value="">16</option>
+                                        <option value="">17</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">21</option>
+                                        <option value="">22</option>
+                                        <option value="">23</option>
+                                    </select>
+                                    <span class="auto-up__time-delimiter">:</span>
+                                    <select name="" id="test8" class="auto-up__select-time select">
+                                        <option value="">00</option>
+                                        <option value="">05</option>
+                                        <option value="">10</option>
+                                        <option value="">15</option>
+                                        <option value="">20</option>
+                                        <option value="">25</option>
+                                        <option value="">30</option>
+                                        <option value="">35</option>
+                                        <option value="">40</option>
+                                        <option value="">45</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="auto-up__button button button--small">Подтвердить</button>
+                            <button class="auto-up__button button button--cancel">Отмена</button>
+                        </div>
                     </div>
                 </li>
             </ul>

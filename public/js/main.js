@@ -26,6 +26,50 @@ $( "#test2" ).selectmenu({
     }
 }).selectmenu( "menuWidget" ).addClass( "select-list select-list--filter" );
 
+$( "#test3" ).selectmenu({
+    width: 135,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+$( "#test4" ).selectmenu({
+    width: 135,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+$( "#test9" ).selectmenu({
+    width: 135,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+$( "#test5" ).selectmenu({
+    width: 55,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+$( "#test6" ).selectmenu({
+    width: 55,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+$( "#test7" ).selectmenu({
+    width: 55,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+$( "#test8" ).selectmenu({
+    width: 55,
+    classes: {
+        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+    }
+}).selectmenu( "menuWidget" ).addClass( "select-list" );
+
 $( "#vid" ).selectmenu({
     width: 320,
     classes: {
@@ -92,9 +136,9 @@ setBehavior('.like-publications__item', '.like-publications__img');
 
 
 /* Переключение режима отображения объявлений (список/плитка) */
-if ($('.js_how_to_display').length) {
+if ((display_how = $('.js_how_to_display')).length) {
     var display_condition = 'list';
-    $('.js_how_to_display').on('click', function () {
+    $(display_how).on('click', function () {
         var display = $(this).children('.radio-switchers__input').attr('value');
 
         if (display_condition !== display){
@@ -114,17 +158,27 @@ if ($('.js_how_to_display').length) {
     });
 }
 
-if ($('.js_tab_switch').length){
-    $('.js_tab_switch').on('click', function () {
+if ((tab_switch = $('.js_tab_switch')).length){
+    $(tab_switch).on('click', function () {
         $('.settings__tab').hide();
-        $('.js_tab_switch').removeClass('is-active');
+        $(tab_switch).removeClass('is-active');
         $(this).addClass('is-active');
         $('#' + $(this).data('tab-id')).show();
     });
 }
 
-if ($('.input--date-select').length){
-    $( ".input--date-select" ).datepicker({ minDate: 0 });
+if ((date_select = $('.input--date-select')).length){
+    $(date_select).datepicker({ minDate: 0 });
+}
+
+if ((open_up = $('.js_open_up')).length){
+    $(open_up).on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('is-active');
+        $(this).closest('.my-dec-item__row-actions').toggleClass('overlay');
+        var parrent = $(this).closest('.my-dec-item');
+        $(parrent).find('.auto-up').fadeToggle('is-open');
+    })
 }
 
 if ($('.file-select').length){
@@ -133,9 +187,9 @@ if ($('.file-select').length){
     });
 }
 
-if ($('.js_gallery_fotorama').length){
+if ((ftrama = $('.js_gallery_fotorama')).length){
     // 1. Initialize fotorama manually.
-    var $fotorama = $('.js_gallery_fotorama').fotorama();
+    var $fotorama = $(ftrama).fotorama();
     // 2. Get the API object.
     var fotorama = $fotorama.data('fotorama');
     fotorama.setOptions({

@@ -339,6 +339,10 @@
     display: inline-block;
     margin-left: 10px;
 
+    &--up{
+      font-size: 14px;
+    }
+
     &--service{
       font-size: 14px;
       color: #666666;
@@ -388,5 +392,55 @@
     border-radius: @border-radius;
     width: 320px;
     max-width: 100%;
+  }
+}
+
+.radio-buttons{
+  font-size:0;
+
+  &__item{
+    display: inline-block;
+
+    &+.radio-buttons__item{
+      margin-left: 10px;
+    }
+  }
+
+  &__input{
+    display: none;
+
+    &:checked{
+      & ~ .radio-buttons__button{
+        border: 1px solid #aea375;
+        background: #cccc99;
+        box-shadow: none;
+
+        .radio-buttons__item-digit{
+          color: #333333;
+        }
+      }
+    }
+  }
+
+  &__button{
+    .gradient-button;
+    .gradient-hover-button;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    width: 130px;
+    padding: 0 10px;
+    border-radius: @border-radius;
+  }
+
+  &__item-text{
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &__item-digit{
+    font-size: 14px;
+    color: #999999;
   }
 }
