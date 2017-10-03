@@ -156,20 +156,23 @@
     font-size: 14px;
     height: 28px;
     text-align: center;
+    white-space: nowrap;
+    flex-shrink: 1;
 
     &:nth-child(n+2){
       border-left: 1px solid #CCCCCC;
+      flex-shrink: 0;
     }
 
     &--name{
       //width: 140px;
+      min-width: 140px;
       padding-left: 10px;
       padding-right: 10px;
 
       .authorized-list__link{
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
         color: #0066cc;
         font-weight: bold;
       }
