@@ -1,5 +1,6 @@
 .hot-carousel{
   margin-top: 35px;
+  overflow: hidden;
 
   &__top{
     display: flex;
@@ -65,25 +66,36 @@
 
   &__list{
     display: flex;
+    flex-direction: column;
+    height: 320px;
     flex-wrap: wrap;
     margin-top: 20px;
+    position: relative;
+    left: 0;
+    max-width: 950px;
+    //transition: 0.8s;
   }
 
   &__item{
     width: 150px;
     height: 100px;
-    margin-left: 10px;
+    margin: 10px 0 0 10px;
 
-    &:nth-child(n+7){
-      margin-top: 10px;
+    &:nth-child(3n+1){
+      margin-top: 0;
     }
 
-    &:nth-child(1), &:nth-child(7), &:nth-child(12){
+    &:nth-child(1), &:nth-child(2), &:nth-child(3){
       margin-left: 0;
     }
 
     &--rec{
-      width: 310px;
+      position: relative;
+
+      & > * {
+        display: block;
+        width: 310px;
+      }
     }
   }
 
