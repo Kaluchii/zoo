@@ -125,11 +125,21 @@
                             <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
                             <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
                             <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
-                        </li>
-                        <li class="comments__item comment comment--author">
-                            <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
-                            <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
-                            <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                            <div class="comments__item comment comment--author comment--answer">
+                                <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                                <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                                <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                            </div>
+                            <div class="comments__item comment comment--author comment--answer">
+                                <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                                <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                                <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                            </div>
+                            <div class="comments__item comment comment--answer">
+                                <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
+                                <p class="comment__text">То есть формат свободного заголовка мы убираем, он формируется из показателей? Уточню с технологами возможность.</p>
+                                <div class="comment__action-wrap"><span class="comment__answer"><span class="comment__action light-grey-link">Ответить</span></span><span class="comment__complain"><span class="comment__action light-grey-link">Пожаловаться</span></span></div>
+                            </div>
                         </li>
                         <li class="comments__item comment">
                             <div class="comment__top-wrap"><span class="comment__name">Евгений</span><span class="comment__date">27.06.17, 16:00</span></div>
@@ -160,8 +170,52 @@
                     <div class="contacts-block__action-list">
                         <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Написать автору</a></p>
                         <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Все объявления автора</a></p>
-                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Поделиться с другом</a></p>
-                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Пожаловаться</a></p>
+                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Поделиться по почте</a></p>
+                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Пожаловаться</a>
+
+                            <div id="j-v-claim-desktop-popup ВЫНЕСТИ ВСЕ БЛОКИ ПОПАПОВ В САМЫЙ НИЗ" class="v-complaint-popup dropdown-block dropdown-block-right box-shadow abs hide" style="display: block;">
+                                <div class="v-complaint-popup__form юююююююююююююююююююююю">
+                                    <p class="">Укажите причины, по которым вы считаете это объявление некорректным:</p>
+                                    <form action="">
+                                        <label class="юююююююююююююю checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="1">
+                                            <span class="checkbox__wrap">
+                                                <span class="checkbox__button"></span>
+                                                <span class="checkbox__text"> Неверная рубрика </span>
+                                            </span>
+                                        </label>
+                                        <label class="юююююююююююююю checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="2">
+                                            <span class="checkbox__wrap">
+                                                <span class="checkbox__button"></span>
+                                                <span class="checkbox__text"> Запрещенный товар/услуга </span>
+                                            </span>
+                                        </label>
+                                        <label class="юююююююююююююю checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="4">
+                                            <span class="checkbox__wrap">
+                                                <span class="checkbox__button"></span>
+                                                <span class="checkbox__text"> Объявление не актуально </span>
+                                            </span>
+                                        </label>
+                                        <label class="юююююююююююююю checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="8">
+                                            <span class="checkbox__wrap">
+                                                <span class="checkbox__button"></span>
+                                                <span class="checkbox__text"> Неверный адрес </span>
+                                            </span>
+                                        </label>
+                                        <div class="v-complaint-popup__form_other hide j-claim-other">
+                                            Оставьте ваш комментарий<br>
+                                            <textarea name="comment" rows="3" autocapitalize="off"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-danger j-submit">Отправить жалобу</button>
+                                        <input type="hidden" name="hash" value="c699182383c2a6cda2"><input type="hidden" name="uufp" value="86cc187619bf9fb219f15dde32485bcc">
+                                    </form>
+                                </div>
+                            </div>
+
+                        </p>
                     </div>
                 </div>
                 <div class="aside__rec-block rec-block">

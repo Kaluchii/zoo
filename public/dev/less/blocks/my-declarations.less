@@ -45,6 +45,7 @@
   }
 
   &__select-count-wrap{
+    position: relative;
     font-size: 14px;
   }
 
@@ -87,6 +88,30 @@
   &__list-item{
     margin-top: 10px;
   }
+
+  &__count-list{
+    display: none;
+    position: absolute;
+    top: 18px;
+    color: #666666;
+    background-color: #ffffff;
+    border: 2px solid #cc9933;
+    border-radius: 3px;
+    z-index: 1;
+  }
+
+  &__count-list-item{
+    padding: 8px 20px 8px 10px;
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #fedf76;
+      color: #333333;
+    }
+  }
 }
 
 .my-dec-item{
@@ -107,11 +132,14 @@
   &__checkbox{}
 
   &__info-col{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
   }
 
   &__row-top{
     display: flex;
+    flex-grow: 1;
     padding: 20px 0 15px;
   }
 
@@ -303,5 +331,65 @@
     &+.auto-up__button{
       margin-left: 10px;
     }
+  }
+}
+
+.payment-popup{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  &.is-show{
+    display: flex;
+  }
+
+  &__bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__wrapper{
+    position: relative;
+    padding: 25px 35px 25px;
+    max-width: 400px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #e9edf1;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  &__title{
+    color: #333333;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__sum{
+    margin-top: 15px;
+    line-height: 1.2;
+  }
+
+  &__btn{
+    margin-top: 20px;
+  }
+
+  &__cancel-wrap{
+    margin-top: 15px;
+  }
+
+  &__cancel{
+    font-size: 14px;
   }
 }

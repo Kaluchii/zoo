@@ -26,12 +26,17 @@
   }
 
   &__notice{
+    display: none;
     margin: 30px auto 0;
     padding: 20px 15px;
     max-width: 770px;
     background-color: #fedf75;
     text-align: center;
     color: #333333;
+
+    &--show{
+      display: block;
+    }
   }
 
   &__inputs-with-error{
@@ -53,7 +58,6 @@
 
   &__social-authorization-wrap{
     margin-top: 10px;
-    text-align: center;
   }
 }
 

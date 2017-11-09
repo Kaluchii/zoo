@@ -63,8 +63,12 @@
             </div>
             <div class="add-advert__social-authorization-row">
                 <p class="add-advert__social-authorization-title">Регистрация через социальные сети</p>
-                <div class="add-advert__social-authorization-wrap">
-                    <img src="/img/soc_img.png" alt="">
+                <div class="add-advert__social-authorization-wrap social-btns social-btns--center">
+                    <a href="" class="social-btns__item social-btns__item--vk"></a>
+                    <a href="" class="social-btns__item social-btns__item--od"></a>
+                    <a href="" class="social-btns__item social-btns__item--fb"></a>
+                    <a href="" class="social-btns__item social-btns__item--mm"></a>
+                    <a href="" class="social-btns__item social-btns__item--gg"></a>
                 </div>
             </div>
         </main>

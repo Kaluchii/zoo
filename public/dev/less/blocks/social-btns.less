@@ -1,0 +1,37 @@
+.social-btns{
+  display: flex;
+
+  &--center{
+    justify-content: center;
+  }
+
+  &__item{
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/soc.png");
+
+    &:nth-child(n+2){
+      margin-left: 5px;
+    }
+
+    &--vk{
+      background-position: 0 0;
+    }
+
+    &--od{
+      background-position: 160px 0;
+    }
+
+    &--fb{
+      background-position: 120px 0;
+    }
+
+    &--mm{
+      background-position: 80px 0;
+    }
+
+    &--gg{
+      background-position: 40px 0;
+    }
+  }
+}

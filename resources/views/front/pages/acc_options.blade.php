@@ -179,8 +179,12 @@
                             </p>
                             <p class="form-rows__social-info-bottom-text">Выберите профили,
                                 которые хотите подключить</p>
-                            <div class="form-rows__social-authorization-wrap">
-                                <img src="/img/soc_img.png" alt="">
+                            <div class="form-rows__social-authorization-wrap social-btns">
+                                <a href="" class="social-btns__item social-btns__item--vk"></a>
+                                <a href="" class="social-btns__item social-btns__item--od"></a>
+                                <a href="" class="social-btns__item social-btns__item--fb"></a>
+                                <a href="" class="social-btns__item social-btns__item--mm"></a>
+                                <a href="" class="social-btns__item social-btns__item--gg"></a>
                             </div>
                         </div>
                     </div>

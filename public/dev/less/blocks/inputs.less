@@ -3,6 +3,10 @@
   display: flex;
   justify-content: flex-start;
 
+  &--map{
+    width: 320px;
+  }
+
   &--btn-right-flag{
     justify-content: flex-end;
     max-width: 320px;
@@ -17,6 +21,10 @@
       align-items: center;
       width: 100%;
       max-width: 320px;
+    }
+
+    &--map{
+      width: 320px;
     }
   }
 
@@ -34,6 +42,10 @@
         border: 2px solid #cc0100;
         box-shadow: 0 0 10px 1px rgba(204, 1, 0, 0.5);
       }
+    }
+
+    .select-button, .radio-switchers__button, .textarea{
+      border-color: #cc0100;
     }
   }
 
@@ -155,7 +167,13 @@
   }
 
   &[type='password']{
-    font-size: 32px;
+    &:valid{
+      font-size: 32px;
+    }
+
+    &:invalid{
+      font-size: 16px;
+    }
   }
 
   &--date-select{

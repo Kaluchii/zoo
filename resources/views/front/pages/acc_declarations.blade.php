@@ -57,22 +57,23 @@
                 </div>
             </div>
             <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
-                <p class="my-declarations__select-count-wrap"><span class="my-declarations__select-count dotted-link">Выбрано 1 объявление</span></p>
+                <div class="my-declarations__select-count-wrap">
+                    <span class="my-declarations__select-count dotted-link">Выбрано 1 объявление</span>
+                    <ul class="my-declarations__count-list">
+                        <li class="my-declarations__count-list-item">выбрать все на странице</li>
+                        <li class="my-declarations__count-list-item">выбрать все</li>
+                        <li class="my-declarations__count-list-item">отменить выбор</li>
+                    </ul>
+                </div>
                 <p class="my-declarations__info-text">Продление объявлений на месяц:</p>
                 <button class="my-declarations__button button button--small">до 5 об. — 25 ед.</button>
                 <button class="my-declarations__button button button--small button--disable">до 10 об. — 35 ед.</button>
                 <button class="my-declarations__button button button--small button--disable">до 15 об. — 45 ед.</button>
             </div>
-            <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
-                <p class="my-declarations__select-count-wrap"><span class="my-declarations__select-count dotted-link">Выбрано 4 объявления</span></p>
-                <p class="my-declarations__info-text">Продлить объявления на месяц за <span class="my-declarations__units-count">30 ед.</span></p>
-                <button class="my-declarations__button button button--small button--disable">Оплатить</button>
-                <p class="my-declarations__info-text">Недостаточно единиц, пополните <a href="" class="my-declarations__balance-link link">баланс</a></p>
-            </div>
             <div class="my-declarations__info-wrap">
                 <p class="my-declarations__info-advancement">Продвижение объявлений</p>
-                <p class="my-declarations__info-text">Продлить объявления на месяц за <span class="my-declarations__units-count">30 ед.</span></p>
-                <button class="my-declarations__button my-declarations__button--no-active button  button--small">Оплатить</button>
+                <p class="my-declarations__info-text">Выбрано 2 услуги на <span class="my-declarations__units-count">70 ед.</span></p>
+                <button class="my-declarations__button button button--small button--disable" disabled>Оплатить</button>
                 <p class="my-declarations__info-text">Недостаточно единиц, пополните <a href="" class="my-declarations__balance-link link">баланс</a></p>
             </div>
             <ul class="my-declarations__list">
@@ -398,6 +399,17 @@
                 </li>
             </ul>
         </main>
+    </div>
+
+
+    <div class="payment-popup">
+        <div class="payment-popup__bg"></div>
+        <div class="payment-popup__wrapper">
+            <p class="payment-popup__title">Оплата услуг</p>
+            <p class="payment-popup__sum">С вашего баланса будет списано 70 ед.</p>
+            <button class="payment-popup__btn button button--small">Подтвердить</button>
+            <p class="payment-popup__cancel-wrap"><a href="#" class="payment-popup__cancel grey-link">Отменить</a></p>
+        </div>
     </div>
 
 

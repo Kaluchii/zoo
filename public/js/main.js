@@ -201,7 +201,7 @@ $(document).ready(function () {
             var cWidth = carousel.width();
 
             $(window).on('resize', function () {
-                cWidth = carousel.width();
+                cWidth = carousel.width(); // Ширина видимой части карусели
             });
 
             var canAnimate = true;
@@ -209,15 +209,17 @@ $(document).ready(function () {
             $('.js_carousel_right').on('click', function () {
                 if (canAnimate) {
                     canAnimate = false;
-                    var viewWidth = cWidth - ((cWidth + 10) % 160) + 10;
-                    var listWidth = Math.ceil(carousel.find('.hot-carousel__item').length / 3) * 160 - 10;
-                    var rightWidth = listWidth - (Math.abs(parseInt(carousel.css('left'))) + viewWidth);
+                    var invisibleWidth = (cWidth + 10) % 160; // Сколько прокрутить для полного отображения обрезанного элемента
+                    var viewWidth = cWidth - invisibleWidth; // Ширина элементов помещающихся в карусель полностью
+                    var listWidth = Math.ceil(carousel.find('.hot-carousel__item').length / 3) * 160 - 10;  // Ширина всего списка
+                    var left = Math.abs(parseInt(carousel.css('left'))); // Отступ слева
+                    var rightWidth = listWidth - (left + cWidth);
                     if (rightWidth > viewWidth) {
-                        carousel.animate({left: "-=" + viewWidth}, 800, function () {
+                        carousel.animate({left: "-=" + (viewWidth + 10)}, 800, function () {
                             canAnimate = true
                         })
                     } else {
-                        carousel.animate({left: "-=" + (rightWidth+10)}, 800, function () {
+                        carousel.animate({left: "-=" + rightWidth}, 800, function () {
                             canAnimate = true
                         })
                     }
@@ -240,5 +242,26 @@ $(document).ready(function () {
                 }
             });
         }
+
+
+        $('.popup-with-form').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#name',
+
+            // When elemened is focused, some mobile browsers in some cases zoom in
+            // It looks not nice, so we disable it:
+            callbacks: {
+                beforeOpen: function() {
+                    if($(window).width() < 700) {
+                        this.st.focus = false;
+                    } else {
+                        this.st.focus = '#name';
+                    }
+                }
+            }
+        });
+
+
     });
 });
