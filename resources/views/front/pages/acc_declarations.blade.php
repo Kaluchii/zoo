@@ -5,7 +5,7 @@
             <h1 class="lk-header__title">Кабинет пользователя <span class="lk-header__user-number">№123456789</span></h1>
             <div class="lk-header__balance-wrap">
                 <p class="lk-header__balance-text">Ваш баланс <span class="lk-header__balance">19 540 ед.</span></p>
-                <button class="lk-header__balance-up-btn button button--small">Пополнить</button>
+                <button class="lk-header__balance-up-btn button button--small js_pay_open">Пополнить</button>
             </div>
         </div>
         <div class="lk-header__nav">
@@ -403,12 +403,12 @@
 
 
     <div class="payment-popup">
-        <div class="payment-popup__bg"></div>
+        <div class="payment-popup__bg js_pay_close"></div>
         <div class="payment-popup__wrapper">
             <p class="payment-popup__title">Оплата услуг</p>
             <p class="payment-popup__sum">С вашего баланса будет списано 70 ед.</p>
             <button class="payment-popup__btn button button--small">Подтвердить</button>
-            <p class="payment-popup__cancel-wrap"><a href="#" class="payment-popup__cancel grey-link">Отменить</a></p>
+            <p class="payment-popup__cancel-wrap"><span class="payment-popup__cancel grey-link js_pay_close">Отменить</span></p>
         </div>
     </div>
 

@@ -243,6 +243,15 @@ $(document).ready(function () {
             });
         }
 
+        $('.js_pay_open').on('click', function () {
+            $('.payment-popup').addClass('is-open').animate({opacity: 1}, 300)
+        });
+        $('.js_pay_close').on('click', function () {
+            $('.payment-popup').animate({opacity: 0}, 300, function () {
+                $(this).removeClass('is-open')
+            })
+        });
+
 
         $('.popup-with-form').magnificPopup({
             type: 'inline',
