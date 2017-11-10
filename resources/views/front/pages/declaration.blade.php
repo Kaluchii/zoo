@@ -168,54 +168,10 @@
                     </div>
                     <p class="contacts-block__warning-info">Никогда не отправляйте предоплату при покупке. Так действуют мошенники. <span class="link">Подробнее...</span></p>
                     <div class="contacts-block__action-list">
-                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Написать автору</a></p>
+                        <p class="contacts-block__action"><a href="#js_author_send_popup" class="js_author_send contacts-block__action-link light-grey-link">Написать автору</a></p>
                         <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Все объявления автора</a></p>
-                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Поделиться по почте</a></p>
-                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Пожаловаться</a>
-
-                            <div id="j-v-claim-desktop-popup ВЫНЕСТИ ВСЕ БЛОКИ ПОПАПОВ В САМЫЙ НИЗ" class="v-complaint-popup dropdown-block dropdown-block-right box-shadow abs hide" style="display: block;">
-                                <div class="v-complaint-popup__form юююююююююююююююююююююю">
-                                    <p class="">Укажите причины, по которым вы считаете это объявление некорректным:</p>
-                                    <form action="">
-                                        <label class="юююююююююююююю checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="1">
-                                            <span class="checkbox__wrap">
-                                                <span class="checkbox__button"></span>
-                                                <span class="checkbox__text"> Неверная рубрика </span>
-                                            </span>
-                                        </label>
-                                        <label class="юююююююююююююю checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="2">
-                                            <span class="checkbox__wrap">
-                                                <span class="checkbox__button"></span>
-                                                <span class="checkbox__text"> Запрещенный товар/услуга </span>
-                                            </span>
-                                        </label>
-                                        <label class="юююююююююююююю checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="4">
-                                            <span class="checkbox__wrap">
-                                                <span class="checkbox__button"></span>
-                                                <span class="checkbox__text"> Объявление не актуально </span>
-                                            </span>
-                                        </label>
-                                        <label class="юююююююююююююю checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="reason[]" value="8">
-                                            <span class="checkbox__wrap">
-                                                <span class="checkbox__button"></span>
-                                                <span class="checkbox__text"> Неверный адрес </span>
-                                            </span>
-                                        </label>
-                                        <div class="v-complaint-popup__form_other hide j-claim-other">
-                                            Оставьте ваш комментарий<br>
-                                            <textarea name="comment" rows="3" autocapitalize="off"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-danger j-submit">Отправить жалобу</button>
-                                        <input type="hidden" name="hash" value="c699182383c2a6cda2"><input type="hidden" name="uufp" value="86cc187619bf9fb219f15dde32485bcc">
-                                    </form>
-                                </div>
-                            </div>
-
-                        </p>
+                        <p class="contacts-block__action"><a href="#js_share_popup" class="js_share contacts-block__action-link light-grey-link">Поделиться по почте</a></p>
+                        <p class="contacts-block__action"><a href="#js_claim_popup" class="js_claim contacts-block__action-link light-grey-link">Пожаловаться</a></p>
                     </div>
                 </div>
                 <div class="aside__rec-block rec-block">
@@ -266,5 +222,125 @@
                 </div>
             </aside>
         </main>
+    </div>
+
+    <div id="js_author_send_popup" class="popup popup--send-popup mfp-hide zoom-anim-dialog">
+        <p class="popup__title">Свяжитесь с автором объявления</p>
+        <form action="">
+            <div class="popup__form-rows form-rows form-rows--popup">
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <input type="text" name="email" class="input" placeholder="Ваш email-адрес">
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <textarea class="textarea" name="comment" autocapitalize="off" placeholder="Текст вашего сообщения"></textarea>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <button type="submit" class="button j-submit">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="js_share_popup" class="popup mfp-hide zoom-anim-dialog">
+        <form action="">
+            <div class="popup__form-rows form-rows">
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap input-row__wrap--vertical">
+                        <label for="email" class="input-row__label-above">E-mail получателя</label>
+                        <input type="text" name="email" id="email" class="input" placeholder="">
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <button type="submit" class="button j-submit">Поделиться</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="js_claim_popup" class="popup mfp-hide zoom-anim-dialog">
+        <p class="popup__title">Укажите причины, по которым вы считаете это объявление некорректным:</p>
+        <form action="">
+            <div class="popup__form-rows form-rows">
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" name="reason[]" value="1">
+                            <span class="checkbox__wrap">
+                                <span class="checkbox__button"></span>
+                                <span class="checkbox__text"> Неверная рубрика </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" name="reason[]" value="2">
+                            <span class="checkbox__wrap">
+                                <span class="checkbox__button"></span>
+                                <span class="checkbox__text"> Запрещенный товар/услуга </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" name="reason[]" value="4">
+                            <span class="checkbox__wrap">
+                                <span class="checkbox__button"></span>
+                                <span class="checkbox__text"> Объявление не актуально </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" name="reason[]" value="8">
+                            <span class="checkbox__wrap">
+                                <span class="checkbox__button"></span>
+                                <span class="checkbox__text"> Неверный адрес </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" name="reason[]" value="1024">
+                            <span class="checkbox__wrap">
+                                <span class="checkbox__button"></span>
+                                <span class="checkbox__text"> Другое </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row input-row--popup-comment">
+                    <div class="input-row__wrap input-row__wrap--vertical">
+                        <label for="claim_comment" class="input-row__label-above">Оставьте ваш комментарий</label>
+                        <textarea class="textarea textarea--popup" name="comment" id="claim_comment" autocapitalize="off"></textarea>
+                    </div>
+                </div>
+                <div class="form-rows__input-row input-row">
+                    <div class="input-row__wrap">
+                        <button type="submit" class="button j-submit">Отправить жалобу</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 @endsection

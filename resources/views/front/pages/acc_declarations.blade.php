@@ -401,17 +401,12 @@
         </main>
     </div>
 
-
-    <div class="payment-popup">
-        <div class="payment-popup__bg js_pay_close"></div>
-        <div class="payment-popup__wrapper">
-            <p class="payment-popup__title">Оплата услуг</p>
-            <p class="payment-popup__sum">С вашего баланса будет списано 70 ед.</p>
-            <button class="payment-popup__btn button button--small">Подтвердить</button>
-            <p class="payment-popup__cancel-wrap"><span class="payment-popup__cancel grey-link js_pay_close">Отменить</span></p>
-        </div>
+    <div id="js_payment" class="popup popup--payment mfp-hide zoom-anim-dialog">
+        <form action="">
+            <p class="popup__title popup__title--payment">Оплата услуг</p>
+            <p class="popup__sum">С вашего баланса будет списано 70 ед.</p>
+            <button class="popup__btn button button--small">Подтвердить</button>
+            <p class="popup__cancel-wrap"><span class="popup__cancel grey-link">Отменить</span></p>
+        </form>
     </div>
-
-
-    <div class="hide"></div>
 @endsection

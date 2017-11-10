@@ -242,7 +242,7 @@ $(document).ready(function () {
                 }
             });
         }
-
+/*
         $('.js_pay_open').on('click', function () {
             $('.payment-popup').addClass('is-open').animate({opacity: 1}, 300)
         });
@@ -250,16 +250,40 @@ $(document).ready(function () {
             $('.payment-popup').animate({opacity: 0}, 300, function () {
                 $(this).removeClass('is-open')
             })
+        });*/
+
+        $('.js_payment').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
         });
 
 
-        $('.popup-with-form').magnificPopup({
+        $('.js_author_send').magnificPopup({
             type: 'inline',
-            preloader: false,
             focus: '#name',
 
-            // When elemened is focused, some mobile browsers in some cases zoom in
-            // It looks not nice, so we disable it:
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in',
             callbacks: {
                 beforeOpen: function() {
                     if($(window).width() < 700) {
@@ -269,6 +293,48 @@ $(document).ready(function () {
                     }
                 }
             }
+        });
+
+        $('.js_share').magnificPopup({
+            type: 'inline',
+            focus: '#email',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in',
+            callbacks: {
+                beforeOpen: function() {
+                    if($(window).width() < 700) {
+                        this.st.focus = false;
+                    } else {
+                        this.st.focus = '#email';
+                    }
+                }
+            }
+        });
+
+        $('.js_claim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
         });
 
 

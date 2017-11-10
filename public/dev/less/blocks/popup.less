@@ -1,0 +1,97 @@
+.popup{
+  background-color: #e9edf1;
+  max-width: 320px;
+  border-radius: 3px;
+  padding: 35px 20px 30px;
+
+  &--payment{
+    max-width: 400px;
+    padding: 25px 35px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+
+  &--send-popup{
+    max-width: 470px;
+  }
+
+  &__title{
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+
+    &--payment{
+      font-size: 32px;
+      line-height: 1;
+    }
+  }
+
+  &__form-rows{
+    margin-top: 15px;
+  }
+
+  &__sum{
+    margin-top: 15px;
+    line-height: 1.2;
+  }
+
+  &__btn{
+    margin-top: 20px;
+  }
+
+  &__cancel-wrap{
+    margin-top: 15px;
+  }
+
+  &__cancel{
+    font-size: 14px;
+  }
+}
+
+.payment-popup{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0;
+
+  &__wrapper{
+    position: relative;
+    padding: 25px 35px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #e9edf1;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  &__title{
+    color: #333333;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__sum{
+    margin-top: 15px;
+    line-height: 1.2;
+  }
+
+  &__btn{
+    margin-top: 20px;
+  }
+
+  &__cancel-wrap{
+    margin-top: 15px;
+  }
+
+  &__cancel{
+    font-size: 14px;
+  }
+}
