@@ -1,115 +1,84 @@
-$(".select.gr-h").selectmenu({
-    width: 320,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-$(".select.cl-h").selectmenu({
-    width: 200,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--color-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
+$(document).ready(function () {
 
 
-$("#selecto").selectmenu({
-    width: 165,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--sort-gradient-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list select-list--filter");
-
-$("#test2").selectmenu({
-    width: 170,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--filter-gradient-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list select-list--filter");
-
-$("#test3").selectmenu({
-    width: 135,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-$("#test4").selectmenu({
-    width: 135,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-$("#test9").selectmenu({
-    width: 135,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-
-$("#test5").selectmenu({
-    width: 55,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-$("#test6").selectmenu({
-    width: 55,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-$("#test7").selectmenu({
-    width: 55,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-$("#test8").selectmenu({
-    width: 55,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-
-$("#vid").selectmenu({
-    width: 320,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-
-$("#select").selectmenu({
-    width: 320,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--gradient-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-
-$("#reg").selectmenu({
-    width: 200,
-    classes: {
-        "ui-selectmenu-button": "select-button select-button--color-h"
-    }
-}).selectmenu("menuWidget").addClass("select-list");
-
-/*
-$( ".select" ).forEach(function(){
-    $(this).selectmenu({
-        width: 320,
+    $( "#test2" ).selectmenu({
+        width: 170,
         classes: {
-            "ui-selectmenu-button": "select-button"
+            "ui-selectmenu-button": "select-button select-button--filter-gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list select-list--filter" );
+
+
+// Начинаем тестировать фронт и как он ваще работает
+    $( "#test3" ).selectmenu({
+        width: 135,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
         }
     }).selectmenu( "menuWidget" ).addClass( "select-list" );
-});*/
+// Фильтры пошли
+
+    $( "#test4" ).selectmenu({
+        width: 135,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+    $( "#test9" ).selectmenu({
+        width: 135,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+    $( "#test5" ).selectmenu({
+        width: 55,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+    $( "#test6" ).selectmenu({
+        width: 55,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+    $( "#test7" ).selectmenu({
+        width: 55,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+    $( "#test8" ).selectmenu({
+        width: 55,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h select-button--small"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+    $( "#vid" ).selectmenu({
+        width: 320,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+    $( "#select" ).selectmenu({
+        width: 320,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
 
 
-$(document).ready(function () {
+
+
 
     $(window).on('load', function () {
         /* Открытие дополнительных пунктов фильтра */
         if ($('.js_toggle_extra').length) {
             $('.js_toggle_extra').on('click', function () {
                 $('.js_extra_options').slideToggle();
-                // $('.js_extra_options').toggleClass('filter__row--close filter__row--open');
                 $(this).toggleClass('filter__extra-options-btn--open');
             });
         }
@@ -242,15 +211,6 @@ $(document).ready(function () {
                 }
             });
         }
-/*
-        $('.js_pay_open').on('click', function () {
-            $('.payment-popup').addClass('is-open').animate({opacity: 1}, 300)
-        });
-        $('.js_pay_close').on('click', function () {
-            $('.payment-popup').animate({opacity: 0}, 300, function () {
-                $(this).removeClass('is-open')
-            })
-        });*/
 
         $('.js_payment').magnificPopup({
             type: 'inline',
