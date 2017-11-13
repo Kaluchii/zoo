@@ -71,6 +71,14 @@ Route::get('/acc_declarations', function () {
     return view('front.pages.acc_declarations');
 });
 
+Route::get('/acc_balance', function () {
+    return view('front.pages.acc_balance');
+});
+
+Route::get('/acc_banner_stat', function () {
+    return view('front.pages.acc_banner_stat');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 

@@ -1,0 +1,78 @@
+.balance{
+  &__row{
+    display: flex;
+    width: 100%;
+    padding-bottom: 15px;
+    background: linear-gradient(to left, rgba(204, 204, 204, 0.2) 2px, rgba(204, 204, 204, 0.2) 2px);
+    background-position: 0 100%;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+
+    & + .balance__row{
+      margin-top: 15px;
+    }
+
+    &--top{
+      padding-bottom: 10px;
+      background: linear-gradient(to left, #cccccc 2px, transparent 2px);
+      background-position: 0 100%;
+      background-size: 4px 1px;
+      background-repeat: repeat-x;
+    }
+  }
+
+  &__title-wrap{
+    &--desc{
+      flex-grow: 1;
+    }
+
+    &--num{
+      min-width: 120px;
+    }
+
+    &--sum{
+      min-width: 120px;
+      text-align: right;
+    }
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &__col{
+    font-size: 14px;
+    color: #333333;
+
+    &--desc{
+      flex-grow: 1;
+      padding-right: 100px;
+    }
+
+    &--num{
+      min-width: 120px;
+      line-height: 1.5;
+    }
+
+    &--sum{
+      min-width: 120px;
+      line-height: 1.5;
+      text-align: right;
+    }
+  }
+
+  &__date{
+    color: #333333;
+    font-weight: 500;
+  }
+
+  &__operation-name{
+    color: #333333;
+  }
+
+  &__declaration{}
+
+  &__dec-link{}
+}
