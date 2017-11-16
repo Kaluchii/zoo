@@ -163,6 +163,13 @@
   transition: @transition-time;
   flex-shrink: 0;
 
+  &--ui-select{
+    border-radius: 5px;
+    border: 1px solid #cc9933;
+    margin-bottom: -1px;
+    background: #fff url(../img/search_bg.png) no-repeat ~'calc(100% - 10px)' center;
+  }
+
   &[readonly], &--readonly{
     background-color: #eeeeee;
   }
@@ -181,13 +188,7 @@
   }
 
   &[type='password']{
-    &:valid{
-      font-size: 32px;
-    }
-
-    &:invalid{
-      font-size: 16px;
-    }
+    letter-spacing: 0.2em;
   }
 
   &--date-select{

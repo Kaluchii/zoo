@@ -155,16 +155,6 @@ $(document).ready(function () {
                 $(this).siblings('.js_file_name').text($(this).val());
             });
         }
-
-        if ((ftrama = $('.js_gallery_fotorama')).length) {
-            // 1. Initialize fotorama manually.
-            var $fotorama = $(ftrama).fotorama();
-            // 2. Get the API object.
-            var fotorama = $fotorama.data('fotorama');
-            fotorama.setOptions({
-                arrows: false
-            });
-        }
         if (( carousel = $('.js_carousel_list') ).length) {
 
             var cWidth = carousel.width();
