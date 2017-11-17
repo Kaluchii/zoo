@@ -143,6 +143,7 @@ div + .rec-block, div + .hot-declarations{
 }
 
 .like-declaration{
+  display: flex;
   font-size: 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
@@ -150,6 +151,7 @@ div + .rec-block, div + .hot-declarations{
   &__img-wrap{
     display: inline-block;
     font-size: 0;
+    flex-shrink: 0;
   }
 
   &__img{
@@ -181,13 +183,13 @@ div + .rec-block, div + .hot-declarations{
   }
 
   &__price{
+    margin-right: 6px;
     font-weight: bold;
     color: #333333;
     font-size: inherit;
   }
 
   &__city{
-    margin-left: 6px;
     color: #666666;
     font-size: inherit;
   }
