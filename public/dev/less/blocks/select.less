@@ -76,7 +76,6 @@
 .select-list{
   box-sizing: border-box;
   max-width: 100%;
-  max-height: 340px;
   overflow-y: auto;
   color: #666666;
   background-color: #ffffff;
@@ -89,6 +88,11 @@
 
   .ui-menu-item{
     cursor: pointer;
+
+    .select-list{
+      max-height: 340px;
+      height: ~'calc(100% - 40px)';
+    }
   }
 
   .ui-menu-item-wrapper{
