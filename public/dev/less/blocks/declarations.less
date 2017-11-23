@@ -247,12 +247,13 @@
 .declaration--tile{
   border: 1px solid #CCCCCC;
   max-width: 220px;
-  width: 100%;
+  width: 32%;
   margin-bottom: 10px;
 
   &.declaration--reclame{
     border: none;
     max-width: none;
+    width: 100%;
   }
 
   .declaration__wrapper{
@@ -281,7 +282,6 @@
   }
 
   .declaration__urgently{
-    margin-left: 10px;
   }
 
   .declaration__data-info{
@@ -314,7 +314,12 @@
     flex-grow: 0;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin-top: 15px;
+  }
+
+  .declaration__price{
+    margin-right: 10px;
   }
 
   .declaration__favourite{

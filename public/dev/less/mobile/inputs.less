@@ -1,0 +1,47 @@
+/*
+@media screen and (max-width: 980px){
+  .input-row{
+    &__label{
+      left: 0;
+      top: -25px;
+      text-align: left;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}*/
+@media screen and (max-width: 980px){
+  .input-row{
+    &__wrap{
+      flex-direction: column;
+    }
+
+    &__name{
+      display: block;
+    }
+
+    &__label{
+      position: static;
+      text-align: left;
+      max-width: 100%;
+      width: auto;
+      padding-bottom: 3px;
+    }
+
+    &__warning-text{
+      display: block;
+      position: static;
+      transform: none;
+    }
+
+    &__clarification{
+      position: static;
+      transform: none;
+      margin: 10px 0 0;
+    }
+
+    &__description{
+      max-width: none;
+    }
+  }
+}

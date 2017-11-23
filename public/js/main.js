@@ -72,9 +72,19 @@ $(document).ready(function () {
 
 
 
+    var $window = $(window);
+    $window.on('resize', function () {
+        if ( $window.width() <= 900 ) {
+            var display_how = $('.js_how_to_display');
+            var display = display_how.children('.radio-switchers__input:checked').attr('value');
+            if ( display !== 'tile' ) {
+                $(display_how).children('.radio-switchers__input[value="tile"]').attr('checked', true);
+                $(display_how).trigger("click");
+            }
+        }
+    });
 
-
-    $(window).on('load', function () {
+    $window.on('load', function () {
         /* Открытие дополнительных пунктов фильтра */
         if ($('.js_toggle_extra').length) {
             $('.js_toggle_extra').on('click', function () {
