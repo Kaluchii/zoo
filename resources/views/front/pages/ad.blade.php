@@ -303,7 +303,7 @@
                                         href="#" class="dotted-link">Добавить номер</a></span></p>
                     </div>
                 </div>
-                <div class="form-rows__input-row input-row">
+                <div class="form-rows__input-row form-rows__input-row--big-indent input-row">
                     <div class="input-row__wrap">
                         <label class="form__checkbox checkbox">
                             <input class="checkbox__input" type="checkbox" value="1">
@@ -314,7 +314,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="form-rows__input-row input-row">
+                <div class="form-rows__input-row form-rows__input-row--big-indent input-row">
                     <button class="button">Подать объявление</button>
                 </div>
             </div>

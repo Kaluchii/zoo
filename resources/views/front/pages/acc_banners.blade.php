@@ -29,8 +29,9 @@
                     <p class="banners__rules"><a href="" class="banners__rules-link link">Правила размещения баннерной рекламы</a></p>
                     <div class="banners__btn-wrap"><a href="" class="banners__add-btn button button--small">Добавить баннер</a></div>
                 </div>
-                <table class="banners__table">
-                    <thead class="banners__thead">
+                <div class="banners__table-wrap">
+                    <table class="banners__table">
+                        <thead class="banners__thead">
                         <tr class="banners__tr">
                             <th class="banners__th banners__item-num">Номер</th>
                             <th class="banners__th banners__item-name">Баннер</th>
@@ -41,8 +42,8 @@
                             <th class="banners__th banners__ctr banners__right-align">CTR %</th>
                             <th class="banners__th banners__stat banners__right-align">Статистика</th>
                         </tr>
-                    </thead>
-                    <tbody class="banners__tbody">
+                        </thead>
+                        <tbody class="banners__tbody">
                         <tr class="banners__tr">
                             <td class="banners__td">231</td>
                             <td class="banners__td"><a href="" class="banners__link link">Объявления • Поиск • Справа</a></td>
@@ -93,8 +94,9 @@
                             <td class="banners__td banners__right-align">1</td>
                             <td class="banners__td banners__right-align"><a href="" class="banners__link link">Посмотреть</a></td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </main>
     </div>
