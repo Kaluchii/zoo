@@ -26,8 +26,33 @@
             </ul>
             <div class="footer__rating-col">
                 <div class="footer__rating rating">
-                    <p class="rating__text">Пожалуйста, оцените страницу<br><span class="rating__numbers">Рейтинг — 4.0 (250 человек)</span></p>
-                    <img src="/img/shema_rating.png" alt="" class="rating__img">
+                    <p class="rating__text">Пожалуйста, оцените страницу<br>
+                        <span class="rating__numbers" itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
+                            <meta itemprop="ratingValue" content="4.5">Рейтинг — 4.5
+                            <meta itemprop="bestRating" content="5">
+                            <meta itemprop="ratingCount" content="145">(250 человек)
+                        </span>
+                    </p>
+                    <div class="rating__stars" data-entity="news" data-id="1177">
+                        <ul class="rating__stars-list" style="width:125px">
+                            <li class="rating__current" style="width:70%;">4.5</li>
+                            <li class="rating__star">
+                                <a class="rating__link" data-raiting="1" title="1/5" style="width:20%;z-index:6" rel="nofollow">1</a>
+                            </li>
+                            <li class="rating__star">
+                                <a class="rating__link" data-raiting="2" title="2/5" style="width:40%;z-index:5" rel="nofollow">2</a>
+                            </li>
+                            <li class="rating__star">
+                                <a class="rating__link" data-raiting="3" title="3/5" style="width:60%;z-index:4" rel="nofollow">3</a>
+                            </li>
+                            <li class="rating__star">
+                                <a class="rating__link" data-raiting="4" title="4/5" style="width:80%;z-index:3" rel="nofollow">4</a>
+                            </li>
+                            <li class="rating__star">
+                                <a class="rating__link" data-raiting="5" title="5/5" style="width:100%;z-index:2" rel="nofollow">5</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <p class="footer__make-in">Сделано в <a href="#" target="_blank" class="link">ИнтерПро</a></p>
             </div>
