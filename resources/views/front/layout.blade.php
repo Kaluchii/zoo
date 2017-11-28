@@ -13,12 +13,12 @@
 <body class="color-bg">
 
     <div class="main-wrapper">
-        @include('front.header')
+        {{--@include('front.header')--}}
         @yield('header')
 
         @yield('content')
 
-        @include('front.footer')
+        {{--@include('front.footer')--}}
         @yield('footer')
     </div>
     @include('front.scripts')

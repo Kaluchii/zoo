@@ -33,7 +33,7 @@
                             <meta itemprop="ratingCount" content="145">(250 человек)
                         </span>
                     </p>
-                    <div class="rating__stars" data-entity="news" data-id="1177">
+                    <div class="rating__stars">
                         <ul class="rating__stars-list" style="width:125px">
                             <li class="rating__current" style="width:70%;">4.5</li>
                             <li class="rating__star">
