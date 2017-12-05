@@ -7,7 +7,7 @@
             <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link light-grey-link">Собаки</a></span>
         </div>
     </section>
-    <section class="filter">
+    {{--<section class="filter">
         <div class="filter__wrapper">
             <h1 class="filter__title">Собаки в Казахстане</h1>
             <div class="filter__row">
@@ -234,7 +234,7 @@
             </div>
 
         </div>
-    </section>
+    </section>--}}
     <div class="content">
         <div class="declarations-top">
             <div class="declarations-top__wrapper">
@@ -595,8 +595,6 @@
                             <li class="pagination__buttons-item"><a href="" class="pagination__button-link">5</a></li>
                             <li class="pagination__buttons-item"><a href="" class="pagination__button-link">6</a></li>
                             <li class="pagination__buttons-item"><a href="" class="pagination__button-link">7</a></li>
-                            <li class="pagination__buttons-item"><a href="" class="pagination__button-link">8</a></li>
-                            <li class="pagination__buttons-item"><a href="" class="pagination__button-link">9</a></li>
                             <li class="pagination__buttons-item"><a href="" class="pagination__button-link">...</a></li>
                             <li class="pagination__buttons-item"><a href="" class="pagination__button-link">121</a></li>
                         </ul>

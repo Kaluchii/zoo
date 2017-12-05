@@ -43,13 +43,13 @@
                         </p>
                     </div>
                     <h2 class="comments__title">Комментарии <span class="comments__comment-count">3</span></h2>
-                    <div class="comments__add-comment add-comment">
-                        <p class="add-comment__title">Добавить комментарий</p>
-                        <textarea name="" class="add-comment__textarea textarea"></textarea>
-                        <div class="add-comment__bottom-wrap">
-                            <p class="add-comment__info-text">Комментарии модерируются и могут быть удалены,
-                                если нарушают <span class="link">правила общения на сайте</span>. Будьте вежливы.</p>
-                            <div class="add-comment__button-wrap">
+                    <div class="comments__add-comment add-message">
+                        <p class="add-message__title">Добавить комментарий</p>
+                        <textarea name="" class="add-message__textarea textarea"></textarea>
+                        <div class="add-message__bottom-wrap">
+                            <p class="add-message__info-text">Комментарии модерируются и могут быть удалены,
+                                если нарушают <a href="" class="link">правила общения на сайте</a>. Будьте вежливы.</p>
+                            <div class="add-message__button-wrap">
                                 <a href="" class="button">Добавить</a>
                             </div>
                         </div>
@@ -177,6 +177,44 @@
         <div class="like-publications">
             <p class="like-publications__title">Похожие публикации</p>
             <ul class="like-publications__list">
+                <li class="like-publications__item">
+                    <div class="like-publications__img-wrap">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
+                    </div>
+                    <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
+                    <p class="like-publications__small-descr">
+                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
+                    </p>
+                    <div class="like-publications__tags-row tags">
+                        <ul class="tags__list">
+                            <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Ветеринария</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Кормление</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Паразиты</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Ветеринария</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Паразиты</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="like-publications__item">
+                    <div class="like-publications__img-wrap">
+                        <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
+                    </div>
+                    <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
+                    <p class="like-publications__small-descr">
+                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
+                    </p>
+                    <div class="like-publications__tags-row tags">
+                        <ul class="tags__list">
+                            <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Ветеринария</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Кормление</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Паразиты</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Ветеринария</a></li>
+                            <li class="tags__item"><a href="" class="tags__link">Паразиты</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="like-publications__item">
                     <div class="like-publications__img-wrap">
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>

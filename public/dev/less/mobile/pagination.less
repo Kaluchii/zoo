@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px){
+  .pagination{
+    flex-direction: column;
+
+    &__nav{
+      margin: 10px 0 0;
+    }
+
+    &__link{
+      font-size: 20px;
+    }
+
+    &__link-delimiter{
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px){
+  .pagination{
+    &__buttons-item{
+      &:nth-child(n+2){
+        margin-left: 3px;
+      }
+    }
+
+    &__button-link{
+      height: 30px;
+      width: 30px;
+      padding: 8px 0;
+      font-size: 12px;
+    }
+  }
+}
