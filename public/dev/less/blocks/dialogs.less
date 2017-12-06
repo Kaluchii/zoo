@@ -2,7 +2,11 @@
   margin-top: 15px;
 
   &__kind-btns{
+    display: flex;
     font-size: 0;
+    overflow: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   &__kind-btn{
@@ -11,6 +15,7 @@
     padding: 0 10px;
     font-size: 14px;
     border-radius: @border-radius;
+    white-space: nowrap;
 
     &:hover:not([class*='is-active']){
       .gradient-hover-button;
@@ -81,6 +86,7 @@
 
   &__message-count{
     font-size: 14px;
+    white-space: nowrap;
   }
 
   &__new-message-count{

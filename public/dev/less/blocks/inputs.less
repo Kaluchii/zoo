@@ -19,6 +19,7 @@
   &__wrap{
     display: flex;
     align-items: flex-start;
+    max-width: 100%;
 
     &--between{
       justify-content: space-between;
@@ -35,6 +36,11 @@
       flex-direction: column;
       width: 100%;
     }
+  }
+
+  &__inline-els{
+    display: flex;
+    max-width: 100%;
   }
 
   &__error{
@@ -168,6 +174,10 @@
     border: 1px solid #cc9933;
     margin-bottom: -1px;
     background: #fff url(../img/search_bg.png) no-repeat ~'calc(100% - 10px)' center;
+  }
+
+  &--price{
+    max-width: ~'calc(100% - 113px)';
   }
 
   &[readonly], &--readonly{
@@ -414,6 +424,8 @@
 }
 
 .file-select{
+  max-width: 100%;
+
   &__field{
     display: none;
   }

@@ -1,8 +1,18 @@
 @media screen and (max-width: 768px){
   .news{
     &__title{
+      font-size: 36px;
+
       &--main-page{
         font-size: 28px;
+      }
+    }
+
+    &__item{
+      &--big{
+        .news__img-wrapper{
+          max-width: none;
+        }
       }
     }
 
@@ -16,6 +26,13 @@
   .news{
     &__item{
       flex-direction: column;
+
+      &--big{
+        .news__item-title{
+          margin-top: 0;
+          font-size: 20px;
+        }
+      }
     }
 
     &__img-wrapper{
@@ -31,6 +48,8 @@
 @media screen and (max-width: 420px){
   .news{
     &__title{
+      font-size: 28px;
+
       &--main-page{
         font-size: 22px;
       }

@@ -172,11 +172,13 @@
                 <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label for="readonly" class="input-row__label"><span class="input-row__name">Цена в тенге<i class="sym-necessary">&nbsp;*</i></span></label>
-                        <input readonly type="text" id="readonly" class="input input--readonly">
-                        <label class="checkbox-btn">
-                            <input class="checkbox-btn__input" type="checkbox" value="1">
-                            <span class="checkbox-btn__button">Бесплатно</span>
-                        </label>
+                        <div class="input-row__inline-els">
+                            <input readonly type="text" id="readonly" class="input input--price input--readonly">
+                            <label class="checkbox-btn">
+                                <input class="checkbox-btn__input" type="checkbox" value="1">
+                                <span class="checkbox-btn__button">Бесплатно</span>
+                            </label>
+                        </div>
                         <p class="input-row__clarification"><i class="suc-input"></i></p>
                     </div>
                 </div>
