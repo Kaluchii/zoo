@@ -30,7 +30,7 @@
                         <p class="balance__title">Описание</p>
                     </div>
                     <div class="balance__title-wrap balance__title-wrap--num">
-                        <p class="balance__title">№ операции</p>
+                        <p class="balance__title">№<span class="balance__hide-mb"> операции</span></p>
                     </div>
                     <div class="balance__title-wrap balance__title-wrap--sum">
                         <p class="balance__title">Сумма</p>

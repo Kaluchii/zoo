@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px){
+  .settings{
+    &__nav{
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      height: 80px;
+    }
+
+    &__nav-item{
+      width: 33%;
+      margin-bottom: 5px;
+
+      &:nth-child(n+2){
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px){
+  .settings{
+    &__nav{
+      height: 80px;
+    }
+
+    &__nav-item{
+      width: 50%;
+      font-size: 14px;
+    }
+  }
+}
