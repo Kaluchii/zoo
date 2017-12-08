@@ -71,7 +71,7 @@ $(document).ready(function () {
     }).selectmenu( "menuWidget" ).addClass( "select-list" );
 
 
-
+    $('.js_scroll_bottom').scrollTop($('.js_scroll_bottom').height());
     var $window = $(window);
     $window.on('resize', function () {
         if ( $window.width() <= 900 ) {

@@ -36,7 +36,7 @@
                 </div>
                 <div class="dialog__chat-wrap">
                     <div class="dialog__chat chat">
-                        <div class="chat__wrapper">
+                        <div class="chat__wrapper js_scroll_bottom">
                             <div class="chat__message">
                                 <p class="chat__date">2 июля 2017</p>
                                 <div class="chat__text-wrap">

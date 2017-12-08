@@ -18,7 +18,7 @@
 
         @yield('content')
 
-        {{--@include('front.footer')--}}
+        @include('front.footer')
         @yield('footer')
     </div>
     @include('front.scripts')
