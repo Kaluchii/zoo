@@ -8,6 +8,20 @@ $(document).ready(function () {
         }
     }).selectmenu( "menuWidget" ).addClass( "select-list select-list--filter" );
 
+    $( "#testt1" ).selectmenu({
+        width: 200,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+    $( "#testt2" ).selectmenu({
+        width: 200,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
 
 // Начинаем тестировать фронт и как он ваще работает
     $( "#test3" ).selectmenu({

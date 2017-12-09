@@ -13,7 +13,7 @@
 <body class="color-bg">
 
     <div class="main-wrapper">
-        {{--@include('front.header')--}}
+        @include('front.header')
         @yield('header')
 
         @yield('content')

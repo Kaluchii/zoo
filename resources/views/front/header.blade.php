@@ -43,14 +43,14 @@
                     <input type="text" class="input" placeholder="Поиск объявлений">
                 </div>
                 <div class="search-panel__select-wrap">
-                    <select name="" id="" class="select cl-h">
+                    <select name="" id="testt1" class="select cl-h">
                         <option value="1">Во всех категориях</option>
                         <option value="2">Кошки</option>
                         <option value="3">Собаки</option>
                     </select>
                 </div>
                 <div class="search-panel__select-wrap">
-                    <select name="" id="reg" class="select cl-h">
+                    <select name="" id="testt2" class="select cl-h">
                         <option value="1">Весь Казахстан</option>
                     </select>
                 </div>

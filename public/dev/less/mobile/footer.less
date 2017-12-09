@@ -32,15 +32,43 @@
     flex-wrap: wrap;
     justify-content: space-between;
     order: -1;
-    width: 100%;
+    width: 45%;
+
+    &:nth-child(3){
+      text-align: right;
+    }
 
     &__item{
       box-sizing: border-box;
-      padding: 0 10px;
+      width: 100%;
 
       &:nth-child(n){
         margin-top: 10px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 620px){
+  .footer{
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .footer{
+    &__soc{
+      width: 100%;
+      text-align: center;
+      max-width: initial;
+    }
+
+    &__rating-col{
+      width: 100%;
+    }
+  }
+
+  .rating{
+    text-align: center;
   }
 }
