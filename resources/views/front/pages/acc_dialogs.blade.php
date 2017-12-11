@@ -29,6 +29,13 @@
                     <button class="dialogs__kind-btn is-active">Все сообщения</button>
                     <button class="dialogs__kind-btn">Избранные</button>
                     <button class="dialogs__kind-btn">Игнорируемые</button>
+                    <div class="dialogs__select-wrap">
+                        <select name="" id="messages" class="select cl-h">
+                            <option value="1">Все сообщения</option>
+                            <option value="2">Избранные</option>
+                            <option value="3">Игнорируемые</option>
+                        </select>
+                    </div>
                 </div>
                 <ul class="dialogs__list">
                     <li class="dialogs__item dialogs-item dialogs-item--new-messages">

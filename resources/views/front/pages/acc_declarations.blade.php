@@ -49,6 +49,13 @@
                                 <span class="radio-buttons__button"><span class="radio-buttons__item-text">Неактивные</span><span class="radio-buttons__item-digit">12</span></span>
                             </label>
                         </div>
+                        <div class="my-declarations__select-wrap">
+                            <select name="" id="active" class="select cl-h">
+                                <option value="1">Активные 1</option>
+                                <option value="2">На проверке 3</option>
+                                <option value="3">Неактивные 12</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="my-declarations__search">
                         <input type="text" class="my-declarations__search-input input" placeholder="Поиск по объявлениям">
@@ -56,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
+            {{--<div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
                 <div class="my-declarations__select-count-wrap">
                     <span class="my-declarations__select-count dotted-link">Выбрано 1 объявление</span>
                     <ul class="my-declarations__count-list">
@@ -75,7 +82,7 @@
                 <p class="my-declarations__info-text">Выбрано 2 услуги на <span class="my-declarations__units-count">70 ед.</span></p>
                 <button class="my-declarations__button button button--small button--disable" disabled>Оплатить</button>
                 <p class="my-declarations__info-text">Недостаточно единиц, пополните <a href="" class="my-declarations__balance-link link">баланс</a></p>
-            </div>
+            </div>--}}
             <ul class="my-declarations__list">
                 <li class="my-declarations__list-item my-dec-item">
                     <div class="my-dec-item__check-col">
@@ -93,7 +100,7 @@
                                     <img src="/img/decl_list-pl.png" alt="" class="my-dec-item__img">
                                 </div>
                                 <div class="my-dec-item__data-wrap">
-                                    <p class="my-dec-item__title-wrap"><a href="" class="my-dec-item__title link">Немецкая овчарка, девочка, 6 мес</a></p>
+                                    <p class="my-dec-item__title-wrap"><a href="" class="my-dec-item__title link">Немецкая овчарка, девочка, 6 мес</a> <span class="my-dec-item__inline-price">1 145 000 тг</span></p>
                                     <p class="my-dec-item__text-row"><span class="my-dec-item__category">Собаки / Овчарки</span><span class="my-dec-item__active-dates">с 25.06.17 до 02.07.17</span></p>
                                     <p class="my-dec-item__text-row"><span class="my-dec-item__stat">Просмотры: <span class="my-dec-item__stat-digit">200</span></span><span class="my-dec-item__stat">Контакты: <span class="my-dec-item__stat-digit">15</span></span><span class="my-dec-item__stat">Комментарии: <span class="my-dec-item__stat-digit">15</span></span></p>
                                     <p class="my-dec-item__active-services">В ТОП • Цвет • Срочно, торг • Турбо-продажа • В горячие</p>

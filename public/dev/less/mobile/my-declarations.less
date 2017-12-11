@@ -1,0 +1,248 @@
+@media screen and (max-width: 1020px){
+  .my-dec-item{
+    flex-wrap: wrap;
+
+    &__services-col{
+      width: 100%;
+      box-sizing: border-box;
+      background: -moz-linear-gradient(to to top, #CCCCCC 4px, transparent 6px);
+      background: -ms-linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+      background: -o-linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(#CCCCCC), color-stop(0.6, #CCCCCC), color-stop(0.6, transparent));
+      background: -webkit-linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+      background: linear-gradient(to top, #CCCCCC 4px, transparent 6px);
+      background-position: 0 0;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+    }
+
+    &__left-col{
+      flex-grow: 1.5;
+    }
+
+    &__services-list{
+      flex-shrink: 1;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__services-item{
+      width: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .my-dec-item{
+    &__services-item{
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .my-declarations{
+    &__filter-wrap{
+      flex-direction: column;
+    }
+
+    &__search{
+      margin-top: 15px;
+    }
+
+    &__search-input{
+      max-width: 230px;
+    }
+
+    &__list{
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .my-dec-item{
+    flex-direction: column;
+
+    &__check-col{
+      padding: 15px 15px 5px 10px;
+    }
+
+    &__row-top{
+      padding: 10px 0;
+    }
+
+    &__img-wrap{
+      width: 100px;
+    }
+
+    &__title-wrap{
+      font-size: 14px;
+    }
+
+    &__data-wrap{
+      margin-left: 15px;
+    }
+
+    &__text-row{
+      &:nth-child(2){
+        margin-top: 10px;
+      }
+    }
+
+    &__price-col{
+      padding-right: 10px;
+    }
+
+    &__info-col{
+      padding-left: 10px;
+    }
+
+    &__services-col{
+      padding: 12px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .my-dec-item{
+    &__services-item{
+      width: 50%;
+    }
+  }
+
+  .auto-up{
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .auto-up{
+    &__top-row{
+      flex-direction: column;
+    }
+
+    &__text{
+      margin: 5px 0 0;
+    }
+
+    &__bottom-row{
+      flex-wrap: wrap;
+    }
+
+    &__time-wrap{
+      width: 100%;
+      margin: 15px 0 0;
+    }
+
+    &__button{
+      margin: 15px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .my-dec-item{
+    &__info-col{
+      padding-right: 10px;
+      flex-direction: row;
+    }
+
+    &__inline-price{
+      display: inline;
+    }
+
+    &__price-col{
+      display: none;
+    }
+
+    &__title{
+      margin-right: 10px;
+    }
+
+    &__row-actions{
+      position: absolute;
+      flex-direction: column;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .my-declarations{
+    &__filter{
+      flex-direction: column;
+    }
+
+    &__radio-buttons{
+      margin: 10px 0 0;
+    }
+  }
+
+  .my-dec-item{
+    &__img-wrap{
+      width: 150px;
+    }
+
+    &__data-wrap{
+      margin: 10px 0 0;
+    }
+
+    &__left-col{
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .my-declarations{
+  }
+
+  .my-dec-item{
+    &__services-item{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .radio-buttons{
+    &__item{
+      & + &{
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .my-declarations{
+    &__filter{
+      flex-direction: row;
+    }
+
+    &__select-wrap{
+      display: block;
+      margin-left: 10px;
+    }
+  }
+
+  .my-dec-item{
+    &__active-dates{
+      display: block;
+      margin-left: 0;
+    }
+
+    &__stat{
+      display: block;
+
+      &:nth-child(n){
+        margin-left: 0;
+      }
+    }
+  }
+
+  .radio-buttons{
+    display: none;
+  }
+}

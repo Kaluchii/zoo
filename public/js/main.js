@@ -15,6 +15,20 @@ $(document).ready(function () {
         }
     }).selectmenu( "menuWidget" ).addClass( "select-list" );
 
+    $( "#messages" ).selectmenu({
+        width: 200,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
+    $( "#active" ).selectmenu({
+        width: 155,
+        classes: {
+            "ui-selectmenu-button": "select-button select-button--gradient-h"
+        }
+    }).selectmenu( "menuWidget" ).addClass( "select-list" );
+
     $( "#testt2" ).selectmenu({
         width: 200,
         classes: {
@@ -170,7 +184,11 @@ $(document).ready(function () {
                 $(this).toggleClass('is-active');
                 $(this).closest('.my-dec-item__row-actions').toggleClass('overlay');
                 var parrent = $(this).closest('.my-dec-item');
-                $(parrent).find('.auto-up').fadeToggle('is-open');
+                var offset = 0;
+                if ( $window.width() <= 1020){
+                    offset = $('.my-dec-item__services-col').outerHeight();
+                }
+                $(parrent).find('.auto-up').css('top', 'calc(100% - ' + offset + 'px)').fadeToggle('is-open');
             })
         }
 

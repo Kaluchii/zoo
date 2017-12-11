@@ -16,17 +16,25 @@
     margin-left: 10px;
   }
 
-  &__search{}
+  &__select-wrap{
+    display: none;
+  }
+
+  &__search{
+    display: flex;
+  }
 
   &__search-input{
     height: 30px;
     font-size: 14px;
     padding: 5px 10px;
-    width: 100%;
+    width: ~'calc(100% - 70px)';
     max-width: 205px;
   }
 
-  &__search-btn{}
+  &__search-btn{
+    margin-left: 10px;
+  }
 
   &__info-wrap{
     display: flex;
@@ -207,6 +215,14 @@
     font-weight: bold;
   }
 
+  &__inline-price{
+    display: none;
+    font-size: inherit;
+    color: #333333;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
   &__row-actions{
     display: flex;
     font-size: 14px;
@@ -263,6 +279,7 @@
   &__services-price{
     color: #999999;
     font-size: inherit;
+    white-space: nowrap;
   }
 
   &__auto-up{}
