@@ -184,12 +184,35 @@ $(document).ready(function () {
                 $(this).toggleClass('is-active');
                 $(this).closest('.my-dec-item__row-actions').toggleClass('overlay');
                 var parrent = $(this).closest('.my-dec-item');
-                var offset = 0;
-                if ( $window.width() <= 1020){
+                var offset = '100%';
+                if ( $window.width() <= 650 ){
+                    offset = '158px';
+                } else if ( $window.width() <= 1020 ){
                     offset = $('.my-dec-item__services-col').outerHeight();
+                    offset = 'calc(100% - ' + offset + 'px)';
                 }
-                $(parrent).find('.auto-up').css('top', 'calc(100% - ' + offset + 'px)').fadeToggle('is-open');
-            })
+                $(parrent).find('.auto-up').css('top', offset).fadeToggle('is-open');
+            });
+
+            $('.js_actions_open').on('click', function () {
+                if ( $(this).hasClass('is-open') ){
+                    var parent = $(this).closest('.my-dec-item');
+
+                    parent.find('.js_open_up').removeClass('is-active');
+                    parent.find('.my-dec-item__row-actions').removeClass('overlay');
+                    parent.find('.auto-up').fadeOut();
+                }
+                $(this).toggleClass('is-open');
+                $(this).parent().find('.my-dec-item__row-actions').toggleClass('is-open');
+            });
+
+            $('.js_auto-up_close').on('click', function () {
+                var parent = $(this).closest('.my-dec-item');
+
+                parent.find('.js_open_up').removeClass('is-active');
+                parent.find('.my-dec-item__row-actions').removeClass('overlay');
+                $(this).closest('.auto-up').fadeOut();
+            });
         }
 
         if ($('.file-select').length) {

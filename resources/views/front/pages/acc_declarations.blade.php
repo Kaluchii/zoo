@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            {{--<div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
+            <div class="my-declarations__info-wrap my-declarations__info-wrap--renewal">
                 <div class="my-declarations__select-count-wrap">
                     <span class="my-declarations__select-count dotted-link">Выбрано 1 объявление</span>
                     <ul class="my-declarations__count-list">
@@ -82,7 +82,7 @@
                 <p class="my-declarations__info-text">Выбрано 2 услуги на <span class="my-declarations__units-count">70 ед.</span></p>
                 <button class="my-declarations__button button button--small button--disable" disabled>Оплатить</button>
                 <p class="my-declarations__info-text">Недостаточно единиц, пополните <a href="" class="my-declarations__balance-link link">баланс</a></p>
-            </div>--}}
+            </div>
             <ul class="my-declarations__list">
                 <li class="my-declarations__list-item my-dec-item">
                     <div class="my-dec-item__check-col">
@@ -109,6 +109,11 @@
                             <div class="my-dec-item__price-col">
                                 <p class="my-dec-item__price">45 000 тг</p>
                             </div>
+                        </div>
+                        <div class="my-dec-item__hamburger hamburger js_actions_open">
+                            <div class="hamburger__row1"></div>
+                            <div class="hamburger__row2"></div>
+                            <div class="hamburger__row3"></div>
                         </div>
                         <div class="my-dec-item__row-actions">
                             <a href="" class="my-dec-item__action">Посмотреть</a>
@@ -240,7 +245,7 @@
                                 </div>
                             </div>
                             <button class="auto-up__button button button--small">Подтвердить</button>
-                            <button class="auto-up__button button button--cancel">Отмена</button>
+                            <button class="auto-up__button button button--cancel js_auto-up_close">Отмена</button>
                         </div>
                     </div>
                 </li>

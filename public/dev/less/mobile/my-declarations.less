@@ -32,6 +32,29 @@
   }
 }
 
+@media screen and (max-width: 950px) {
+  .my-declarations{
+    &__info-wrap{
+      flex-wrap: wrap;
+    }
+
+    &__select-count-wrap{
+      width: 100%;
+    }
+
+    &__info-text{
+      width: 100%;
+      margin: 5px 0 0;
+    }
+
+    &__button{
+      &:nth-child(n){
+        margin: 10px 10px 0 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 930px) {
   .my-dec-item{
     &__services-item{
@@ -61,6 +84,12 @@
 }
 
 @media screen and (max-width: 770px) {
+  .my-declarations{
+    &__info-wrap{
+      padding: 10px;
+    }
+  }
+
   .my-dec-item{
     flex-direction: column;
 
@@ -161,10 +190,50 @@
     }
 
     &__row-actions{
+      display: none;
       position: absolute;
       flex-direction: column;
-      display: none;
+      top: 38px;
+      right: 10px;
+      background: #ffffff;
+
+      &.is-open{
+        display: flex;
+      }
+
+      &.overlay{
+        position: absolute;
+      }
     }
+
+    &__action{
+      &:nth-child(n){
+        border: 1px solid #999999;
+      }
+
+      &:nth-child(n+2){
+        margin-top: -1px;
+        border-radius: 0;
+      }
+
+      &:last-child{
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+
+    &__hamburger{
+      display: block;
+
+      &.is-open{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+
+  .auto-up{
+    z-index: 3;
   }
 }
 
