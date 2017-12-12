@@ -79,6 +79,10 @@ Route::get('/acc_banner_stat', function () {
     return view('front.pages.acc_banner_stat');
 });
 
+Route::get('/styles', function () {
+    return view('front.pages.styles');
+});
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 
