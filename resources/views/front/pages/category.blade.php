@@ -244,7 +244,7 @@
                 </div>
             </div>
         </div>
-        <main class="declarations">
+        <main class="declarations js_favs_decl">
             <div class="declarations__main-content main-content">
                 <div class="declarations__display">
                     <div class="declarations__sort-wrap">

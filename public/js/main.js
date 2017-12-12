@@ -97,10 +97,22 @@ $(document).ready(function () {
             "ui-selectmenu-button": "select-button select-button--gradient-h"
         }
     }).selectmenu( "menuWidget" ).addClass( "select-list" );
+    var $window = $(window);
 
+    function decListRebuild() {
+        if ((favs_decl = $('.js_favs_decl')).length){
+            if ( $window.width() <= 768 ) {
+                favs_decl.find('.declarations-list').addClass('declarations-list--tile');
+                favs_decl.find('.declaration').addClass('declaration--tile')
+            } else {
+                favs_decl.find('.declarations-list').removeClass('declarations-list--tile');
+                favs_decl.find('.declaration').removeClass('declaration--tile')
+            }
+        }
+    }
+    decListRebuild();
 
     $('.js_scroll_bottom').scrollTop($('.js_scroll_bottom').height());
-    var $window = $(window);
     $window.on('resize', function () {
         if ( $window.width() <= 900 ) {
             var display_how = $('.js_how_to_display');
@@ -109,6 +121,7 @@ $(document).ready(function () {
                 $(display_how).children('.radio-switchers__input[value="tile"]').attr('checked', true);
                 $(display_how).trigger("click");
             }
+            decListRebuild();
         }
     });
 
