@@ -1,44 +1,44 @@
 .text-block{
+  color: #666666;
+
   p{
-    color: #666666;
     line-height: 1.5;
-    font-size: 16px;
     strong, b{
       font-weight: bold;
     }
   }
   h1{
-    font-size: 64px;
+    font-size: 32px;
     font-weight: normal;
     line-height: 1.2;
     color:  #333333;
   }
   h2{
-    font-size: 54px;
+    font-size: 28px;
     font-weight: normal;
     line-height: 1.2;
     color:  #333333;
   }
   h3{
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 1.2;
-    color:  #333333;
-  }
-  h4{
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 1.2;
-    color:  #333333;
-  }
-  h5{
     font-size: 24px;
     font-weight: normal;
     line-height: 1.2;
     color:  #333333;
   }
+  h4{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    color:  #333333;
+  }
+  h5{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+    color:  #333333;
+  }
   h6{
-    font-size: 28px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 1.2;
     color:  #333333;
@@ -47,21 +47,19 @@
   ul{
     list-style-type: disc;
     margin-left: 15px;
+    font-size: inherit;
     li{
       list-style-type: disc;
       margin-bottom: 5px;
-      color: #666666;
-      line-height: 1.5;
       font-size: inherit;
     }
   }
   ol{
     list-style-type: decimal;
-    margin-left: 15px;
+    margin-left: 20px;
     li{
+      margin-bottom: 5px;
       list-style-type: decimal;
-      color: #666666;
-      line-height: 1.5;
       font-size: inherit;
     }
   }
@@ -70,10 +68,21 @@
     font-family: inherit;
     font-size: inherit;
   }
+  i{
+    font-size: inherit;
+  }
+  u{
+    font-size: inherit;
+    text-decoration: underline;
+  }
+  blockquote{
+    font-size: inherit;
+    padding-left: 15px;
+    border-left: 1px solid #CCCCCC;
+  }
 }
 
 p{
-  color: #666666;
   line-height: 1.5;
   font-size: inherit;
   strong, b{
@@ -111,7 +120,7 @@ h5{
   color:  #333333;
 }
 h6{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.2;
   color:  #333333;
@@ -121,7 +130,6 @@ ul{
   list-style-type: none;
   li{
     list-style-type: none;
-    color: #666666;
     line-height: 1.5;
     font-size: inherit;
   }
@@ -130,7 +138,6 @@ ol{
   list-style-type: none;
   li{
     list-style-type: none;
-    color: #666666;
     line-height: 1.5;
     font-size: inherit;
   }
@@ -152,6 +159,20 @@ img{
   }
 }
 
+@media screen and (max-width: 768px) {
+  .text-block{
+    h1{
+      font-size: 28px;
+    }
+    h2{
+      font-size: 24px;
+    }
+    h3{
+      font-size: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 620px) {
   h1{
     font-size: 32px;
@@ -170,5 +191,25 @@ img{
   }
   h3{
     font-size: 18px;
+  }
+
+  .text-block{
+    font-size: 14px;
+
+    h1{
+      font-size: 22px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 16px;
+    }
+    h5{
+      font-size: 16px;
+    }
   }
 }

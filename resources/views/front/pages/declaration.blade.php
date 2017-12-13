@@ -18,6 +18,7 @@
                 <li class="obyavlenie-control__item"><a href="" class="link obyavlenie-control__link obyavlenie-control__link--hot">В горячие</a></li>
                 <li class="obyavlenie-control__item"><a href="" class="link obyavlenie-control__link obyavlenie-control__link--urgently">Срочно, торг</a></li>
                 <li class="obyavlenie-control__item"><a href="" class="link obyavlenie-control__link obyavlenie-control__link--turbo">Турбо продажа</a></li>
+                <li class="obyavlenie-control__item"><a href="" class="link obyavlenie-control__link obyavlenie-control__link--turbo">Рекламировать объявление</a></li>
             </ul>
         </div>
         <main class="obyavlenie">
@@ -85,7 +86,7 @@
                             <p class="about-info__value">Его значение</p>
                         </li>
                     </ul>
-                    <p class="about-info__row">
+                    {{--<p class="about-info__row">
                         <span class="about-info__data-item">Не привит</span>
                         <span class="about-info__delimiter"> • </span>
                         <span class="about-info__data-item">Стерилизован</span>
@@ -97,10 +98,12 @@
                         <span class="about-info__data-item">Не привит</span>
                         <span class="about-info__delimiter"> • </span>
                         <span class="about-info__data-item">Стерилизован</span>
-                    </p>
+                    </p>--}}
                 </div>
-                <p class="obyavlenie__description">Для истинных ценителей!
-Предлагаем к продаже редкого красавца хаски. Возраст 2,5 месяца. Потрясающий цвет шубки! Необыкновенно красивый цвет и разрез глаз! Привит. РКФ. Подробности только по телефону (вотс апп,вайбер) Находимся 100 км от Алматы по Кульджинскому шоссе.Доставим в Алмату и другие область.</p>
+                <div class="obyavlenie__description text-block">
+                    <p>Для истинных ценителей!
+                        Предлагаем к продаже редкого красавца хаски. Возраст 2,5 месяца. Потрясающий цвет шубки! Необыкновенно красивый цвет и разрез глаз! Привит. РКФ. Подробности только по телефону (вотс апп,вайбер) Находимся 100 км от Алматы по Кульджинскому шоссе.Доставим в Алмату и другие область.</p>
+                </div>
                 <div class="obyavlenie__comments comments">
                     <div class="comments__authorization">
                         <p class="comments__authorization-text">

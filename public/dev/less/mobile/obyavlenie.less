@@ -19,14 +19,62 @@
   }
 
   .obyavlenie-control{
-    display: none;
+    padding-bottom: 10px;
+
+    &__item{
+      &:nth-last-child(n+2){
+        display: none;
+      }
+
+      &:last-child{
+        display: block;
+      }
+    }
+
+    &__link{
+      font-size: 16px;
+
+      &::before{
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .about-info{
+    padding: 0 0 15px 15px;
+
+    &__item{
+      margin-top: 20px;
+    }
   }
 }
+
+@media screen and (max-width: 520px){
+  .about-info{
+    &__item{
+      width: ~'calc(50% - 15px)';
+    }
+  }
+}
+
 
 @media screen and (max-width: 420px){
   .obyavlenie{
     &__name{
       font-size: 22px;
+    }
+    &__favourite{
+      width: 22px;
+      height: 20px;
+    }
+  }
+
+  .about-info{
+    padding-left: 10px;
+
+    &__item{
+      width: ~'calc(50% - 10px)';
+      margin-right: 10px;
     }
   }
 }

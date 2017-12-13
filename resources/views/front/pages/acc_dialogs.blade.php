@@ -46,7 +46,8 @@
                         </div>
                         <div class="dialogs-item__right-col">
                             <p class="dialogs-item__message-count">1 сообщение<span class="dialogs-item__new-message-count">1</span></p>
-                            <div class="dialogs-item__favourite is-favourite"></div>
+                            <div class="dialogs-item__ignore js-to-folder is-ignore" title="Игнорирую"></div>
+                            <div class="dialogs-item__favourite js-to-folder" title="Избранные"></div>
                         </div>
                     </li>
                     <li class="dialogs__item dialogs-item">
@@ -57,7 +58,8 @@
                         </div>
                         <div class="dialogs-item__right-col">
                             <p class="dialogs-item__message-count">23 сообщения<span class="dialogs-item__new-message-count"></span></p>
-                            <div class="dialogs-item__favourite"></div>
+                            <div class="dialogs-item__ignore js-to-folder" title="Игнорирую"></div>
+                            <div class="dialogs-item__favourite js-to-folder" title="Избранные"></div>
                         </div>
                     </li>
                     <li class="dialogs__item dialogs-item">
@@ -68,7 +70,8 @@
                         </div>
                         <div class="dialogs-item__right-col">
                             <p class="dialogs-item__message-count">13 сообщений<span class="dialogs-item__new-message-count">1</span></p>
-                            <div class="dialogs-item__favourite"></div>
+                            <div class="dialogs-item__ignore js-to-folder" title="Игнорирую"></div>
+                            <div class="dialogs-item__favourite js-to-folder" title="Избранные"></div>
                         </div>
                     </li>
                 </ul>

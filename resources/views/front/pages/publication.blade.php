@@ -182,9 +182,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
@@ -201,9 +199,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
@@ -220,9 +216,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
@@ -239,9 +233,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
@@ -255,9 +247,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Паразиты</a></li>
@@ -269,9 +259,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Ветеринария</a></li>
@@ -286,9 +274,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Уход</a></li>
@@ -301,9 +287,7 @@
                         <a href="" class="like-publications__img-link"><img src="/img/like_pub.png" alt="" class="like-publications__img"></a>
                     </div>
                     <p class="like-publications__name"><a href="" class="like-publications__link link">Как правильно и быстро приучить котят к лотку</a></p>
-                    <p class="like-publications__small-descr">
-                        Если соблюдать простые правила, животные привыкнут быстро и безболезненно.
-                    </p>
+                    <div class="like-publications__small-descr text-block"><p>Если соблюдать простые правила, животные привыкнут быстро и безболезненно.</p></div>
                     <div class="like-publications__tags-row tags">
                         <ul class="tags__list">
                             <li class="tags__item"><a href="" class="tags__link">Уход</a></li>

@@ -19,7 +19,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Чем кормить новорожденных котят первые 2 дня</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -29,7 +29,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Как правильно и быстро приучть котят к лотку</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -39,7 +39,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Как правильно и быстро приучть котят к лотку Как правильно и быстро приучть котят к лотку</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -49,7 +49,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Знаменитые собаки медалисты и чемпионы</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Какие собаки лучше всего подходят ксли в доме дети</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -72,7 +72,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Профилактика паразитов для кошек и собак</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Как правильно и быстро приучть котят к лотку</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -92,7 +92,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Как правильно и быстро приучть котят к лотку Как правильно и быстро приучть котят к лотку</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -102,7 +102,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Знаменитые собаки медалисты и чемпионы</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Какие собаки лучше всего подходят ксли в доме дети</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="news__info-wrapper">
                                 <div class="news__item-title"><a href="" class="news__link link">Профилактика паразитов для кошек и собак</a></div>
-                                <p class="news__text">Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p>
+                                <div class="news__text text-block"><p>Ветеринарный паспорт для собак и кошек - международный ветеринарный документ, содержащий информацию о самом животном и информацию владельца.</p></div>
                                 <p class="news__date-comment-wrapper"><span class="news__date">12.05.15, 16:00</span><span class="news__text-delimiter"> • </span><span class="news__comments">10 комментариев</span></p>
                             </div>
                         </li>
