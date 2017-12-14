@@ -9,4 +9,108 @@
   .aside{
     display: none;
   }
+
+  .links-list{
+    &__list{
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item{
+      width: ~"calc(50% - 10px)";
+    }
+  }
+
+  .forum-publication{
+    position: relative;
+    transition: height .4s;
+
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -25%;
+      width: 150%;
+      height: 35px;
+      box-shadow: 0 0 70px 25px rgba(213, 235, 207, 0.8);
+      background-color: rgba(213, 235, 207, 0.9);
+      transition: box-shadow .4s;
+    }
+
+    &.is-open{
+      &::after{
+        height: 0;
+        box-shadow: 0 0 0 transparent;
+      }
+    }
+
+    &__wrapper{
+      padding-bottom: 25px;
+    }
+
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 15px;
+      }
+    }
+
+    &__open-wrap{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      padding-bottom: 15px;
+    }
+
+    &__open{
+      position: relative;
+      font-weight: bold;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -22px;
+        top: 2px;
+        background: url(../img/arrow_down.png) no-repeat center/contain;
+        height: 16px;
+        width: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px){
+  .links-list{
+    padding-right: 15px;
+    padding-left: 15px;
+
+    &__list{
+    }
+
+    &__item{
+      width: 100%;
+    }
+  }
+
+  .forum-publication{
+    &__wrapper{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    &__open{
+      font-size: 14px;
+
+      &::after {
+        right: -18px;
+        height: 12px;
+        width: 10px;
+      }
+    }
+  }
 }

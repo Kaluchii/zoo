@@ -234,6 +234,11 @@ $(document).ready(function () {
             });
         }
 
+        $('.js_open_forum').on('click', function () {
+            $(this).fadeOut();
+            $('.forum-publication').addClass('is-open').css('height', $('.forum-publication__wrapper').outerHeight() + 'px');
+        });
+
         if ( $('.obyavlenie').length) {
             $('.js_actions_open').on('click', function () {
                 $(this).toggleClass('is-open');

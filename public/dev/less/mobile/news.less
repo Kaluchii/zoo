@@ -19,6 +19,16 @@
     &__img-wrapper{
       max-width: 140px;
     }
+
+    &__links-list{
+      display: block;
+    }
+
+    &__forum-publication{
+      display: block;
+      overflow: hidden;
+      height: 160px;
+    }
   }
 }
 
@@ -41,6 +51,14 @@
 
     &__info-wrapper{
       margin: 15px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 470px){
+  .news{
+    &__forum-publication{
+      height: 180px;
     }
   }
 }

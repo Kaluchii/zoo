@@ -73,6 +73,16 @@
                 <div class="main__main-content main-content">
                     <div class="main__news news">
                         <h2 class="news__title news__title--main-page">Что почитать на сайте</h2>
+                        <div class="news__links-list links-list links-list--popular">
+                            <h4 class="links-list__title aside__title">Популярные статьи</h4>
+                            <ul class="links-list__list">
+                                <li class="links-list__item"><a href="" class="links-list__link link">Нужна ли стерилизация</a></li>
+                                <li class="links-list__item"><a href="" class="links-list__link link">Профилактика паразитов</a></li>
+                                <li class="links-list__item"><a href="" class="links-list__link link">Как выбрать щенка</a></li>
+                                <li class="links-list__item"><a href="" class="links-list__link link">Выбор корма для котов</a></li>
+                                <li class="links-list__item"><a href="" class="links-list__link link">Особенности корма котов</a></li>
+                            </ul>
+                        </div>
                         <ul class="news__list">
                             <li class="news__item">
                                 <div class="news__img-wrapper">
@@ -132,6 +142,45 @@
                                 <img src="/img/palceholder_rec.png" alt="" class="news__rec-img">
                             </li>
                         </ul>
+                        <div class="news__forum-publication forum-publication">
+                            <div class="forum-publication__wrapper">
+                                <h4 class="forum-publication__title aside__title">Последнее на форуме</h4>
+                                <ul class="forum-publication__list">
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <p class="forum-publication__name"><a href="" class="forum-publication__name-link link">Как правильно кормить новорожденных котят</a></p>
+                                        <p class="forum-publication__item-info"><span class="forum-publication__date">12.03.17</span><span class="forum-publication__comments">10 комментариев</span></p>
+                                    </li>
+                                    <li class="forum-publication__item">
+                                        <a href="" class="forum-publication__forum-go-link link">Перейти на форум</a>
+                                    </li>
+                                </ul>
+                                <p class="forum-publication__open-wrap"><span class="forum-publication__open dotted-link js_open_forum">Раскрыть список</span></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="main__declarations-division declarations-division">
                         <h3 class="declarations-division__main-title">Объявления по городам</h3>
