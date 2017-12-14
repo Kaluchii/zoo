@@ -199,7 +199,7 @@ $(document).ready(function () {
                 var parrent = $(this).closest('.my-dec-item');
                 var offset = '100%';
                 if ( $window.width() <= 650 ){
-                    offset = '158px';
+                    offset = '192px';
                 } else if ( $window.width() <= 1020 ){
                     offset = $('.my-dec-item__services-col').outerHeight();
                     offset = 'calc(100% - ' + offset + 'px)';
@@ -216,7 +216,13 @@ $(document).ready(function () {
                     parent.find('.auto-up').fadeOut();
                 }
                 $(this).toggleClass('is-open');
-                $(this).parent().find('.my-dec-item__row-actions').toggleClass('is-open');
+                var actions = $(this).parent().find('.my-dec-item__row-actions');
+                actions.toggleClass('is-open');
+                if( actions.hasClass('is-open') ){
+                    actions.css("display", "flex").hide().fadeIn();
+                } else {
+                    actions.fadeOut();
+                }
             });
 
             $('.js_auto-up_close').on('click', function () {
@@ -225,6 +231,20 @@ $(document).ready(function () {
                 parent.find('.js_open_up').removeClass('is-active');
                 parent.find('.my-dec-item__row-actions').removeClass('overlay');
                 $(this).closest('.auto-up').fadeOut();
+            });
+        }
+
+        if ( $('.obyavlenie').length) {
+            $('.js_actions_open').on('click', function () {
+                $(this).toggleClass('is-open');
+
+                var actions = $(this).parent().find('.m-list');
+                actions.toggleClass('is-open');
+                actions.fadeToggle();
+            });
+
+            $('.m-list').on('click', function () {
+                $('.js_actions_open').trigger('click')
             });
         }
 

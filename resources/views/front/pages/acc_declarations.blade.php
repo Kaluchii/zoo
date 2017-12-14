@@ -110,11 +110,7 @@
                                 <p class="my-dec-item__price">45 000 тг</p>
                             </div>
                         </div>
-                        <div class="my-dec-item__hamburger hamburger js_actions_open">
-                            <div class="hamburger__row1"></div>
-                            <div class="hamburger__row2"></div>
-                            <div class="hamburger__row3"></div>
-                        </div>
+                        <div class="my-dec-item__hamburger hamburger hamburger--settings js_actions_open"></div>
                         <div class="my-dec-item__row-actions">
                             <a href="" class="my-dec-item__action">Посмотреть</a>
                             <a href="" class="my-dec-item__action">Редактировать</a>

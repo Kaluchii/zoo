@@ -51,6 +51,7 @@
   margin: 0 auto;
   text-align: left;
   z-index: 1045;
+  max-width: 100%;
 }
 
 .mfp-inline-holder .mfp-content,
@@ -567,4 +568,12 @@ img.mfp-img {
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+@media all and (max-width: 420px) {
+  .mfp-close {
+    width: 30px;
+    height: 34px;
+    line-height: 34px;
+  }
 }

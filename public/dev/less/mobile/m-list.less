@@ -1,0 +1,32 @@
+.m-list{
+  position: absolute;
+  top: 39px;
+  right: 10px;
+  padding: 5px 0 2px;
+  z-index: 1;
+  font-size: 14px;
+  background-color: #e9edf1;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  &__item{
+    &:nth-last-child(n+2){
+      background: linear-gradient(to top, #cccccc 4px, transparent 6px);
+      background-position: 10px 100%;
+      background-size: ~'calc(100% - 20px)' 1px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__link{
+    display: block;
+    padding: 7px 15px;
+    color: #0066cb;
+    background: none;
+
+    &:hover, &:focus{
+      background: none;
+    }
+  }
+}

@@ -20,6 +20,17 @@
                 <li class="obyavlenie-control__item"><a href="" class="link obyavlenie-control__link obyavlenie-control__link--turbo">Турбо продажа</a></li>
                 <li class="obyavlenie-control__item"><a href="" class="link obyavlenie-control__link obyavlenie-control__link--turbo">Рекламировать объявление</a></li>
             </ul>
+            <div class="obyavlenie-control__hamburger hamburger js_actions_open">
+                <div class="hamburger__row1"></div>
+                <div class="hamburger__row2"></div>
+                <div class="hamburger__row3"></div>
+            </div>
+            <ul class="obyavlenie-control__m-list m-list">
+                <li class="m-list__item"><a href="#js_author_send_popup" class="js_author_send m-list__link light-grey-link">Написать автору</a></li>
+                <li class="m-list__item"><a href="" class="m-list__link light-grey-link">Все объявления автора</a></li>
+                <li class="m-list__item"><a href="#js_share_popup" class="js_share m-list__link light-grey-link">Поделиться по почте</a></li>
+                <li class="m-list__item"><a href="#js_claim_popup" class="js_claim m-list__link light-grey-link">Пожаловаться</a></li>
+            </ul>
         </div>
         <main class="obyavlenie">
             <div class="obyavlenie__main-content main-content">
@@ -104,6 +115,16 @@
                     <p>Для истинных ценителей!
                         Предлагаем к продаже редкого красавца хаски. Возраст 2,5 месяца. Потрясающий цвет шубки! Необыкновенно красивый цвет и разрез глаз! Привит. РКФ. Подробности только по телефону (вотс апп,вайбер) Находимся 100 км от Алматы по Кульджинскому шоссе.Доставим в Алмату и другие область.</p>
                 </div>
+                <div class="obyavlenie__contacts-block contacts-block">
+                    <div class="contacts-block__phones">
+                        <div class="contacts-block__display-phones"><span class="contacts-block__display-phone-btn dotted-link">Показать телефоны</span></div>
+                        <div class="contacts-block__phones-list">
+                            <p class="contacts-block__phone-item">+7 7XX XXX-XX-XX</p>
+                            <p class="contacts-block__phone-item">+7 7XX XXX-XX-XX</p>
+                        </div>
+                    </div>
+                    <p class="contacts-block__warning-info">Никогда не отправляйте предоплату при покупке. Так действуют мошенники. <span class="link">Подробнее...</span></p>
+                </div>
                 <div class="obyavlenie__comments comments">
                     <div class="comments__authorization">
                         <p class="comments__authorization-text">
@@ -170,12 +191,12 @@
                         </div>
                     </div>
                     <p class="contacts-block__warning-info">Никогда не отправляйте предоплату при покупке. Так действуют мошенники. <span class="link">Подробнее...</span></p>
-                    <div class="contacts-block__action-list">
-                        <p class="contacts-block__action"><a href="#js_author_send_popup" class="js_author_send contacts-block__action-link light-grey-link">Написать автору</a></p>
-                        <p class="contacts-block__action"><a href="" class="contacts-block__action-link light-grey-link">Все объявления автора</a></p>
-                        <p class="contacts-block__action"><a href="#js_share_popup" class="js_share contacts-block__action-link light-grey-link">Поделиться по почте</a></p>
-                        <p class="contacts-block__action"><a href="#js_claim_popup" class="js_claim contacts-block__action-link light-grey-link">Пожаловаться</a></p>
-                    </div>
+                    <ul class="contacts-block__action-list action-list">
+                        <li class="action-list__item"><a href="#js_author_send_popup" class="js_author_send action-list__link light-grey-link">Написать автору</a></li>
+                        <li class="action-list__item"><a href="" class="action-list__link light-grey-link">Все объявления автора</a></li>
+                        <li class="action-list__item"><a href="#js_share_popup" class="js_share action-list__link light-grey-link">Поделиться по почте</a></li>
+                        <li class="action-list__item"><a href="#js_claim_popup" class="js_claim action-list__link light-grey-link">Пожаловаться</a></li>
+                    </ul>
                 </div>
                 <div class="aside__rec-block rec-block">
                     <img src="/img/aside_rec.png" alt="" class="rec-block__img">
@@ -257,7 +278,7 @@
 
     <div id="js_share_popup" class="popup mfp-hide zoom-anim-dialog">
         <form action="">
-            <div class="popup__form-rows form-rows">
+            <div class="popup__form-rows form-rows form-rows--popup">
                 <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap input-row__wrap--vertical">
                         <label for="email" class="input-row__label-above">E-mail получателя</label>
@@ -276,7 +297,7 @@
     <div id="js_claim_popup" class="popup mfp-hide zoom-anim-dialog">
         <p class="popup__title">Укажите причины, по которым вы считаете это объявление некорректным:</p>
         <form action="">
-            <div class="popup__form-rows form-rows">
+            <div class="popup__form-rows form-rows form-rows--popup">
                 <div class="form-rows__input-row input-row">
                     <div class="input-row__wrap">
                         <label class="form__checkbox checkbox">

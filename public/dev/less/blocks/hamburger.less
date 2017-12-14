@@ -2,41 +2,45 @@
   position: absolute;
   top: 11px;
   right: 10px;
-  height: 26px;
-  width: 30px;
-  border: 1px solid #999999;
+  height: 36px;
+  width: 40px;
   border-radius: @border-radius;
   cursor: pointer;
+  transition: .4s;
+
+  &--settings{
+    background: url("../img/settings.svg") no-repeat center/ 24px 24px;
+  }
 
   &__row1{
     position: relative;
-    top: 5px;
-    left: 4px;
+    top: 9px;
+    left: 9px;
     width: 22px;
     height: 2px;
-    background: #999999;
+    background: #0066cb;
     border-radius: 2px;
     transition: .3s;
   }
 
   &__row2{
     position: relative;
-    top: 10px;
-    left: 4px;
+    top: 15px;
+    left: 9px;
     width: 22px;
     height: 2px;
-    background: #999999;
+    background: #0066cb;
     border-radius: 2px;
     transition: .2s;
   }
 
   &__row3{
     position: relative;
-    top: 15px;
-    left: 4px;
+    top: 21px;
+    left: 9px;
     width: 22px;
     height: 2px;
-    background: #999999;
+    background: #0066cb;
     border-radius: 2px;
     transition: .3s;
   }
@@ -44,8 +48,9 @@
   &.is-open{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background-color: #e9edf1;
 
-    .hamburger{
+    /*.hamburger{
       &__row1{
         width: 26px;
         top: 12px;
@@ -63,6 +68,6 @@
         left: 2px;
         transform: rotate(40deg);
       }
-    }
+    }*/
   }
 }
