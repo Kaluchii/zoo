@@ -7,7 +7,7 @@
             <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link light-grey-link">Собаки</a></span>
         </div>
     </section>
-    <section class="filter">
+    {{--<section class="filter">
         <div class="filter__wrapper">
             <h1 class="filter__title">Собаки в Казахстане</h1>
             <div class="filter__row">
@@ -234,7 +234,7 @@
             </div>
 
         </div>
-    </section>
+    </section>--}}
     <div class="content">
         <div class="declarations-top">
             <div class="declarations-top__wrapper">
@@ -246,6 +246,42 @@
         </div>
         <main class="declarations js_favs_decl">
             <div class="declarations__main-content main-content">
+                <div class="declarations__hot-declarations hot-declarations">
+                    <h4 class="hot-declarations__title aside__title">Горячие объявления</h4>
+                    <p class="hot-declarations__subtitle"><a href="" class="hot-declarations__how link">Как попасть в
+                            «Горячие»</a></p>
+                    <div class="hot-declarations__list-wrap">
+                        <ul class="hot-declarations__list">
+                            <li class="hot-declarations__list-item hot-declaration">
+                                <div class="hot-declaration__img-wrap">
+                                    <a href="" class="hot-declaration__img-link"><img src="/img/hot_rec.png" alt="" class="hot-declaration__img"></a>
+                                </div>
+                                <p class="hot-declaration__title"><a href="" class="hot-declaration__link link">Немецкая
+                                        овчарка, девочка, 6 мес</a></p>
+                                <p class="hot-declaration__price">35 000 тг</p>
+                                <p class="hot-declaration__city">Алматы</p>
+                            </li>
+                            <li class="hot-declarations__list-item hot-declaration">
+                                <div class="hot-declaration__img-wrap">
+                                    <a href="" class="hot-declaration__img-link"><img src="/img/cz5.png" alt="" class="hot-declaration__img"></a>
+                                </div>
+                                <p class="hot-declaration__title"><a href="" class="hot-declaration__link link">Хаски,
+                                        мальчик, 12 мес</a></p>
+                                <p class="hot-declaration__price">35 000 тг</p>
+                                <p class="hot-declaration__city">Алматы</p>
+                            </li>
+                            <li class="hot-declarations__list-item hot-declaration">
+                                <div class="hot-declaration__img-wrap">
+                                    <a href="" class="hot-declaration__img-link"><img src="/img/cz4.png" alt="" class="hot-declaration__img"></a>
+                                </div>
+                                <p class="hot-declaration__title"><a href="" class="hot-declaration__link link">Хаски,
+                                        мальчик, 12 мес</a></p>
+                                <p class="hot-declaration__price">35 000 тг</p>
+                                <p class="hot-declaration__city">Алматы</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="declarations__display">
                     <div class="declarations__sort-wrap">
                         <p class="declarations__label">Сортировка</p>
