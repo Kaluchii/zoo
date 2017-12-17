@@ -99,29 +99,29 @@ $(document).ready(function () {
     }).selectmenu( "menuWidget" ).addClass( "select-list" );
     var $window = $(window);
 
-    function decListRebuild() {
+    function decListRebuild(view) {
         if ((favs_decl = $('.js_favs_decl')).length){
-            if ( $window.width() <= 768 ) {
+            var display_how = $('.js_how_to_display');
+
+            if ( view === 'tile' ) {
                 favs_decl.find('.declarations-list').addClass('declarations-list--tile');
-                favs_decl.find('.declaration').addClass('declaration--tile')
+                favs_decl.find('.declaration').addClass('declaration--tile');
+                $(display_how).children('.radio-switchers__input[value="tile"]').prop('checked', true);
             } else {
                 favs_decl.find('.declarations-list').removeClass('declarations-list--tile');
-                favs_decl.find('.declaration').removeClass('declaration--tile')
+                favs_decl.find('.declaration').removeClass('declaration--tile');
+                $(display_how).children('.radio-switchers__input[value="list"]').prop('checked', true);
             }
         }
     }
-    decListRebuild();
+    if ( $window.width() <= 900 ) {
+        decListRebuild('tile');
+    }
 
     $('.js_scroll_bottom').scrollTop($('.js_scroll_bottom').height());
     $window.on('resize', function () {
         if ( $window.width() <= 900 ) {
-            var display_how = $('.js_how_to_display');
-            var display = display_how.children('.radio-switchers__input:checked').attr('value');
-            if ( display !== 'tile' ) {
-                $(display_how).children('.radio-switchers__input[value="tile"]').attr('checked', true);
-                $(display_how).trigger("click");
-            }
-            decListRebuild();
+            decListRebuild('tile');
         }
     });
 
@@ -157,9 +157,10 @@ $(document).ready(function () {
 
         /* Переключение режима отображения объявлений (список/плитка) */
         if ((display_how = $('.js_how_to_display')).length) {
-            var display_condition = 'list';
+            var display_condition = $('.radio-switchers__input:checked').prop('value');
             $(display_how).on('click', function () {
-                var display = $(this).children('.radio-switchers__input').attr('value');
+                var display = $(this).children('.radio-switchers__input').prop('value');
+                display_condition = $('.radio-switchers__input:checked').prop('value');
 
                 if (display_condition !== display) {
 
@@ -262,7 +263,7 @@ $(document).ready(function () {
 
             var cWidth = carousel.width();
 
-            $(window).on('resize', function () {
+            $window.on('resize', function () {
                 cWidth = carousel.width(); // Ширина видимой части карусели
             });
 
