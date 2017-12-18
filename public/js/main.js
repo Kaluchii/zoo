@@ -192,6 +192,16 @@ $(document).ready(function () {
             $(date_select).datepicker({minDate: 0});
         }
 
+        if ((open_menu = $('.js_mmenu_open')).length) {
+            open_menu.on('click', function () {
+                $(this).toggleClass('is-open');
+
+                var menu = $(this).parent().find('.js_menu_content');
+                menu.toggleClass('is-open');
+                menu.fadeToggle();
+            });
+        }
+
         if ((open_up = $('.js_open_up')).length) {
             $(open_up).on('click', function (e) {
                 e.preventDefault();

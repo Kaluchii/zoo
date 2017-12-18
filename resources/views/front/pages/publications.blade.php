@@ -1,7 +1,7 @@
 @extends('front.layout')
 @section('content')
     <section class="breadcrumbs">
-        <div class="breadcrumbs__wrapper">
+        <div class="breadcrumbs__wrapper breadcrumbs__wrapper--l-offset">
             <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link light-grey-link">Главная</a></span>
             <span class="breadcrumbs__delimiter">/</span>
             <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link light-grey-link">Почитать</a></span>
@@ -12,6 +12,16 @@
             <div class="publications__main-content main-content">
                 <div class="publications__news news">
                     <h2 class="news__title">Что почитать на сайте</h2>
+                    <div class="news__links-list links-list links-list--popular">
+                        <h4 class="links-list__title aside__title">Популярные статьи</h4>
+                        <ul class="links-list__list">
+                            <li class="links-list__item"><a href="" class="links-list__link link">Нужна ли стерилизация</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Профилактика паразитов</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Как выбрать щенка</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Выбор корма для котов</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Особенности корма котов</a></li>
+                        </ul>
+                    </div>
                     <ul class="news__list">
                         <li class="news__item news__item--big">
                             <div class="news__img-wrapper">
@@ -242,5 +252,33 @@
                 </div>
             </aside>
         </main>
+        <div class="m-menu">
+            <div class="m-menu__wrapper">
+                <div class="m-menu__hamburger hamburger js_mmenu_open">
+                    <div class="hamburger__row1"></div>
+                    <div class="hamburger__row2"></div>
+                    <div class="hamburger__row3"></div>
+                </div>
+
+                <div class="m-menu__content-wrapper js_menu_content">
+                    <div class="m-menu__search search">
+                        <input type="text" class="search__input input" placeholder="Поиск по статьям">
+                        <button class="search__btn"></button>
+                    </div>
+                    <div class="m-menu__links-list links-list">
+                        <h4 class="links-list__title aside__title">Рубрики</h4>
+                        <ul class="links-list__list">
+                            <li class="links-list__item"><a href="" class="links-list__link link">Собаки</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Кошки</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Болезни и лечение</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Воспитание</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Питание и корма</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link link">Мероприятия и выставки</a></li>
+                            <li class="links-list__item"><a href="" class="links-list__link links-list__link--bold link">Все статьи</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
