@@ -10,28 +10,46 @@
     <section class="filter">
         <div class="filter__wrapper">
             <h1 class="filter__title">Собаки в Казахстане</h1>
-            <div class="filter__row">
-                <div class="filter__criterion-row criterion">
+            <div class="filter__row filter__row--main">
+                <div class="filter__criterion-row criterion criterion--main">
                     <p class="criterion__name">Город</p>
                     <div class="criterion__list-wrapper">
                         <ul class="criterion__list">
-                            <li class="criterion__item">
-                                <div class="criterion__btn is-active">Алматы</div>
+                            <li class="criterion__item radio-switchers">
+                                <label class="radio-switchers__item">
+                                    <input name="region" class="radio-switchers__input js-city-checkbox" type="radio" value="">
+                                    <span class="radio-switchers__button radio-switchers__button--filter">Алматы</span>
+                                </label>
                             </li>
-                            <li class="criterion__item">
-                                <div class="criterion__btn">Астана</div>
+                            <li class="criterion__item radio-switchers">
+                                <label class="radio-switchers__item">
+                                    <input name="region" class="radio-switchers__input js-city-checkbox" type="radio" value="">
+                                    <span class="radio-switchers__button radio-switchers__button--filter">Астана</span>
+                                </label>
                             </li>
-                            <li class="criterion__item">
-                                <div class="criterion__btn">Шымкент</div>
+                            <li class="criterion__item radio-switchers">
+                                <label class="radio-switchers__item">
+                                    <input name="region" class="radio-switchers__input js-city-checkbox" type="radio" value="">
+                                    <span class="radio-switchers__button radio-switchers__button--filter">Шымкент</span>
+                                </label>
                             </li>
-                            <li class="criterion__item">
-                                <div class="criterion__btn">Караганда</div>
+                            <li class="criterion__item radio-switchers">
+                                <label class="radio-switchers__item">
+                                    <input name="region" class="radio-switchers__input js-city-checkbox" type="radio" value="">
+                                    <span class="radio-switchers__button radio-switchers__button--filter">Караганда</span>
+                                </label>
                             </li>
-                            <li class="criterion__item">
-                                <div class="criterion__btn">Актобе</div>
+                            <li class="criterion__item radio-switchers">
+                                <label class="radio-switchers__item">
+                                    <input name="region" class="radio-switchers__input js-city-checkbox" type="radio" value="">
+                                    <span class="radio-switchers__button radio-switchers__button--filter">Актобе</span>
+                                </label>
                             </li>
-                            <li class="criterion__item">
-                                <div class="criterion__btn">Актау</div>
+                            <li class="criterion__item radio-switchers">
+                                <label class="radio-switchers__item">
+                                    <input name="region" class="radio-switchers__input js-city-checkbox" type="radio" value="">
+                                    <span class="radio-switchers__button radio-switchers__button--filter">Актау</span>
+                                </label>
                             </li>
                         </ul>
                         <div class="criterion__other-variants">
