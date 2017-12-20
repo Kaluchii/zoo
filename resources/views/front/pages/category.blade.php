@@ -54,10 +54,11 @@
                         </ul>
                         <div class="criterion__other-variants">
                             <a href="" class="criterion__other-variants-btn dotted-link">Другой город</a>
+                            <a href="" class="criterion__other-variants-btn--mobile"></a>
                         </div>
                     </div>
                 </div>
-                <div class="filter__criterion-row criterion">
+                <div class="filter__criterion-row criterion criterion--main">
                     <p class="criterion__name">Порода</p>
                     <div class="criterion__list-wrapper">
                         <ul class="criterion__list">
