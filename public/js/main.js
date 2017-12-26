@@ -269,6 +269,7 @@ $(document).ready(function () {
                 $(this).siblings('.js_file_name').text($(this).val());
             });
         }
+
         if (( carousel = $('.js_carousel_list') ).length) {
 
             var cWidth = carousel.width();
@@ -331,7 +332,6 @@ $(document).ready(function () {
             removalDelay: 300,
             mainClass: 'my-mfp-zoom-in'
         });
-
 
         $('.js_author_send').magnificPopup({
             type: 'inline',
