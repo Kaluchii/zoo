@@ -99,7 +99,7 @@ $(document).ready(function () {
     }).selectmenu( "menuWidget" ).addClass( "select-list" );
     var $window = $(window);
 
-    function decListRebuild(view) {
+    /*function decListRebuild(view) {
         if ((favs_decl = $('.js_favs_decl')).length){
             var display_how = $('.js_how_to_display');
 
@@ -113,17 +113,17 @@ $(document).ready(function () {
                 $(display_how).children('.radio-switchers__input[value="list"]').prop('checked', true);
             }
         }
-    }
-    if ( $window.width() <= 900 ) {
+    }*/
+    /*if ( $window.width() <= 900 ) {
         decListRebuild('tile');
-    }
+    }*/
 
     $('.js_scroll_bottom').scrollTop($('.js_scroll_bottom').height());
-    $window.on('resize', function () {
+    /*$window.on('resize', function () {
         if ( $window.width() <= 900 ) {
             decListRebuild('tile');
         }
-    });
+    });*/
 
     $window.on('load', function () {
         /* Открытие дополнительных пунктов фильтра */

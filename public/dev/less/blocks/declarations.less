@@ -101,6 +101,10 @@
   &__aside{
     padding-top: 20px;
   }
+
+  &__contacts-block{
+    display: none;
+  }
 }
 
 
@@ -108,7 +112,6 @@
 .declarations-list{
   &--tile{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -254,9 +257,9 @@
 // Отображение списка объявлений ПЛИТКОЙ
 .declaration--tile{
   border: 1px solid #CCCCCC;
-  width: ~'calc(33.3333333% - 8.66666666px)';
+  width: ~'calc(33.3333333% - 12px)';
+  margin-left: 10px;
   margin-bottom: 10px;
-  padding-right: 30px;
 
   &.declaration--reclame{
     border: none;

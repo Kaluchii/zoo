@@ -1,0 +1,80 @@
+.replenishment{
+  &__title{
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__action-wrap{
+    margin: 15px auto 0;
+  }
+
+  &__input{}
+
+  &__button{}
+
+  &__payment-method{}
+}
+
+.payment-method{
+  &__title{
+    margin-top: 30px;
+    color: #333333;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 580px;
+    margin: 20px auto 0;
+  }
+
+  &__item{
+    margin: 5px;
+  }
+}
+
+.method-item{
+  width: 180px;
+  height: 140px;
+  box-sizing: border-box;
+  padding: 25px 10px 15px;
+  background-color: #e9edf0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  &__logo{
+    max-height: 100%;
+  }
+
+  &__name{
+    display: block;
+    margin-top: 15px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__input{
+    display: none;
+  }
+}
