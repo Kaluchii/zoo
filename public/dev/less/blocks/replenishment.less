@@ -6,12 +6,18 @@
   }
 
   &__action-wrap{
+    display: flex;
+    max-width: 300px;
     margin: 15px auto 0;
   }
 
-  &__input{}
+  &__input{
+    width: ~"calc(100% - 147px)";
+  }
 
-  &__button{}
+  &__button{
+    margin-left: 10px;
+  }
 
   &__payment-method{}
 }
@@ -27,7 +33,7 @@
   &__list{
     display: flex;
     flex-wrap: wrap;
-    max-width: 580px;
+    max-width: 570px;
     margin: 20px auto 0;
   }
 
@@ -40,15 +46,26 @@
   width: 180px;
   height: 140px;
   box-sizing: border-box;
-  padding: 25px 10px 15px;
+  padding: 15px;
   background-color: #e9edf0;
   border-radius: 5px;
   cursor: pointer;
+  transition: .3s;
+  
+  &:hover{
+    background-color: #f4f8fb;
+  }
+
+  &.active{
+    background-color: #efe3b4;
+  }
 
   &__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
+    cursor: pointer;
   }
 
   &__logo-wrapper{

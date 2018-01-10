@@ -1,0 +1,52 @@
+@media screen and (max-width: 590px){
+  .payment-method{
+    &__list{
+      max-width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .replenishment{
+    &__title{
+      max-width: 230px;
+      margin: 0 auto;
+    }
+
+    &__action-wrap{
+      margin-top: 20px;
+      max-width: 240px;
+    }
+
+    &__input{
+      width: ~"calc(100% - 115px)";
+    }
+  }
+
+  .payment-method{
+    &__list{
+      max-width: 300px;
+    }
+
+    &__item{
+      margin: 5px 5px 5px 0;
+
+      &:nth-child(2n+2){
+        margin: 5px 0 5px 5px;
+      }
+    }
+  }
+
+  .method-item{
+    width: 145px;
+    height: 130px;
+
+    &__logo-wrapper{
+      height: 45px;
+    }
+
+    &__name{
+      font-size: 14px;
+    }
+  }
+}
