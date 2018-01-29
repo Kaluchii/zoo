@@ -77,6 +77,7 @@
 .select-list{
   box-sizing: border-box;
   max-width: 100%;
+  max-height: 320px;
   overflow-y: auto;
   color: #666666;
   background-color: #ffffff;
@@ -87,11 +88,18 @@
     max-width: 170px;
   }
 
+  &--regions{
+    max-height: 455px;
+
+    .select-list{
+      max-height: 455px;
+    }
+  }
+
   .ui-menu-item{
     cursor: pointer;
 
     .select-list{
-      max-height: 340px;
       height: ~'calc(100% - 40px)';
     }
   }
