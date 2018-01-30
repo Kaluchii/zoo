@@ -25,6 +25,7 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     white-space: nowrap;
+    user-select: none;
   }
 
   &__search{
@@ -34,23 +35,81 @@
 
   &__list{
     margin-top: 11px;
-    max-height: 300px;
+    max-height: 450px;
     overflow: auto;
+
+    &>.other-variant__list-item:nth-child(n+2){
+      &>span{
+        &::after{
+          content: "";
+          position: absolute;
+          top: 2px;
+          right: 0;
+          width: 6px;
+          height: 11px;
+          background: url("../img/arrow_r.png");
+        }
+      }
+
+      &:hover{
+        &>span{
+          &::after{
+            background: url("../img/arrow_rh.png");
+          }
+        }
+      }
+    }
   }
 
   &__list-item{
+    display: block;
     padding: 8px 10px 8px 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     color: #666666;
     font-size: 14px;
     line-height: 1;
-  }
 
-  &__list-item:hover{
-    background-color: #fedf76;
-    color: #333333;
-    cursor: pointer;
+    &:hover{
+      background-color: #fedf76;
+      color: #333333;
+      cursor: pointer;
+
+      .citys-list{
+        display: block;
+      }
+    }
+
+    &>span{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #666666;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .other-variant__list-item{
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
+}
+.citys-list{
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 210px;
+  max-height: 460px;
+  height: 100%;
+  overflow-y: auto;
+  color: #666666;
+  background-color: #ffffff;
+  border: 2px solid #cc9933;
+  border-radius: 5px;
 }

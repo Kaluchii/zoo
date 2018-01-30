@@ -78,6 +78,7 @@
   box-sizing: border-box;
   max-width: 100%;
   max-height: 320px;
+  min-width: 210px;
   overflow-y: auto;
   color: #666666;
   background-color: #ffffff;
@@ -93,6 +94,26 @@
 
     .select-list{
       max-height: 455px;
+    }
+
+    &>.ui-menu-item:nth-child(n+2){
+      &>.ui-menu-item-wrapper{
+        &::after{
+          content: "";
+          position: absolute;
+          top: 9px;
+          right: 10px;
+          width: 6px;
+          height: 11px;
+          background: url("../img/arrow_r.png");
+        }
+
+        &.ui-state-active{
+          &::after{
+            background: url("../img/arrow_rh.png");
+          }
+        }
+      }
     }
   }
 
