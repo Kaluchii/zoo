@@ -116,6 +116,22 @@
   &--tile{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -10px;
+
+    .declaration{
+      &--reclame{
+        border-bottom: 0;
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      &__wrapper{
+        &--reclame{
+          padding: 0;
+        }
+      }
+    }
   }
 
   &__item{}
@@ -136,6 +152,7 @@
     &--reclame{
       padding: 10px 0;
       justify-content: center;
+      line-height: 0;
     }
 
     &--yellow{
