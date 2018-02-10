@@ -305,7 +305,13 @@ div + .rec-block, div + .hot-declarations{
     text-align: center;
   }
 
-  &__display-phones{}
+  &__display-phones{
+    &:empty{
+      +.contacts-block__phones-list{
+        margin-top: 0;
+      }
+    }
+  }
 
 
   &__display-phone-btn{
@@ -325,6 +331,13 @@ div + .rec-block, div + .hot-declarations{
 
   &__phones-list{
     margin-top: 10px;
+    padding: 0 15px;
+    line-height: 1.7;
+
+    a{
+      font-weight: bold;
+      white-space: nowrap;
+    }
   }
 
   &__phone-item{
