@@ -146,6 +146,14 @@
       flex-direction: column;
     }
 
+    &__extra-options:empty{
+      display: none;
+
+      &+.filter__search-btn{
+        margin-top: 0;
+      }
+    }
+
     &__search-btn{
       margin-top: 20px;
       align-self: flex-end;
