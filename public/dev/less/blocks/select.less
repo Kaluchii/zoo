@@ -1,8 +1,8 @@
-.select-button{
-  flex-shrink: 0;
-  border-radius: @border-radius;
-  padding: 10px;
+.select, .select-button{
   max-width: 100%;
+  flex-shrink: 0;
+  padding: 10px;
+  border-radius: @border-radius;
   .gradient-button;
 
   &--filter-gradient-h{
@@ -138,5 +138,22 @@
       background-color: #fedf76;
       color: #333333;
     }
+  }
+}
+
+.select{
+  width: 100%;
+  max-width: 320px;
+  padding: 5px;
+
+  &--small{
+    padding: 5px 15px 5px 5px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  &--filter-gradient-h{
+    padding: 4px 5px;
+    max-width: 170px;
   }
 }
