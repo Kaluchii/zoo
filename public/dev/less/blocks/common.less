@@ -1,0 +1,161 @@
+/*
+              В этом файле описываются глобальные стили и
+              стили часто повторяющихся блоков используемых в качестве примесей
+
+
+                                      Пример подключения шрифтов
+*/
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('RobotoLight'), url('../fonts/Roboto/RobotoLight.woff2') format('woff2'), url('../fonts/Roboto/RobotoLight.woff') format('woff'), url('../fonts/Roboto/RobotoLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('RobotoRegular'), url('../fonts/Roboto/Roboto.woff2') format('woff2'), url('../fonts/Roboto/Roboto.woff') format('woff'), url('../fonts/Roboto/Roboto.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('RobotoMedium'), url('../fonts/Roboto/RobotoMedium.woff2') format('woff2'), url('../fonts/Roboto/RobotoMedium.woff') format('woff'), url('../fonts/Roboto/RobotoMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('RobotoBold'), url('../fonts/Roboto/RobotoBold.woff2') format('woff2'), url('../fonts/Roboto/RobotoBold.woff') format('woff'), url('../fonts/Roboto/RobotoBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.link{
+  .link(@link-color, @link-border, @hover-color, @hover-border);
+  font-size: inherit;
+}
+
+.dotted-link{
+  .dotted-link(@link-color, @link-border, @hover-color, @hover-border);
+  font-size: inherit;
+}
+
+.grey-link{
+  .link(#666666, rgba(102, 102, 102, 0.3), @hover-color, @hover-border);
+  font-size: inherit;
+}
+
+.light-grey-link{
+  .link(#999999, rgba(153, 153, 153, 0.3), @hover-color, @hover-border);
+  font-size: inherit;
+}
+
+br{
+  font-size: 0;
+}
+
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+  max-width: 1020px;
+  margin: 0 auto;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+.color-bg{
+  background: #dfe4e8 url("../img/bg.png") repeat;
+}
+
+.content{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 35px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.main-content{
+  //max-width: 680px;
+  /*width: 100%;*/
+  width: ~'calc(100% - 270px)';
+}
+
+.bold{
+  font-weight: bold;
+  color: #333333;
+}
+
+.biggest-title{
+  font-size: 48px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.big-title{
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.align-center{
+  margin-top: 15px;
+  color: #666666;
+  font-size: 16px;
+  text-align: center;
+
+  strong{
+    color: #333333;
+  }
+}
+
+
+.link-hover{
+  .declaration__name, .hot-declaration__link, .like-declaration__link, .news__link, .like-publications__link{
+    background: -moz-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: -ms-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: -o-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 0, 0, 0.3)), to(rgba(204, 0, 0, 0.3)));
+    background: -webkit-linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    background: linear-gradient(to left, rgba(204, 0, 0, 0.3), rgba(204, 0, 0, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(204, 0, 0, 0.3)', endColorstr='rgba(204, 0, 0, 0.3)', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: #cc0000;
+  }
+  .declaration__link, .hot-declaration__img-link, .like-declaration__img-link, .news__img-link, .like-publications__img-link{
+    box-shadow: 0 0 0 1px #cc0000;
+  }
+}
+
+.disabled {
+  position:relative;
+}
+.disabled::after{
+  content:"";
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.shadow-bg{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0b0b;
+  opacity: 0.8;
+  z-index: 2;
+}
