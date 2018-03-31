@@ -223,10 +223,12 @@
 
 /* Переключатель */
 .radio-switchers{
+  max-width: 100%;
   font-size: 0;
 
   &__item{
     display: inline-block;
+    max-width: 100%;
 
     &:nth-child(n+2){
       margin-left: -1px;
@@ -263,6 +265,7 @@
   &__button{
     position: relative;
     padding: 10px;
+    max-width: 100%;
     .gradient-button;
     .gradient-hover-button;
 
@@ -374,16 +377,16 @@
   }
 
   &__wrap{
+    display: flex;
     color: #333333;
     line-height: 1.2;
     font-size: 0;
   }
 
   &__button{
-    display: inline-block;
     position: relative;
-    vertical-align: top;
     top: 2px;
+    flex-shrink: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

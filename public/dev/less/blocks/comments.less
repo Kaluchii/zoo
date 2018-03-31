@@ -81,10 +81,18 @@
     color: #666666;
   }
 
-  &__action-wrap{}
+  &__action-wrap{
+    .comment__complain:first-child, .comment__answer:first-child, .comment__delete:first-child{
+      margin-left: 0;
+    }
+  }
 
   &__answer{
-    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  &__delete{
+    margin-left: 15px;
   }
 
   &__complain{
