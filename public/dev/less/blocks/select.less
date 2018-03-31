@@ -154,11 +154,11 @@
 
 .select{
   width: 100%;
-  max-width: 320px;
-  padding: 5px;
+  //max-width: 320px;
+  padding: 10px 25px 10px 10px;
 
   &--small{
-    padding: 5px 15px 5px 5px;
+    padding: 5px 15px 5px 10px;
     height: 30px;
     font-size: 14px;
   }
@@ -166,5 +166,19 @@
   &--filter-gradient-h{
     padding: 4px 5px;
     max-width: 170px;
+  }
+
+  &--color-h{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, rgba(255,255,255,1);
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    background: url(../img/arrow_down.png) no-repeat ~'calc(100% - 10px)' 50%, linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
   }
 }

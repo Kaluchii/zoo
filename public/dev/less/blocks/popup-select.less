@@ -6,7 +6,7 @@
   &--category{
     .popup-select{
       &__f-level-list{
-        max-height: 260px;
+        height: 260px;
         overflow: auto;
       }
 
@@ -28,10 +28,13 @@
     transition: .5s;
     transform: translate3d(0,0,0);
     margin: 10px 0;
-    max-height: 440px;
+    height: 450px;
+    max-height: ~'calc(100vh - 95px)';
+    overflow: auto;
 
     &.is-offset{
       transform: translate3d(-100%,0,0);
+      overflow: initial;
     }
   }
 
