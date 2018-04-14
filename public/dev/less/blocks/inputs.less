@@ -36,6 +36,21 @@
       flex-direction: column;
       width: 100%;
     }
+
+    &.is-mobile{
+      position: relative;
+
+      .input-row__select-overlay{
+        display: block;
+      }
+    }
+  }
+
+  &__select-overlay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   &__inline-els{
@@ -385,7 +400,7 @@
 
   &__button{
     position: relative;
-    top: 2px;
+    top: 0;
     flex-shrink: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

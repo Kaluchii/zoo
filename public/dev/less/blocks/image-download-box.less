@@ -16,6 +16,24 @@
     &:nth-last-child(n+4) {
       margin-bottom: 10px;
     }
+
+    &.is-loading{
+      pointer-events: none;
+
+      .img-download{
+        &__button{
+          background: #e9edf0 url("../img/default.svg") no-repeat center / 40px 40px !important;
+        }
+
+        &__rotate{
+          opacity: .3;
+        }
+
+        &__del{
+          opacity: .3;
+        }
+      }
+    }
   }
 
   &__proposal-alternative{

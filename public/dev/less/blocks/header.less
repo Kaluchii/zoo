@@ -240,6 +240,21 @@
     margin-left: 10px;
     max-width: 200px;
     width: 21.052631%;
+
+    &.is-mobile{
+      position: relative;
+
+      .search-panel__select-overlay{
+        display: block;
+      }
+    }
+  }
+
+  &__select-overlay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   &__btn-wrap{
